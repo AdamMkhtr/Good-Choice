@@ -22,6 +22,8 @@
 		A681DE2D27B1310000FB429B /* FruitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE2B27B1310000FB429B /* FruitsTableViewCell.swift */; };
 		A681DE2E27B1310000FB429B /* FruitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE2C27B1310000FB429B /* FruitsTableViewCell.xib */; };
 		A6C6668E27B2A24A006F0087 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6668D27B2A24A006F0087 /* Fruits.swift */; };
+		A6C6669127B2A3FF006F0087 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6668F27B2A3FF006F0087 /* DetailsViewController.swift */; };
+		A6C6669227B2A3FF006F0087 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C6669027B2A3FF006F0087 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		A681DE2B27B1310000FB429B /* FruitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewCell.swift; sourceTree = "<group>"; };
 		A681DE2C27B1310000FB429B /* FruitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsTableViewCell.xib; sourceTree = "<group>"; };
 		A6C6668D27B2A24A006F0087 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		A6C6668F27B2A3FF006F0087 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A6C6669027B2A3FF006F0087 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 				A681DE2427B12B0000FB429B /* ContainerViewController.xib */,
 				A681DE2827B12B5600FB429B /* FruitsViewController.xib */,
 				A681DE2C27B1310000FB429B /* FruitsTableViewCell.xib */,
+				A6C6669027B2A3FF006F0087 /* DetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		A681DE2127B12A5600FB429B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A6C6668F27B2A3FF006F0087 /* DetailsViewController.swift */,
 				A681DE2B27B1310000FB429B /* FruitsTableViewCell.swift */,
 				A681DDF327B12A1A00FB429B /* ViewController.swift */,
 				A681DE2327B12B0000FB429B /* ContainerViewController.swift */,
@@ -286,6 +292,7 @@
 				A681DE2E27B1310000FB429B /* FruitsTableViewCell.xib in Resources */,
 				A681DDF927B12A1B00FB429B /* Assets.xcassets in Resources */,
 				A681DE2627B12B0000FB429B /* ContainerViewController.xib in Resources */,
+				A6C6669227B2A3FF006F0087 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +320,7 @@
 				A6C6668E27B2A24A006F0087 /* Fruits.swift in Sources */,
 				A681DDF427B12A1A00FB429B /* ViewController.swift in Sources */,
 				A681DE2927B12B5600FB429B /* FruitsViewController.swift in Sources */,
+				A6C6669127B2A3FF006F0087 /* DetailsViewController.swift in Sources */,
 				A681DDF027B12A1A00FB429B /* AppDelegate.swift in Sources */,
 				A681DE2527B12B0000FB429B /* ContainerViewController.swift in Sources */,
 				A681DE2D27B1310000FB429B /* FruitsTableViewCell.swift in Sources */,

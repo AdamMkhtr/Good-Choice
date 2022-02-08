@@ -74,4 +74,11 @@ extension FruitsViewController: UITableViewDataSource {
 
 extension FruitsViewController: UITableViewDelegate {
 
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      let cell = tableView.cellForRow(at: indexPath)
+      guard cell is FruitsTableViewCell else { return }
+      DetailsViewController()
+  }
+
 }

@@ -14,6 +14,14 @@ class Fruits {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
+  struct FruitsInfo {
+    let name: String
+    let description: String
+    let vitamines: String
+  }
+
+  let apple = FruitsInfo(name: "", description: "", vitamines: "")
+
 
 
 
