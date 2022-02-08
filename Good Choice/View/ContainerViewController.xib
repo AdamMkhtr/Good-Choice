@@ -19,6 +19,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YQ-3c-llA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.79607843137254897" green="0.85490196078431369" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J41-ah-6c0">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBrownColor"/>
@@ -28,7 +32,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="J41-ah-6c0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GLF-rt-LSG"/>
+                <constraint firstItem="2YQ-3c-llA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iwd-6x-7Dq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J41-ah-6c0" secondAttribute="trailing" id="Jg8-Ag-p4D"/>
+                <constraint firstItem="2YQ-3c-llA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SmV-x2-ILT"/>
+                <constraint firstAttribute="trailing" secondItem="2YQ-3c-llA" secondAttribute="trailing" id="Uat-rQ-o3q"/>
+                <constraint firstAttribute="bottom" secondItem="2YQ-3c-llA" secondAttribute="bottom" id="b1d-Bk-pzf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J41-ah-6c0" secondAttribute="bottom" id="hqy-2d-TlC"/>
                 <constraint firstItem="J41-ah-6c0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wDb-Ju-2fH"/>
             </constraints>

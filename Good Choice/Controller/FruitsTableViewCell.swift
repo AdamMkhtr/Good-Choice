@@ -8,16 +8,34 @@
 import UIKit
 
 class FruitsTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
+  
+  
+  //----------------------------------------------------------------------------
+  // MARK: - Outlets
+  //----------------------------------------------------------------------------
+  
+  @IBOutlet weak var fruitsView: UIView!
+  
+  //----------------------------------------------------------------------------
+  // MARK: - Setup
+  //----------------------------------------------------------------------------
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    setupCornerRadius()
+  }
+  
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+  }
+  
+  func setupCornerRadius() {
+    fruitsView.layer.cornerRadius = 8
+  }
+  //----------------------------------------------------------------------------
+  // MARK: - Methods
+  //----------------------------------------------------------------------------
+  
+  
+  
 }

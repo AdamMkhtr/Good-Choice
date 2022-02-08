@@ -21,6 +21,7 @@
 		A681DE2A27B12B5600FB429B /* FruitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE2827B12B5600FB429B /* FruitsViewController.xib */; };
 		A681DE2D27B1310000FB429B /* FruitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE2B27B1310000FB429B /* FruitsTableViewCell.swift */; };
 		A681DE2E27B1310000FB429B /* FruitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE2C27B1310000FB429B /* FruitsTableViewCell.xib */; };
+		A6C6668E27B2A24A006F0087 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6668D27B2A24A006F0087 /* Fruits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A681DE2827B12B5600FB429B /* FruitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsViewController.xib; sourceTree = "<group>"; };
 		A681DE2B27B1310000FB429B /* FruitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewCell.swift; sourceTree = "<group>"; };
 		A681DE2C27B1310000FB429B /* FruitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsTableViewCell.xib; sourceTree = "<group>"; };
+		A6C6668D27B2A24A006F0087 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		A681DE2027B12A4F00FB429B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6C6668D27B2A24A006F0087 /* Fruits.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C6668E27B2A24A006F0087 /* Fruits.swift in Sources */,
 				A681DDF427B12A1A00FB429B /* ViewController.swift in Sources */,
 				A681DE2927B12B5600FB429B /* FruitsViewController.swift in Sources */,
 				A681DDF027B12A1A00FB429B /* AppDelegate.swift in Sources */,

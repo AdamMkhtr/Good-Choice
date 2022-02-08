@@ -22,14 +22,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="id1-Ek-2jr">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="85"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEL-78-jzu">
-                                        <rect key="frame" x="0.0" y="0.0" width="192" height="85"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEL-78-jzu">
+                                        <rect key="frame" x="0.0" y="0.0" width="210.5" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banane" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-kL-0MF">
-                                        <rect key="frame" x="192" y="0.0" width="108" height="85"/>
+                                        <rect key="frame" x="210.5" y="0.0" width="89.5" height="85"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -37,6 +37,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="0.45518291" green="0.61464494469999997" blue="0.44333016870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="id1-Ek-2jr" firstAttribute="leading" secondItem="eSe-vi-RC1" secondAttribute="leading" id="29S-Z6-znX"/>
                             <constraint firstAttribute="bottom" secondItem="id1-Ek-2jr" secondAttribute="bottom" id="4TA-jT-OLZ"/>
@@ -45,7 +46,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" red="0.79607843140000001" green="0.85490196080000003" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="eSe-vi-RC1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="8yL-Db-7dt"/>
                     <constraint firstAttribute="bottom" secondItem="eSe-vi-RC1" secondAttribute="bottom" constant="5" id="LwT-sy-Y3n"/>
@@ -54,6 +55,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fruitsView" destination="eSe-vi-RC1" id="cww-5v-zW2"/>
+            </connections>
             <point key="canvasLocation" x="124.6376811594203" y="122.87946428571428"/>
         </tableViewCell>
     </objects>
