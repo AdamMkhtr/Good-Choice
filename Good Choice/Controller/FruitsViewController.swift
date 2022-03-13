@@ -36,7 +36,6 @@ class FruitsViewController: UIViewController {
     fruitsTableView.dataSource = self
   }
 
-
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------

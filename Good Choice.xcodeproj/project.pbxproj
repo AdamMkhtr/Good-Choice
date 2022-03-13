@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E747A24000A9F92476CA7AB /* Pods_Good_Choice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE93E60FD9CEF9325255581 /* Pods_Good_Choice.framework */; };
+		A680440C27DE070B00F3D7B2 /* UiImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680440B27DE070B00F3D7B2 /* UiImageView+Extensions.swift */; };
 		A681DDF027B12A1A00FB429B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DDEF27B12A1A00FB429B /* AppDelegate.swift */; };
 		A681DDF227B12A1A00FB429B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DDF127B12A1A00FB429B /* SceneDelegate.swift */; };
 		A681DDF427B12A1A00FB429B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DDF327B12A1A00FB429B /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		A6C6668E27B2A24A006F0087 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6668D27B2A24A006F0087 /* Fruits.swift */; };
 		A6C6669127B2A3FF006F0087 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6668F27B2A3FF006F0087 /* DetailsViewController.swift */; };
 		A6C6669227B2A3FF006F0087 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C6669027B2A3FF006F0087 /* DetailsViewController.xib */; };
+		D5EC670D4B6388EA9B361D12 /* Pods_Good_Choice_Good_ChoiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DAD466F1531FF3BD7A3719 /* Pods_Good_Choice_Good_ChoiceUITests.framework */; };
+		F621E262C1ED656ED35F0511 /* Pods_Good_ChoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F0437BD5E9AC2D179ADA22 /* Pods_Good_ChoiceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		039D2CFE8F3431F2DCB0F49A /* Pods-Good Choice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good Choice.release.xcconfig"; path = "Target Support Files/Pods-Good Choice/Pods-Good Choice.release.xcconfig"; sourceTree = "<group>"; };
+		60F088A186629A14382110A1 /* Pods-Good Choice-Good ChoiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good Choice-Good ChoiceUITests.release.xcconfig"; path = "Target Support Files/Pods-Good Choice-Good ChoiceUITests/Pods-Good Choice-Good ChoiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61DAD466F1531FF3BD7A3719 /* Pods_Good_Choice_Good_ChoiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Good_Choice_Good_ChoiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A680440B27DE070B00F3D7B2 /* UiImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiImageView+Extensions.swift"; sourceTree = "<group>"; };
 		A681DDEC27B12A1A00FB429B /* Good Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A681DDEF27B12A1A00FB429B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A681DDF127B12A1A00FB429B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +73,12 @@
 		A6C6668D27B2A24A006F0087 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		A6C6668F27B2A3FF006F0087 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A6C6669027B2A3FF006F0087 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		B0F0437BD5E9AC2D179ADA22 /* Pods_Good_ChoiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Good_ChoiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB790C3ACCB337A4B74A30A6 /* Pods-Good ChoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good ChoiceTests.release.xcconfig"; path = "Target Support Files/Pods-Good ChoiceTests/Pods-Good ChoiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF160233F81A9026DA88BC59 /* Pods-Good Choice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good Choice.debug.xcconfig"; path = "Target Support Files/Pods-Good Choice/Pods-Good Choice.debug.xcconfig"; sourceTree = "<group>"; };
+		C949D8DB15781E301AA5DCE2 /* Pods-Good ChoiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good ChoiceTests.debug.xcconfig"; path = "Target Support Files/Pods-Good ChoiceTests/Pods-Good ChoiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE93E60FD9CEF9325255581 /* Pods_Good_Choice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Good_Choice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E638C885DF79F11D6B547C0B /* Pods-Good Choice-Good ChoiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good Choice-Good ChoiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Good Choice-Good ChoiceUITests/Pods-Good Choice-Good ChoiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E747A24000A9F92476CA7AB /* Pods_Good_Choice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F621E262C1ED656ED35F0511 /* Pods_Good_ChoiceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +102,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5EC670D4B6388EA9B361D12 /* Pods_Good_Choice_Good_ChoiceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A680440A27DE06DF00F3D7B2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A680440B27DE070B00F3D7B2 /* UiImageView+Extensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		A681DDE327B12A1A00FB429B = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +124,8 @@
 				A681DE0527B12A1C00FB429B /* Good ChoiceTests */,
 				A681DE0F27B12A1C00FB429B /* Good ChoiceUITests */,
 				A681DDED27B12A1A00FB429B /* Products */,
+				FBDBCD217E616CB4F3B5014E /* Pods */,
+				C4523989C5F4015C27861A46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +142,7 @@
 		A681DDEE27B12A1A00FB429B /* Good Choice */ = {
 			isa = PBXGroup;
 			children = (
+				A680440A27DE06DF00F3D7B2 /* Shared */,
 				A681DDFD27B12A1B00FB429B /* Info.plist */,
 				A681DE2227B12A6000FB429B /* Supporting files */,
 				A681DE2127B12A5600FB429B /* Controller */,
@@ -183,6 +211,29 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		C4523989C5F4015C27861A46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCE93E60FD9CEF9325255581 /* Pods_Good_Choice.framework */,
+				61DAD466F1531FF3BD7A3719 /* Pods_Good_Choice_Good_ChoiceUITests.framework */,
+				B0F0437BD5E9AC2D179ADA22 /* Pods_Good_ChoiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBDBCD217E616CB4F3B5014E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF160233F81A9026DA88BC59 /* Pods-Good Choice.debug.xcconfig */,
+				039D2CFE8F3431F2DCB0F49A /* Pods-Good Choice.release.xcconfig */,
+				E638C885DF79F11D6B547C0B /* Pods-Good Choice-Good ChoiceUITests.debug.xcconfig */,
+				60F088A186629A14382110A1 /* Pods-Good Choice-Good ChoiceUITests.release.xcconfig */,
+				C949D8DB15781E301AA5DCE2 /* Pods-Good ChoiceTests.debug.xcconfig */,
+				BB790C3ACCB337A4B74A30A6 /* Pods-Good ChoiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A681DE1627B12A1C00FB429B /* Build configuration list for PBXNativeTarget "Good Choice" */;
 			buildPhases = (
+				0876A26093304D827AC9A7F6 /* [CP] Check Pods Manifest.lock */,
 				A681DDE827B12A1A00FB429B /* Sources */,
 				A681DDE927B12A1A00FB429B /* Frameworks */,
 				A681DDEA27B12A1A00FB429B /* Resources */,
+				1A2DF82640A8258AA5175C4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A681DE1927B12A1C00FB429B /* Build configuration list for PBXNativeTarget "Good ChoiceTests" */;
 			buildPhases = (
+				6AA8B5892FC0AD55A8C252B5 /* [CP] Check Pods Manifest.lock */,
 				A681DDFE27B12A1C00FB429B /* Sources */,
 				A681DDFF27B12A1C00FB429B /* Frameworks */,
 				A681DE0027B12A1C00FB429B /* Resources */,
+				63EA864CCDCF8AB8E0756636 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A681DE1C27B12A1C00FB429B /* Build configuration list for PBXNativeTarget "Good ChoiceUITests" */;
 			buildPhases = (
+				476B51B345E752781742939F /* [CP] Check Pods Manifest.lock */,
 				A681DE0827B12A1C00FB429B /* Sources */,
 				A681DE0927B12A1C00FB429B /* Frameworks */,
 				A681DE0A27B12A1C00FB429B /* Resources */,
+				02E174D858C8DD2E5A3D5F84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +369,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02E174D858C8DD2E5A3D5F84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good Choice-Good ChoiceUITests/Pods-Good Choice-Good ChoiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good Choice-Good ChoiceUITests/Pods-Good Choice-Good ChoiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Good Choice-Good ChoiceUITests/Pods-Good Choice-Good ChoiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0876A26093304D827AC9A7F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Good Choice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A2DF82640A8258AA5175C4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good Choice/Pods-Good Choice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good Choice/Pods-Good Choice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Good Choice/Pods-Good Choice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		476B51B345E752781742939F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Good Choice-Good ChoiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63EA864CCDCF8AB8E0756636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good ChoiceTests/Pods-Good ChoiceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good ChoiceTests/Pods-Good ChoiceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Good ChoiceTests/Pods-Good ChoiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA8B5892FC0AD55A8C252B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Good ChoiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A681DDE827B12A1A00FB429B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -321,6 +498,7 @@
 				A681DDF427B12A1A00FB429B /* ViewController.swift in Sources */,
 				A681DE2927B12B5600FB429B /* FruitsViewController.swift in Sources */,
 				A6C6669127B2A3FF006F0087 /* DetailsViewController.swift in Sources */,
+				A680440C27DE070B00F3D7B2 /* UiImageView+Extensions.swift in Sources */,
 				A681DDF027B12A1A00FB429B /* AppDelegate.swift in Sources */,
 				A681DE2527B12B0000FB429B /* ContainerViewController.swift in Sources */,
 				A681DE2D27B1310000FB429B /* FruitsTableViewCell.swift in Sources */,
@@ -490,6 +668,7 @@
 		};
 		A681DE1727B12A1C00FB429B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF160233F81A9026DA88BC59 /* Pods-Good Choice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -519,6 +698,7 @@
 		};
 		A681DE1827B12A1C00FB429B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039D2CFE8F3431F2DCB0F49A /* Pods-Good Choice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +728,7 @@
 		};
 		A681DE1A27B12A1C00FB429B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C949D8DB15781E301AA5DCE2 /* Pods-Good ChoiceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +749,7 @@
 		};
 		A681DE1B27B12A1C00FB429B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB790C3ACCB337A4B74A30A6 /* Pods-Good ChoiceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +770,7 @@
 		};
 		A681DE1D27B12A1C00FB429B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E638C885DF79F11D6B547C0B /* Pods-Good Choice-Good ChoiceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,6 +789,7 @@
 		};
 		A681DE1E27B12A1C00FB429B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F088A186629A14382110A1 /* Pods-Good Choice-Good ChoiceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
