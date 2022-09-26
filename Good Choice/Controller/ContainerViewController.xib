@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerViewController" customModule="Good_Choice" customModuleProvider="target">
             <connections>
+                <outlet property="bottomBar" destination="44G-kq-n0i" id="sRS-Wk-z7U"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +17,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44G-kq-n0i">
+                    <rect key="frame" x="0.0" y="709" width="390" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="44G-kq-n0i" secondAttribute="height" multiplier="390:101" id="Frr-ff-Cah"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="132" y="10"/>
+            <constraints>
+                <constraint firstItem="44G-kq-n0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O9r-UG-6nU"/>
+                <constraint firstItem="44G-kq-n0i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="X54-cQ-SGF"/>
+                <constraint firstItem="44G-kq-n0i" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kqH-Om-7Nu"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="9.9526066350710902"/>
         </view>
     </objects>
 </document>

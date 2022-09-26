@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A620B60128E1CA800066BF6E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */; };
 		A620B60228E1CA800066BF6E /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A620B60028E1CA800066BF6E /* ContainerViewController.xib */; };
+		A620B60928E1D5BA0066BF6E /* BottomBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */; };
+		A620B60A28E1D5BA0066BF6E /* BottomBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A620B60828E1D5BA0066BF6E /* BottomBarViewController.xib */; };
 		A69B1DC028E1C78500BA13CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1DBF28E1C78500BA13CA /* AppDelegate.swift */; };
 		A69B1DC228E1C78500BA13CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1DC128E1C78500BA13CA /* SceneDelegate.swift */; };
 		A69B1DC928E1C78700BA13CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69B1DC828E1C78700BA13CA /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		A620B60028E1CA800066BF6E /* ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ContainerViewController.xib; path = ../Controller/ContainerViewController.xib; sourceTree = "<group>"; };
+		A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarViewController.swift; sourceTree = "<group>"; };
+		A620B60828E1D5BA0066BF6E /* BottomBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBarViewController.xib; sourceTree = "<group>"; };
 		A69B1DBC28E1C78500BA13CA /* Good Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69B1DBF28E1C78500BA13CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69B1DC128E1C78500BA13CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		A617C1C928E1C99C0007ED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */,
 				A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */,
 			);
 			path = Controller;
@@ -58,8 +63,9 @@
 		A617C1CA28E1C9A70007ED3E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A620B60028E1CA800066BF6E /* ContainerViewController.xib */,
 				A69B1DCA28E1C78700BA13CA /* LaunchScreen.storyboard */,
+				A620B60028E1CA800066BF6E /* ContainerViewController.xib */,
+				A620B60828E1D5BA0066BF6E /* BottomBarViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69B1DCC28E1C78700BA13CA /* LaunchScreen.storyboard in Resources */,
+				A620B60A28E1D5BA0066BF6E /* BottomBarViewController.xib in Resources */,
 				A69B1DC928E1C78700BA13CA /* Assets.xcassets in Resources */,
 				A620B60228E1CA800066BF6E /* ContainerViewController.xib in Resources */,
 			);
@@ -171,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69B1DC028E1C78500BA13CA /* AppDelegate.swift in Sources */,
+				A620B60928E1D5BA0066BF6E /* BottomBarViewController.swift in Sources */,
 				A620B60128E1CA800066BF6E /* ContainerViewController.swift in Sources */,
 				A69B1DC228E1C78500BA13CA /* SceneDelegate.swift in Sources */,
 			);

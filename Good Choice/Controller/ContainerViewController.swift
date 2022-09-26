@@ -9,21 +9,46 @@ import UIKit
 
 class ContainerViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  //----------------------------------------------------------------------------
+  // MARK: - Properties
+  //----------------------------------------------------------------------------
+  let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
 
-        // Do any additional setup after loading the view.
-    }
+  //----------------------------------------------------------------------------
+  // MARK: - Outlets
+  //----------------------------------------------------------------------------
 
+  @IBOutlet weak var bottomBar: UIView!
 
-    /*
-    // MARK: - Navigation
+  //----------------------------------------------------------------------------
+  // MARK: - Init
+  //----------------------------------------------------------------------------
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    configureBottomBarController()
+    
+  }
+
+  //----------------------------------------------------------------------------
+  // MARK: - Setup
+  //----------------------------------------------------------------------------
+
+  /// Configure the view for the home container.
+  func configureBottomBarController() {
+    bottomBar.addSubview(bottomBarController.view)
+    addChild(bottomBarController)
+    bottomBarController.didMove(toParent: self)
+
+    bottomBarController.view.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      bottomBarController.view.topAnchor.constraint(equalTo: bottomBar.topAnchor),
+      bottomBarController.view.bottomAnchor.constraint(equalTo: bottomBar.bottomAnchor),
+      bottomBarController.view.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor),
+      bottomBarController.view.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor),
+    ])
+  }
+
 
 }
