@@ -19,7 +19,8 @@ class BottomBarViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   @IBOutlet weak var bottombarView: UIView!
-
+  @IBOutlet weak var fruitsLabel: UILabel!
+  
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
