@@ -23,24 +23,25 @@ class ChoiceTableViewCell: UITableViewCell {
   //----------------------------------------------------------------------------
 
   @IBOutlet weak var baseView: UIView!
+  @IBOutlet weak var nameCellLabel: UILabel!
 
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    setupCornerRadius()
+  }
 
-    }
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
+  }
 
   func setupCornerRadius() {
     baseView.clipsToBounds = true
-    baseView.layer.cornerRadius = 20
+    baseView.layer.cornerRadius = 30
     baseView.layer.borderWidth = 0
   }
 

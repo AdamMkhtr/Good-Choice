@@ -10,7 +10,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomBarViewController" customModule="Good_Choice" customModuleProvider="target">
             <connections>
                 <outlet property="bottombarView" destination="s94-4g-yLG" id="2Wp-H5-sHL"/>
+                <outlet property="fruitImageView" destination="t9l-Fs-N0h" id="GCR-4G-Ug4"/>
+                <outlet property="fruitView" destination="3jT-uN-kqE" id="FPe-ZS-QLM"/>
                 <outlet property="fruitsLabel" destination="0zO-ST-g7m" id="bCr-qL-ezr"/>
+                <outlet property="légumeView" destination="8hF-zh-ekF" id="UXo-RP-oe1"/>
+                <outlet property="vegetableImageView" destination="9MF-O2-9Hi" id="57e-sh-vxP"/>
+                <outlet property="vegetableLabel" destination="IfJ-GV-EC1" id="6TK-HU-gY2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

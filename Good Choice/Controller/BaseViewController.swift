@@ -45,7 +45,7 @@ class BaseViewController: UIViewController {
 
 extension BaseViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 4
+    return Fruit.fruits.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,6 +53,9 @@ extension BaseViewController: UITableViewDataSource {
       print("Error create Cell")
       return UITableViewCell()
     }
+
+    cell.nameCellLabel.text = Fruit.fruits[indexPath.row]
+
     return cell
   }
 
