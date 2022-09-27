@@ -9,7 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerViewController" customModule="Good_Choice" customModuleProvider="target">
             <connections>
+                <outlet property="baseView" destination="Qjs-YU-q9D" id="q1N-QG-JcP"/>
                 <outlet property="bottomBar" destination="44G-kq-n0i" id="sRS-Wk-z7U"/>
+                <outlet property="navigationBarView" destination="qzb-W4-5pm" id="dr3-KH-9xv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,18 +21,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44G-kq-n0i">
-                    <rect key="frame" x="0.0" y="709" width="390" height="101"/>
+                    <rect key="frame" x="0.0" y="721" width="390" height="89"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="44G-kq-n0i" secondAttribute="height" multiplier="390:101" id="Frr-ff-Cah"/>
+                        <constraint firstAttribute="width" secondItem="44G-kq-n0i" secondAttribute="height" multiplier="390:89" id="1uw-xM-x9M"/>
                     </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzb-W4-5pm">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qzb-W4-5pm" secondAttribute="height" multiplier="130:43" id="HCs-Tk-qml"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-YU-q9D">
+                    <rect key="frame" x="0.0" y="129" width="390" height="592"/>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Qjs-YU-q9D" firstAttribute="top" secondItem="qzb-W4-5pm" secondAttribute="bottom" id="3ll-UZ-1MF"/>
+                <constraint firstItem="44G-kq-n0i" firstAttribute="top" secondItem="Qjs-YU-q9D" secondAttribute="bottom" id="NIV-Sp-CC8"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O9r-UG-6nU"/>
+                <constraint firstItem="qzb-W4-5pm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QNL-DU-61m"/>
+                <constraint firstItem="qzb-W4-5pm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TER-0K-lj3"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="X54-cQ-SGF"/>
+                <constraint firstItem="Qjs-YU-q9D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YhM-3w-o7C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qjs-YU-q9D" secondAttribute="trailing" id="as1-Ej-qSM"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kqH-Om-7Nu"/>
+                <constraint firstItem="qzb-W4-5pm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yXM-9i-CtL"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="9.9526066350710902"/>
         </view>
