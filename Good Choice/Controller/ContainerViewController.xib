@@ -40,7 +40,6 @@
             <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Qjs-YU-q9D" firstAttribute="top" secondItem="qzb-W4-5pm" secondAttribute="bottom" id="3ll-UZ-1MF"/>
-                <constraint firstItem="44G-kq-n0i" firstAttribute="top" secondItem="Qjs-YU-q9D" secondAttribute="bottom" id="NIV-Sp-CC8"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O9r-UG-6nU"/>
                 <constraint firstItem="qzb-W4-5pm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QNL-DU-61m"/>
                 <constraint firstItem="qzb-W4-5pm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TER-0K-lj3"/>
@@ -48,6 +47,7 @@
                 <constraint firstItem="Qjs-YU-q9D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YhM-3w-o7C"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qjs-YU-q9D" secondAttribute="trailing" id="as1-Ej-qSM"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kqH-Om-7Nu"/>
+                <constraint firstItem="44G-kq-n0i" firstAttribute="top" secondItem="Qjs-YU-q9D" secondAttribute="bottom" id="uDj-Ff-1tX"/>
                 <constraint firstItem="qzb-W4-5pm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yXM-9i-CtL"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="9.9526066350710902"/>

@@ -17,6 +17,9 @@
 		A69B1DCC28E1C78700BA13CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69B1DCA28E1C78700BA13CA /* LaunchScreen.storyboard */; };
 		A6E3EAFD28E301A6002C4C69 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EAFB28E301A6002C4C69 /* BaseViewController.swift */; };
 		A6E3EAFE28E301A6002C4C69 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E3EAFC28E301A6002C4C69 /* BaseViewController.xib */; };
+		A6E3EB0128E32359002C4C69 /* ChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */; };
+		A6E3EB0228E32359002C4C69 /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */; };
+		A6E3EB0428E32485002C4C69 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EB0328E32485002C4C69 /* Fruits.swift */; };
 		A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */; };
 		A6FC8DFA28E2FCAA00C7C6C4 /* NavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */; };
 /* End PBXBuildFile section */
@@ -34,6 +37,9 @@
 		A69B1DCD28E1C78700BA13CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E3EAFB28E301A6002C4C69 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A6E3EAFC28E301A6002C4C69 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BaseViewController.xib; path = ../../BaseViewController.xib; sourceTree = "<group>"; };
+		A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		A6E3EB0328E32485002C4C69 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NavigationViewController.xib; path = ../Controller/NavigationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,8 @@
 				A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */,
 				A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */,
 				A6E3EAFB28E301A6002C4C69 /* BaseViewController.swift */,
+				A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */,
+				A617C1CB28E1C9C00007ED3E /* Model */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -78,6 +86,7 @@
 				A620B60828E1D5BA0066BF6E /* BottomBarViewController.xib */,
 				A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */,
 				A6E3EAFC28E301A6002C4C69 /* BaseViewController.xib */,
+				A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,6 +94,7 @@
 		A617C1CB28E1C9C00007ED3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6E3EB0328E32485002C4C69 /* Fruits.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,7 +120,6 @@
 			children = (
 				A69B1DCD28E1C78700BA13CA /* Info.plist */,
 				A617C1C828E1C9700007ED3E /* Supporting files */,
-				A617C1CB28E1C9C00007ED3E /* Model */,
 				A617C1CA28E1C9A70007ED3E /* View */,
 				A617C1C928E1C99C0007ED3E /* Controller */,
 			);
@@ -181,6 +190,7 @@
 				A6E3EAFE28E301A6002C4C69 /* BaseViewController.xib in Resources */,
 				A6FC8DFA28E2FCAA00C7C6C4 /* NavigationViewController.xib in Resources */,
 				A620B60228E1CA800066BF6E /* ContainerViewController.xib in Resources */,
+				A6E3EB0228E32359002C4C69 /* ChoiceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +205,8 @@
 				A620B60928E1D5BA0066BF6E /* BottomBarViewController.swift in Sources */,
 				A620B60128E1CA800066BF6E /* ContainerViewController.swift in Sources */,
 				A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */,
+				A6E3EB0428E32485002C4C69 /* Fruits.swift in Sources */,
+				A6E3EB0128E32359002C4C69 /* ChoiceTableViewCell.swift in Sources */,
 				A69B1DC228E1C78500BA13CA /* SceneDelegate.swift in Sources */,
 				A6E3EAFD28E301A6002C4C69 /* BaseViewController.swift in Sources */,
 			);

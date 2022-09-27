@@ -30,6 +30,7 @@ class ContainerViewController: UIViewController {
     super.viewDidLoad()
     configureBottomBarController()
     configureNavigationBarController()
+    configureBaseBarController()
   }
 
   //----------------------------------------------------------------------------
@@ -74,7 +75,7 @@ class ContainerViewController: UIViewController {
     addChild(baseBarController)
     baseBarController.didMove(toParent: self)
 
-    navigationBarController.view.translatesAutoresizingMaskIntoConstraints = false
+    baseBarController.view.translatesAutoresizingMaskIntoConstraints = false
 
     NSLayoutConstraint.activate([
       baseBarController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
