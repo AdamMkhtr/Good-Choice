@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="baseView" destination="Qjs-YU-q9D" id="q1N-QG-JcP"/>
                 <outlet property="bottomBar" destination="44G-kq-n0i" id="sRS-Wk-z7U"/>
+                <outlet property="detailsTopBarView" destination="bv8-vl-rrz" id="ppb-0T-ZBh"/>
                 <outlet property="navigationBarView" destination="qzb-W4-5pm" id="dr3-KH-9xv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,35 +21,44 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44G-kq-n0i">
-                    <rect key="frame" x="0.0" y="721" width="390" height="89"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="44G-kq-n0i" secondAttribute="height" multiplier="390:89" id="1uw-xM-x9M"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzb-W4-5pm">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="129"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="qzb-W4-5pm" secondAttribute="height" multiplier="130:43" id="HCs-Tk-qml"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bv8-vl-rrz">
+                    <rect key="frame" x="0.0" y="129" width="390" height="70.666666666666686"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bv8-vl-rrz" secondAttribute="height" multiplier="11:2" constant="2" id="gWk-U0-qVq"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-YU-q9D">
-                    <rect key="frame" x="0.0" y="129" width="390" height="592"/>
+                    <rect key="frame" x="0.0" y="199.66666666666669" width="390" height="521.33333333333326"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44G-kq-n0i">
+                    <rect key="frame" x="0.0" y="721" width="390" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="44G-kq-n0i" secondAttribute="height" multiplier="390:89" id="1uw-xM-x9M"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.99197131400000005" green="0.95760494470000002" blue="0.90195101499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="Qjs-YU-q9D" firstAttribute="top" secondItem="qzb-W4-5pm" secondAttribute="bottom" id="3ll-UZ-1MF"/>
+                <constraint firstItem="bv8-vl-rrz" firstAttribute="top" secondItem="qzb-W4-5pm" secondAttribute="bottom" id="6wL-mb-Wzd"/>
+                <constraint firstItem="44G-kq-n0i" firstAttribute="top" secondItem="Qjs-YU-q9D" secondAttribute="bottom" id="EPB-La-szg"/>
+                <constraint firstItem="bv8-vl-rrz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="N7O-lb-Yq0"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O9r-UG-6nU"/>
                 <constraint firstItem="qzb-W4-5pm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QNL-DU-61m"/>
                 <constraint firstItem="qzb-W4-5pm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TER-0K-lj3"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="X54-cQ-SGF"/>
-                <constraint firstItem="Qjs-YU-q9D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YhM-3w-o7C"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qjs-YU-q9D" secondAttribute="trailing" id="as1-Ej-qSM"/>
+                <constraint firstItem="Qjs-YU-q9D" firstAttribute="top" secondItem="bv8-vl-rrz" secondAttribute="bottom" id="d4U-sa-XZX"/>
                 <constraint firstItem="44G-kq-n0i" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kqH-Om-7Nu"/>
-                <constraint firstItem="44G-kq-n0i" firstAttribute="top" secondItem="Qjs-YU-q9D" secondAttribute="bottom" id="uDj-Ff-1tX"/>
+                <constraint firstItem="Qjs-YU-q9D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lXk-md-Bge"/>
+                <constraint firstItem="Qjs-YU-q9D" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yXI-cW-82O"/>
                 <constraint firstItem="qzb-W4-5pm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yXM-9i-CtL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bv8-vl-rrz" secondAttribute="trailing" id="zAs-Q1-KlU"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="9.9526066350710902"/>
         </view>

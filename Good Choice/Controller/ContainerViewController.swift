@@ -16,6 +16,7 @@ class ContainerViewController: UIViewController {
   let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
   let baseBarController = BaseViewController(nibName: nil, bundle: nil)
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
+  let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -33,6 +34,7 @@ class ContainerViewController: UIViewController {
     configureBottomBarController()
     configureNavigationBarController()
     configureBaseBarController()
+    configureDetailsBarController()
   }
 
   //----------------------------------------------------------------------------
@@ -40,22 +42,22 @@ class ContainerViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   /// Configure the view for the home container.
-  func configureBottomBarController() {
-    bottomBar.addSubview(bottomBarController.view)
-    addChild(bottomBarController)
-    bottomBarController.didMove(toParent: self)
+  func configureDetailsBarController() {
+    detailsTopBarView.addSubview(detailsTopBarController.view)
+    addChild(detailsTopBarController)
+    detailsTopBarController.didMove(toParent: self)
 
-    bottomBarController.view.translatesAutoresizingMaskIntoConstraints = false
+    detailsTopBarController.view.translatesAutoresizingMaskIntoConstraints = false
 
     NSLayoutConstraint.activate([
-      bottomBarController.view.topAnchor.constraint(equalTo: bottomBar.topAnchor),
-      bottomBarController.view.bottomAnchor.constraint(equalTo: bottomBar.bottomAnchor),
-      bottomBarController.view.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor),
-      bottomBarController.view.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor),
+      detailsTopBarController.view.topAnchor.constraint(equalTo: detailsTopBarView.topAnchor),
+      detailsTopBarController.view.bottomAnchor.constraint(equalTo: detailsTopBarView.bottomAnchor),
+      detailsTopBarController.view.leadingAnchor.constraint(equalTo: detailsTopBarView.leadingAnchor),
+      detailsTopBarController.view.trailingAnchor.constraint(equalTo: detailsTopBarView.trailingAnchor),
     ])
   }
 
-  func configureDetailsBarController() {
+  func configureBottomBarController() {
     bottomBar.addSubview(bottomBarController.view)
     addChild(bottomBarController)
     bottomBarController.didMove(toParent: self)

@@ -1,22 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsTopBarViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsTopBarViewController" customModule="Good_Choice" customModuleProvider="target">
             <connections>
+                <outlet property="apportLabel" destination="6qn-zj-GUD" id="UG8-qz-VbV"/>
+                <outlet property="apportView" destination="KSe-sD-oaW" id="7LE-VR-tr8"/>
+                <outlet property="chooseLabel" destination="ffl-JT-5Kq" id="pft-sa-YBw"/>
+                <outlet property="chooseView" destination="GkV-mC-5n7" id="k38-c6-Qqi"/>
+                <outlet property="conserveLabel" destination="bjc-4f-EL7" id="dPJ-Ss-xRz"/>
+                <outlet property="conserveView" destination="rir-kO-7g3" id="zm6-qt-2UL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="491" height="368"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wki-ua-hT9">
+                    <rect key="frame" x="0.0" y="0.0" width="491" height="87.333333333333329"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AYi-91-q8I">
+                            <rect key="frame" x="0.0" y="0.0" width="491" height="87.333333333333329"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSe-sD-oaW">
+                                    <rect key="frame" x="0.0" y="0.0" width="163" height="87.333333333333329"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qn-zj-GUD">
+                                            <rect key="frame" x="45.666666666666657" y="31" width="72" height="25"/>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                            <color key="textColor" red="0.57647058819999997" green="0.3803921569" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="6qn-zj-GUD" firstAttribute="centerX" secondItem="KSe-sD-oaW" secondAttribute="centerX" id="7ZF-d0-TCg"/>
+                                        <constraint firstItem="6qn-zj-GUD" firstAttribute="centerY" secondItem="KSe-sD-oaW" secondAttribute="centerY" id="r6c-ki-dBY"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkV-mC-5n7">
+                                    <rect key="frame" x="164" y="0.0" width="163" height="87.333333333333329"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-JT-5Kq">
+                                            <rect key="frame" x="47" y="31" width="69" height="25"/>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="ffl-JT-5Kq" firstAttribute="centerY" secondItem="GkV-mC-5n7" secondAttribute="centerY" id="FhY-S4-79g"/>
+                                        <constraint firstItem="ffl-JT-5Kq" firstAttribute="centerX" secondItem="GkV-mC-5n7" secondAttribute="centerX" id="gU5-ph-cYo"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rir-kO-7g3">
+                                    <rect key="frame" x="328" y="0.0" width="163" height="87.333333333333329"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conserver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-4f-EL7">
+                                            <rect key="frame" x="29.999999999999993" y="31" width="103.33333333333331" height="25"/>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="bjc-4f-EL7" firstAttribute="centerY" secondItem="rir-kO-7g3" secondAttribute="centerY" id="U3r-KK-Tg7"/>
+                                        <constraint firstItem="bjc-4f-EL7" firstAttribute="centerX" secondItem="rir-kO-7g3" secondAttribute="centerX" id="fFU-iO-w76"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AYi-91-q8I" secondAttribute="bottom" id="CO5-rt-gKX"/>
+                        <constraint firstItem="AYi-91-q8I" firstAttribute="top" secondItem="wki-ua-hT9" secondAttribute="top" id="EHY-3s-fVy"/>
+                        <constraint firstItem="AYi-91-q8I" firstAttribute="leading" secondItem="wki-ua-hT9" secondAttribute="leading" id="Tih-tF-2RO"/>
+                        <constraint firstAttribute="trailing" secondItem="AYi-91-q8I" secondAttribute="trailing" id="iFq-2m-vJE"/>
+                        <constraint firstAttribute="width" secondItem="wki-ua-hT9" secondAttribute="height" multiplier="11:2" constant="11" id="sGO-AK-EYs"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wki-ua-hT9" secondAttribute="trailing" id="1tI-D6-EjR"/>
+                <constraint firstItem="wki-ua-hT9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a7o-R2-p6r"/>
+                <constraint firstItem="wki-ua-hT9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bOO-1V-k84"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="208.46153846153845" y="-159.24170616113744"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
