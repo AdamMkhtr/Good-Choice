@@ -14,6 +14,8 @@ class BottomBarViewController: UIViewController {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
+  weak var delegate: BottomBarDelegate?
+
   //----------------------------------------------------------------------------
   // MARK: - Outlet
   //----------------------------------------------------------------------------
@@ -35,6 +37,10 @@ class BottomBarViewController: UIViewController {
     setupCornerRadius()
     setupTapGestureRecognizer()
   }
+
+  override func viewWillAppear(_ animated: Bool) {
+    setupTapGestureRecognizer()
+  }
   func setupCornerRadius() {
     bottombarView.clipsToBounds = true
     bottombarView.layer.cornerRadius = 35
@@ -50,7 +56,7 @@ class BottomBarViewController: UIViewController {
     let tapGestureFruits = UITapGestureRecognizer()
     self.fruitView.addGestureRecognizer(tapGestureFruits)
     tapGestureFruits.addTarget(self, action: #selector(tapFruits))
-
+    
     let tapGestureLégumes = UITapGestureRecognizer()
     self.légumeView.addGestureRecognizer(tapGestureLégumes)
     tapGestureLégumes.addTarget(self, action: #selector(tapVegetable))
@@ -61,13 +67,13 @@ class BottomBarViewController: UIViewController {
     recolorAllView()
     fruitsLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     fruitImageView.image = UIImage(named: "FruitsActivate")
- //   delegate?.didLauchRequestVOD()
+    delegate?.didLauchRequestFruits()
   }
   @objc func tapVegetable() {
     recolorAllView()
     vegetableLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     vegetableImageView.image = UIImage(named: "legumesActivate")
-  //  delegate?.didLauchRequestVOD()
+    delegate?.didLauchRequestVegetables()
   }
 
   private func recolorAllView() {
@@ -79,4 +85,13 @@ class BottomBarViewController: UIViewController {
     fruitImageView.image = UIImage(named: "FruitsBar")
     vegetableImageView.image = UIImage(named: "LégumesBar")
   }
+}
+
+//----------------------------------------------------------------------------
+// MARK: - Protocol
+//----------------------------------------------------------------------------
+
+protocol BottomBarDelegate: AnyObject {
+  func didLauchRequestFruits()
+  func didLauchRequestVegetables()
 }

@@ -9,12 +9,11 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-
-
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
+  var dataCell = Fruit.fruits
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -43,9 +42,32 @@ class BaseViewController: UIViewController {
 
 }
 
+//----------------------------------------------------------------------------
+// MARK: - Extension delegate bottom bar
+//----------------------------------------------------------------------------
+
+extension BaseViewController: BottomBarDelegate {
+  
+  func didLauchRequestFruits() {
+    print("coucou")
+    dataCell = Fruit.fruits
+    choiceTableView.reloadData()
+  }
+
+  func didLauchRequestVegetables() {
+    print("coucou2")
+    dataCell = Vegetable.vegetables
+    choiceTableView.reloadData()
+  }
+}
+
+//----------------------------------------------------------------------------
+// MARK: - Extension TableView Data source
+//----------------------------------------------------------------------------
+
 extension BaseViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return Fruit.fruits.count
+    return dataCell.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,14 +75,15 @@ extension BaseViewController: UITableViewDataSource {
       print("Error create Cell")
       return UITableViewCell()
     }
-
-    cell.nameCellLabel.text = Fruit.fruits[indexPath.row]
+    cell.nameCellLabel.text = dataCell[indexPath.row]
 
     return cell
   }
-
-
 }
+
+//----------------------------------------------------------------------------
+// MARK: - Extension TableView Delegate
+//----------------------------------------------------------------------------
 
 extension BaseViewController: UITableViewDelegate {
 
