@@ -25,6 +25,8 @@
 		A6E3EB0128E32359002C4C69 /* ChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */; };
 		A6E3EB0228E32359002C4C69 /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */; };
 		A6E3EB0428E32485002C4C69 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3EB0328E32485002C4C69 /* Fruits.swift */; };
+		A6F3973F28E73B13007BB4B0 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */; };
+		A6F3974028E73B13007BB4B0 /* ChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */; };
 		A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */; };
 		A6FC8DFA28E2FCAA00C7C6C4 /* NavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
 		A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		A6E3EB0328E32485002C4C69 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChooseViewController.xib; path = ../Controller/ChooseViewController.xib; sourceTree = "<group>"; };
 		A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NavigationViewController.xib; path = ../Controller/NavigationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +85,7 @@
 				A651375B28E47771008C3631 /* InformationBaseViewController.swift */,
 				A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */,
 				A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */,
+				A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */,
 				A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */,
 				A6E3EAFB28E301A6002C4C69 /* BaseViewController.swift */,
 				A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */,
@@ -100,6 +105,7 @@
 				A651375C28E47771008C3631 /* InformationBaseViewController.xib */,
 				A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */,
 				A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */,
+				A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				A69B1DCC28E1C78700BA13CA /* LaunchScreen.storyboard in Resources */,
 				A620B60A28E1D5BA0066BF6E /* BottomBarViewController.xib in Resources */,
 				A69B1DC928E1C78700BA13CA /* Assets.xcassets in Resources */,
+				A6F3974028E73B13007BB4B0 /* ChooseViewController.xib in Resources */,
 				A6E3EAFE28E301A6002C4C69 /* BaseViewController.xib in Resources */,
 				A6FC8DFA28E2FCAA00C7C6C4 /* NavigationViewController.xib in Resources */,
 				A620B60228E1CA800066BF6E /* ContainerViewController.xib in Resources */,
@@ -223,6 +230,7 @@
 				A620B60128E1CA800066BF6E /* ContainerViewController.swift in Sources */,
 				A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */,
 				A651375D28E47771008C3631 /* InformationBaseViewController.swift in Sources */,
+				A6F3973F28E73B13007BB4B0 /* ChooseViewController.swift in Sources */,
 				A66DD73828E3516D00FCEF30 /* Vegetable.swift in Sources */,
 				A6E3EB0428E32485002C4C69 /* Fruits.swift in Sources */,
 				A6E3EB0128E32359002C4C69 /* ChoiceTableViewCell.swift in Sources */,

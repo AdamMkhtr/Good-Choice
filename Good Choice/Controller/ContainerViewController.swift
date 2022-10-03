@@ -17,6 +17,8 @@ class ContainerViewController: UIViewController {
   let baseBarController = BaseViewController(nibName: nil, bundle: nil)
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
   let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
+  let ChooseController = ChooseViewController(nibName: nil, bundle: nil)
+
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -31,15 +33,28 @@ class ContainerViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupBaseContainer()
     configureBottomBarController()
     configureNavigationBarController()
-    configureBaseBarController()
     configureDetailsBarController()
   }
 
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
+
+  /// Setup the button for the base container.
+  func setupBaseContainer() {
+    detailsTopBarController.didTapSupply = { [weak self] in
+      self?.configureBaseBarController(controller: self!.informationBaseController)
+    }
+    detailsTopBarController.didTapChoose = { [weak self] in
+      self?.configureBaseBarController(controller: self!.ChooseController)
+    }
+    detailsTopBarController.didTapConserve = { [weak self] in
+      self?.configureBaseBarController(controller: self!.ChooseController)
+    }
+  }
 
   /// Configure the view for the home container.
   func configureDetailsBarController() {
@@ -88,37 +103,36 @@ class ContainerViewController: UIViewController {
     ])
   }
 
-//  /// Configure the view for the home container.
-//  func configureBaseBarController() {
-//    baseView.addSubview(baseBarController.view)
-//    addChild(baseBarController)
-//    baseBarController.didMove(toParent: self)
-//
-//    baseBarController.view.translatesAutoresizingMaskIntoConstraints = false
-//
-//    NSLayoutConstraint.activate([
-//      baseBarController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
-//      baseBarController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
-//      baseBarController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
-//      baseBarController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
-//    ])
-//  }
+  //  /// Configure the view for the home container.
+  //  func configureBaseBarController() {
+  //    baseView.addSubview(baseBarController.view)
+  //    addChild(baseBarController)
+  //    baseBarController.didMove(toParent: self)
+  //
+  //    baseBarController.view.translatesAutoresizingMaskIntoConstraints = false
+  //
+  //    NSLayoutConstraint.activate([
+  //      baseBarController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
+  //      baseBarController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
+  //      baseBarController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
+  //      baseBarController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
+  //    ])
+  //  }
 
   /// Configure the view for the home container.
-  func configureBaseBarController() {
-    baseView.addSubview(informationBaseController.view)
-    addChild(informationBaseController)
-    informationBaseController.didMove(toParent: self)
+  func configureBaseBarController(controller : UIViewController) {
+    baseView.addSubview(controller.view)
+    addChild(controller)
+    controller.didMove(toParent: self)
 
-    informationBaseController.view.translatesAutoresizingMaskIntoConstraints = false
+    controller.view.translatesAutoresizingMaskIntoConstraints = false
 
     NSLayoutConstraint.activate([
-      informationBaseController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
-      informationBaseController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
-      informationBaseController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
-      informationBaseController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
+      controller.view.topAnchor.constraint(equalTo: baseView.topAnchor),
+      controller.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
+      controller.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
+      controller.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
     ])
   }
-
-
 }
+
