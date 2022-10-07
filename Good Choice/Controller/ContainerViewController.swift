@@ -12,13 +12,12 @@ class ContainerViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-  let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
   let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
+  let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
   let baseBarController = BaseViewController(nibName: nil, bundle: nil)
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
   let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
   let ChooseController = ChooseViewController(nibName: nil, bundle: nil)
-
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -33,10 +32,13 @@ class ContainerViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupBaseContainer()
+//    setupBaseContainer()
+    configureTableViewController()
     configureBottomBarController()
     configureNavigationBarController()
     configureDetailsBarController()
+    detailsTopBarView.isHidden = true
+
   }
 
   //----------------------------------------------------------------------------
@@ -103,21 +105,21 @@ class ContainerViewController: UIViewController {
     ])
   }
 
-  //  /// Configure the view for the home container.
-  //  func configureBaseBarController() {
-  //    baseView.addSubview(baseBarController.view)
-  //    addChild(baseBarController)
-  //    baseBarController.didMove(toParent: self)
-  //
-  //    baseBarController.view.translatesAutoresizingMaskIntoConstraints = false
-  //
-  //    NSLayoutConstraint.activate([
-  //      baseBarController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
-  //      baseBarController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
-  //      baseBarController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
-  //      baseBarController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
-  //    ])
-  //  }
+    /// Configure the view for the home container.
+    func configureTableViewController() {
+      baseView.addSubview(baseBarController.view)
+      addChild(baseBarController)
+      baseBarController.didMove(toParent: self)
+
+      baseBarController.view.translatesAutoresizingMaskIntoConstraints = false
+
+      NSLayoutConstraint.activate([
+        baseBarController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
+        baseBarController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
+        baseBarController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
+        baseBarController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
+      ])
+    }
 
   /// Configure the view for the home container.
   func configureBaseBarController(controller : UIViewController) {

@@ -9,12 +9,11 @@ import UIKit
 
 class BottomBarViewController: UIViewController {
 
-
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
-  weak var delegate: BottomBarDelegate?
+   weak var delegate: BottomBarDelegate?
 
   //----------------------------------------------------------------------------
   // MARK: - Outlet
@@ -47,7 +46,6 @@ class BottomBarViewController: UIViewController {
     bottombarView.layer.borderWidth = 0
   }
 
-
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
@@ -61,7 +59,6 @@ class BottomBarViewController: UIViewController {
     self.légumeView.addGestureRecognizer(tapGestureLégumes)
     tapGestureLégumes.addTarget(self, action: #selector(tapVegetable))
   }
-
 
   @objc func tapFruits() {
     recolorAllView()

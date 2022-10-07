@@ -33,13 +33,13 @@
 
 /* Begin PBXFileReference section */
 		A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		A620B60028E1CA800066BF6E /* ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ContainerViewController.xib; path = ../Controller/ContainerViewController.xib; sourceTree = "<group>"; };
+		A620B60028E1CA800066BF6E /* ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
 		A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarViewController.swift; sourceTree = "<group>"; };
 		A620B60828E1D5BA0066BF6E /* BottomBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomBarViewController.xib; sourceTree = "<group>"; };
 		A651375B28E47771008C3631 /* InformationBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationBaseViewController.swift; sourceTree = "<group>"; };
 		A651375C28E47771008C3631 /* InformationBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationBaseViewController.xib; sourceTree = "<group>"; };
 		A652651328E734B500CFB6C6 /* DetailsTopBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTopBarViewController.swift; sourceTree = "<group>"; };
-		A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailsTopBarViewController.xib; path = ../Controller/DetailsTopBarViewController.xib; sourceTree = "<group>"; };
+		A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTopBarViewController.xib; sourceTree = "<group>"; };
 		A66DD73728E3516D00FCEF30 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
 		A69B1DBC28E1C78500BA13CA /* Good Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69B1DBF28E1C78500BA13CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,14 +48,14 @@
 		A69B1DCB28E1C78700BA13CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A69B1DCD28E1C78700BA13CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E3EAFB28E301A6002C4C69 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		A6E3EAFC28E301A6002C4C69 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BaseViewController.xib; path = ../../BaseViewController.xib; sourceTree = "<group>"; };
+		A6E3EAFC28E301A6002C4C69 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		A6E3EAFF28E32359002C4C69 /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
 		A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		A6E3EB0328E32485002C4C69 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
-		A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChooseViewController.xib; path = ../Controller/ChooseViewController.xib; sourceTree = "<group>"; };
+		A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseViewController.xib; sourceTree = "<group>"; };
 		A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NavigationViewController.xib; path = ../Controller/NavigationViewController.xib; sourceTree = "<group>"; };
+		A6FC8DF828E2FCAA00C7C6C4 /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				A651375B28E47771008C3631 /* InformationBaseViewController.swift */,
-				A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */,
 				A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */,
+				A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */,
 				A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */,
 				A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */,
 				A6E3EAFB28E301A6002C4C69 /* BaseViewController.swift */,
@@ -104,8 +104,8 @@
 				A6E3EAFC28E301A6002C4C69 /* BaseViewController.xib */,
 				A651375C28E47771008C3631 /* InformationBaseViewController.xib */,
 				A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */,
-				A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */,
 				A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */,
+				A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

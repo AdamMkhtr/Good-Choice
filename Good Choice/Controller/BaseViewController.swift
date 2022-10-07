@@ -14,7 +14,6 @@ class BaseViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   var dataCell = Fruit.fruits
-
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -47,7 +46,7 @@ class BaseViewController: UIViewController {
 //----------------------------------------------------------------------------
 
 extension BaseViewController: BottomBarDelegate {
-  
+
   func didLauchRequestFruits() {
     print("coucou")
     dataCell = Fruit.fruits
