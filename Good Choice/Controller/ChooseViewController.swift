@@ -23,7 +23,6 @@ class ChooseViewController: UIViewController {
 
   override func viewDidLoad() {
       super.viewDidLoad()
-
   }
 
   //----------------------------------------------------------------------------

@@ -12,27 +12,31 @@ class ContainerViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-  let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
+
+  let baseController = BaseViewController(nibName: nil, bundle: nil)
   let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
-  let baseBarController = BaseViewController(nibName: nil, bundle: nil)
+  let ChooseController = ChooseViewController(nibName: nil, bundle: nil)
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
   let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
-  let ChooseController = ChooseViewController(nibName: nil, bundle: nil)
+  let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
+
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
 
-  @IBOutlet weak var baseView: UIView!
   @IBOutlet weak var bottomBar: UIView!
+  @IBOutlet weak var baseView: UIView!
   @IBOutlet weak var navigationBarView: UIView!
   @IBOutlet weak var detailsTopBarView: UIView!
+  
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
 
   override func viewDidLoad() {
     super.viewDidLoad()
-//    setupBaseContainer()
+ //   setupBaseContainer()
+
     configureTableViewController()
     configureBottomBarController()
     configureNavigationBarController()
@@ -107,17 +111,18 @@ class ContainerViewController: UIViewController {
 
     /// Configure the view for the home container.
     func configureTableViewController() {
-      baseView.addSubview(baseBarController.view)
-      addChild(baseBarController)
-      baseBarController.didMove(toParent: self)
+      baseView.addSubview(baseController.view)
+      addChild(baseController)
+      baseController.didMove(toParent: self)
 
-      baseBarController.view.translatesAutoresizingMaskIntoConstraints = false
+      baseController.view.translatesAutoresizingMaskIntoConstraints = false
+      bottomBarController.delegate = baseController.self
 
       NSLayoutConstraint.activate([
-        baseBarController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
-        baseBarController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
-        baseBarController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
-        baseBarController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
+        baseController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
+        baseController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
+        baseController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
+        baseController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
       ])
     }
 

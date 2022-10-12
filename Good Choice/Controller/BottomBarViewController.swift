@@ -67,10 +67,10 @@ class BottomBarViewController: UIViewController {
     delegate?.didLauchRequestFruits()
   }
   @objc func tapVegetable() {
+    delegate?.didLauchRequestVegetables()
     recolorAllView()
     vegetableLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     vegetableImageView.image = UIImage(named: "legumesActivate")
-    delegate?.didLauchRequestVegetables()
   }
 
   private func recolorAllView() {

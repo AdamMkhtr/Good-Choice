@@ -12,7 +12,6 @@ class BaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-
   var dataCell = Fruit.fruits
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -33,6 +32,7 @@ class BaseViewController: UIViewController {
     self.choiceTableView.register(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ChoiceCell")
     choiceTableView.dataSource = self
     choiceTableView.delegate = self
+
   }
 
   //----------------------------------------------------------------------------
