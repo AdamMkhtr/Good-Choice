@@ -131,6 +131,8 @@ class ContainerViewController: UIViewController {
     baseView.addSubview(controller.view)
     addChild(controller)
     controller.didMove(toParent: self)
+    #warning("attention oublie pas ici controller -> base pour le delegate")
+    informationBaseController.delegate = baseController.self
 
     controller.view.translatesAutoresizingMaskIntoConstraints = false
 

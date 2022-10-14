@@ -14,6 +14,8 @@ class InformationBaseViewController: UIViewController {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
+  weak var delegate : InformationDelegate?
+
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -37,7 +39,7 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   override func viewDidLoad() {
-      super.viewDidLoad()
+    super.viewDidLoad()
 
   }
 
@@ -47,4 +49,12 @@ class InformationBaseViewController: UIViewController {
 
 
 
+}
+
+//----------------------------------------------------------------------------
+// MARK: - Protocol
+//----------------------------------------------------------------------------
+
+protocol InformationDelegate: AnyObject {
+  func didCollectInfos()
 }

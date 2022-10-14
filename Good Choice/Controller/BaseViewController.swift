@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
   @IBOutlet weak var choiceTableView: UITableView!
 
   //----------------------------------------------------------------------------
-  // MARK: - Init
+  // MARK: - Inittee
   //----------------------------------------------------------------------------
 
   override func viewDidLoad() {
@@ -48,15 +48,25 @@ class BaseViewController: UIViewController {
 extension BaseViewController: BottomBarDelegate {
 
   func didLauchRequestFruits() {
-    print("coucou")
     dataCell = Fruit.fruits
     choiceTableView.reloadData()
   }
 
   func didLauchRequestVegetables() {
-    print("coucou2")
-    dataCell = Vegetable.vegetables
-    choiceTableView.reloadData()
+    print("okkk")
+//    dataCell = Vegetable.vegetables
+//    choiceTableView.reloadData()
+  }
+}
+
+
+
+//----------------------------------------------------------------------------
+// MARK: - Extension
+//----------------------------------------------------------------------------
+extension BaseViewController: InformationDelegate {
+  func didCollectInfos() {
+    print("ça passe")
   }
 }
 
@@ -74,7 +84,7 @@ extension BaseViewController: UITableViewDataSource {
       print("Error create Cell")
       return UITableViewCell()
     }
-    cell.nameCellLabel.text = dataCell[indexPath.row]
+    cell.nameCellLabel.text = dataCell[indexPath.row].name
 
     return cell
   }
@@ -85,6 +95,17 @@ extension BaseViewController: UITableViewDataSource {
 //----------------------------------------------------------------------------
 
 extension BaseViewController: UITableViewDelegate {
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let indexPathFruits = choiceTableView.indexPathForSelectedRow?.row else {
+      print("error index path Favorite table view")
+      return
+    }
+
+    let selectedPicture = Fruit.fruits[indexPathFruits]
+
+    didCollectInfos()
+  }
 
 }
 
