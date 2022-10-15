@@ -45,6 +45,7 @@ class ContainerViewController: UIViewController {
 
     baseController.delegateInformation = informationBaseController.self
     baseController.delegateDisplay = self
+    baseController.delegateDescription = ChooseController.self
 
   }
 

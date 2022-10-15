@@ -10,3 +10,7 @@ import Foundation
 protocol DisplayDelegate: AnyObject {
   func didDisplayTheInformationsView()
 }
+
+protocol DescriptionDelegate: AnyObject {
+  func didCollectDescriptionOfProduct(fruit: fruitDetail)
+}
