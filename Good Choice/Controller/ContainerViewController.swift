@@ -35,13 +35,16 @@ class ContainerViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
- //   setupBaseContainer()
+
 
     configureTableViewController()
     configureBottomBarController()
     configureNavigationBarController()
     configureDetailsBarController()
     detailsTopBarView.isHidden = true
+
+    baseController.delegateInformation = informationBaseController.self
+    baseController.delegateDisplay = self
 
   }
 
@@ -50,7 +53,7 @@ class ContainerViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   /// Setup the button for the base container.
-  func setupBaseContainer() {
+  func setupBaseInformationContainer() {
     detailsTopBarController.didTapSupply = { [weak self] in
       self?.configureBaseBarController(controller: self!.informationBaseController)
     }
@@ -132,7 +135,7 @@ class ContainerViewController: UIViewController {
     addChild(controller)
     controller.didMove(toParent: self)
     #warning("attention oublie pas ici controller -> base pour le delegate")
-    informationBaseController.delegate = baseController.self
+
 
     controller.view.translatesAutoresizingMaskIntoConstraints = false
 
@@ -145,3 +148,18 @@ class ContainerViewController: UIViewController {
   }
 }
 
+
+
+//----------------------------------------------------------------------------
+// MARK: - Extension
+//----------------------------------------------------------------------------
+
+extension ContainerViewController: DisplayDelegate {
+  func didDisplayTheInformationsView() {
+    setupBaseInformationContainer()
+    detailsTopBarView.isHidden = false
+    configureBaseBarController(controller: informationBaseController)
+  }
+
+
+}

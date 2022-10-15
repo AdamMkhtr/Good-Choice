@@ -12,7 +12,10 @@ class BaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
+  weak var delegateDisplay : DisplayDelegate?
+  weak var delegateInformation : BaseDelegate?
   var dataCell = Fruit.fruits
+
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -62,12 +65,11 @@ extension BaseViewController: BottomBarDelegate {
 
 
 //----------------------------------------------------------------------------
-// MARK: - Extension
+// MARK: - Protocol Base Delegate
 //----------------------------------------------------------------------------
-extension BaseViewController: InformationDelegate {
-  func didCollectInfos() {
-    print("ça passe")
-  }
+
+protocol BaseDelegate: AnyObject {
+  func didCollectInfos(fruit : fruitDetail)
 }
 
 //----------------------------------------------------------------------------
@@ -102,9 +104,11 @@ extension BaseViewController: UITableViewDelegate {
       return
     }
 
-    let selectedPicture = Fruit.fruits[indexPathFruits]
+    let fruitInfos = Fruit.fruits[indexPathFruits]
 
-    didCollectInfos()
+    delegateInformation?.didCollectInfos(fruit: fruitInfos)
+    delegateDisplay?.didDisplayTheInformationsView()
+
   }
 
 }
