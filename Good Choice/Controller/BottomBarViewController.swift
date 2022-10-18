@@ -13,8 +13,7 @@ class BottomBarViewController: UIViewController {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
-   weak var delegate: BottomBarDelegate?
-
+  weak var delegate: BottomBarDelegate?
   var didTapFruit: (() -> Void)?
   var didTapVegetable: (() -> Void)?
 
@@ -37,22 +36,24 @@ class BottomBarViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupCornerRadius()
-    setupTapGestureRecognizer()
   }
 
   override func viewWillAppear(_ animated: Bool) {
     setupTapGestureRecognizer()
   }
+
+  //----------------------------------------------------------------------------
+  // MARK: - Setup
+  //----------------------------------------------------------------------------
+
+  /// setup corner radius for the bottom bar
   func setupCornerRadius() {
     bottombarView.clipsToBounds = true
     bottombarView.layer.cornerRadius = 35
     bottombarView.layer.borderWidth = 0
   }
 
-  //----------------------------------------------------------------------------
-  // MARK: - Methods
-  //----------------------------------------------------------------------------
-
+  /// setup the gesture recognizer for fruits and vegetables buttton
   func setupTapGestureRecognizer() {
     let tapGestureFruits = UITapGestureRecognizer()
     self.fruitView.addGestureRecognizer(tapGestureFruits)
@@ -63,6 +64,10 @@ class BottomBarViewController: UIViewController {
     tapGestureLégumes.addTarget(self, action: #selector(tapVegetable))
   }
 
+  //----------------------------------------------------------------------------
+  // MARK: - Methods
+  //----------------------------------------------------------------------------
+
   @objc func tapFruits() {
     recolorAllView()
     fruitsLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
@@ -70,6 +75,7 @@ class BottomBarViewController: UIViewController {
     delegate?.didLauchRequestFruits()
     didTapFruit?()
   }
+
   @objc func tapVegetable() {
     delegate?.didLauchRequestVegetables()
     recolorAllView()
@@ -78,6 +84,7 @@ class BottomBarViewController: UIViewController {
     didTapVegetable?()
   }
 
+  /// Recolor the view on white and change the icon in white when the button is unused.
   private func recolorAllView() {
     let selectedLabels: [UILabel] =
     [fruitsLabel, vegetableLabel]
@@ -87,13 +94,4 @@ class BottomBarViewController: UIViewController {
     fruitImageView.image = UIImage(named: "FruitsBar")
     vegetableImageView.image = UIImage(named: "LégumesBar")
   }
-}
-
-//----------------------------------------------------------------------------
-// MARK: - Protocol
-//----------------------------------------------------------------------------
-
-protocol BottomBarDelegate: AnyObject {
-  func didLauchRequestFruits()
-  func didLauchRequestVegetables()
 }

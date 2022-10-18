@@ -19,3 +19,8 @@ protocol InformationDelegate: AnyObject {
   func didDisplayChoose()
   func didDisplayConserve()
 }
+
+protocol BottomBarDelegate: AnyObject {
+  func didLauchRequestFruits()
+  func didLauchRequestVegetables()
+}
