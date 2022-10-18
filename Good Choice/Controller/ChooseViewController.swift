@@ -47,20 +47,17 @@ class ChooseViewController: UIViewController {
 
 extension ChooseViewController: DescriptionDelegate {
   func didCollectDescriptionOfProduct(fruit: ProductDetail) {
+    #warning("Attention ne pas oublier de régler ça")
     guard fruit != nil else {
       return
     }
     fruitDescription = fruit
   }
-
-
 }
-
 
 //----------------------------------------------------------------------------
 // MARK: - Extension Choose / Conserve Delegate
 //----------------------------------------------------------------------------
-
 
 extension ChooseViewController: InformationDelegate {
   func didDisplayChoose() {
