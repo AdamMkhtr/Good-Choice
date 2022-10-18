@@ -9,7 +9,6 @@ import UIKit
 
 class InformationBaseViewController: UIViewController {
   
-  
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
@@ -19,6 +18,7 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
+  
   @IBOutlet weak var vitamine1: UILabel!
   @IBOutlet weak var vitamine2: UILabel!
   @IBOutlet weak var vitamine3: UILabel!
@@ -34,19 +34,20 @@ class InformationBaseViewController: UIViewController {
   @IBOutlet weak var resultCompo1: UILabel!
   @IBOutlet weak var resultCompo2: UILabel!
   @IBOutlet weak var resultCompo3: UILabel!
+  
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
   }
   
   override func viewWillAppear(_ animated: Bool) {
     setupInformations()
   }
   
+  /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
     guard fruitForInformation != nil else {
       return
@@ -69,10 +70,7 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   
   
-  
 }
-
-
 
 //----------------------------------------------------------------------------
 // MARK: - Extension delegate Base
@@ -83,5 +81,3 @@ extension InformationBaseViewController: BaseDelegate {
     fruitForInformation = fruit
   }
 }
-
-
