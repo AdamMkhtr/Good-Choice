@@ -12,6 +12,7 @@ class BaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
+
   weak var delegateDisplay : DisplayDelegate?
   weak var delegateInformation : BaseDelegate?
   weak var delegateDescription : DescriptionDelegate?
@@ -61,8 +62,6 @@ extension BaseViewController: BottomBarDelegate {
     choiceTableView.reloadData()
   }
 }
-
-
 
 //----------------------------------------------------------------------------
 // MARK: - Protocol Base Delegate

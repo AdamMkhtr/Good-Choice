@@ -8,22 +8,22 @@
 import UIKit
 
 class ContainerViewController: UIViewController {
-  
+
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-  
+
   let baseController = BaseViewController(nibName: nil, bundle: nil)
   let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
   let chooseController = ChooseViewController(nibName: nil, bundle: nil)
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
   let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
   let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
-  
+
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
-  
+
   @IBOutlet weak var bottomBar: UIView!
   @IBOutlet weak var baseView: UIView!
   @IBOutlet weak var navigationBarView: UIView!
@@ -32,35 +32,39 @@ class ContainerViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupDelegate()
     setupContainers()
     detailsTopBarView.isHidden = true
-    setupDelegate()
+    setupBaseInformationContainer()
+
   }
-  
+
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
-  
+
   /// setup all container for the app.
   func setupContainers() {
+    configureTopNavigationBarController()
     configureMainController(controller: baseController)
     configureBottomBarController()
-    configureTopNavigationBarController()
     configureTopDetailsBarController()
     setupBottomBarContainer()
   }
-  
+
   /// Setup all delegate for the app.
   func setupDelegate() {
+
+    bottomBarController.delegate = baseController.self
     baseController.delegateInformation = informationBaseController.self
     baseController.delegateDisplay = self
     baseController.delegateDescription = chooseController.self
     detailsTopBarController.informationDelegateDisplay = chooseController.self
   }
-  
+
   /// Setup the button for the base container.
   func setupBaseInformationContainer() {
     detailsTopBarController.didTapSupply = { [weak self] in
@@ -73,7 +77,7 @@ class ContainerViewController: UIViewController {
       self?.configureMainController(controller: self!.chooseController)
     }
   }
-  
+
   /// Setup how base display with bottom bar
   func setupBottomBarContainer() {
     bottomBarController.didTapFruit = { [weak self] in
@@ -85,15 +89,15 @@ class ContainerViewController: UIViewController {
       self?.detailsTopBarView.isHidden = true
     }
   }
-  
+
   /// Configure the view for the Details Top Bar container.
   func configureTopDetailsBarController() {
     detailsTopBarView.addSubview(detailsTopBarController.view)
     addChild(detailsTopBarController)
     detailsTopBarController.didMove(toParent: self)
-    
+
     detailsTopBarController.view.translatesAutoresizingMaskIntoConstraints = false
-    
+
     NSLayoutConstraint.activate([
       detailsTopBarController.view.topAnchor.constraint(equalTo: detailsTopBarView.topAnchor),
       detailsTopBarController.view.bottomAnchor.constraint(equalTo: detailsTopBarView.bottomAnchor),
@@ -101,15 +105,15 @@ class ContainerViewController: UIViewController {
       detailsTopBarController.view.trailingAnchor.constraint(equalTo: detailsTopBarView.trailingAnchor),
     ])
   }
-  
+
   /// Configure the view for the bottom bar container.
   func configureBottomBarController() {
     bottomBar.addSubview(bottomBarController.view)
     addChild(bottomBarController)
     bottomBarController.didMove(toParent: self)
-    
+
     bottomBarController.view.translatesAutoresizingMaskIntoConstraints = false
-    
+
     NSLayoutConstraint.activate([
       bottomBarController.view.topAnchor.constraint(equalTo: bottomBar.topAnchor),
       bottomBarController.view.bottomAnchor.constraint(equalTo: bottomBar.bottomAnchor),
@@ -117,15 +121,15 @@ class ContainerViewController: UIViewController {
       bottomBarController.view.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor),
     ])
   }
-  
+
   /// Configure the view for the top bar navigation container.
   func configureTopNavigationBarController() {
     navigationBarView.addSubview(navigationBarController.view)
     addChild(navigationBarController)
     navigationBarController.didMove(toParent: self)
-    
+
     navigationBarController.view.translatesAutoresizingMaskIntoConstraints = false
-    
+
     NSLayoutConstraint.activate([
       navigationBarController.view.topAnchor.constraint(equalTo: navigationBarView.topAnchor),
       navigationBarController.view.bottomAnchor.constraint(equalTo: navigationBarView.bottomAnchor),
@@ -133,14 +137,14 @@ class ContainerViewController: UIViewController {
       navigationBarController.view.trailingAnchor.constraint(equalTo: navigationBarView.trailingAnchor),
     ])
   }
-  
+
   /// Configure the view for Main container.
   func configureMainController(controller : UIViewController) {
     baseView.addSubview(controller.view)
     addChild(controller)
     controller.didMove(toParent: self)
     controller.view.translatesAutoresizingMaskIntoConstraints = false
-    
+
     NSLayoutConstraint.activate([
       controller.view.topAnchor.constraint(equalTo: baseView.topAnchor),
       controller.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
