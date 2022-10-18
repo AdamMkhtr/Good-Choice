@@ -14,7 +14,7 @@ class InformationBaseViewController: UIViewController {
   // MARK: - Properties
   //----------------------------------------------------------------------------
   
-  var fruitForInformation : fruitDetail?
+  var fruitForInformation : ProductDetail?
   
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -79,7 +79,7 @@ class InformationBaseViewController: UIViewController {
 //----------------------------------------------------------------------------
 
 extension InformationBaseViewController: BaseDelegate {
-  func didCollectInfos(fruit: fruitDetail) {
+  func didCollectInfos(fruit: ProductDetail) {
     fruitForInformation = fruit
   }
 }

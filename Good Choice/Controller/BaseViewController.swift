@@ -57,8 +57,8 @@ extension BaseViewController: BottomBarDelegate {
   }
 
   func didLauchRequestVegetables() {
- //   dataCell = Vegetable.vegetables
-   // choiceTableView.reloadData()
+    dataCell = Vegetable.vegetables
+    choiceTableView.reloadData()
   }
 }
 
@@ -69,7 +69,7 @@ extension BaseViewController: BottomBarDelegate {
 //----------------------------------------------------------------------------
 
 protocol BaseDelegate: AnyObject {
-  func didCollectInfos(fruit : fruitDetail)
+  func didCollectInfos(fruit : ProductDetail)
 }
 
 //----------------------------------------------------------------------------

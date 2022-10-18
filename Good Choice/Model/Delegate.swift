@@ -12,7 +12,7 @@ protocol DisplayDelegate: AnyObject {
 }
 
 protocol DescriptionDelegate: AnyObject {
-  func didCollectDescriptionOfProduct(fruit: fruitDetail)
+  func didCollectDescriptionOfProduct(fruit: ProductDetail)
 }
 
 protocol InformationDelegate: AnyObject {

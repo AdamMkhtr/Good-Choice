@@ -13,7 +13,7 @@ class ChooseViewController: UIViewController {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
-  var fruitDescription: fruitDetail?
+  var fruitDescription: ProductDetail?
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -27,7 +27,7 @@ class ChooseViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   override func viewDidLoad() {
-      super.viewDidLoad()
+    super.viewDidLoad()
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -41,8 +41,12 @@ class ChooseViewController: UIViewController {
 
 }
 
+//----------------------------------------------------------------------------
+// MARK: - Extension Description Delegate
+//----------------------------------------------------------------------------
+
 extension ChooseViewController: DescriptionDelegate {
-  func didCollectDescriptionOfProduct(fruit: fruitDetail) {
+  func didCollectDescriptionOfProduct(fruit: ProductDetail) {
     guard fruit != nil else {
       return
     }
@@ -54,7 +58,7 @@ extension ChooseViewController: DescriptionDelegate {
 
 
 //----------------------------------------------------------------------------
-// MARK: - Extension Choose/ conserve delegate
+// MARK: - Extension Choose / Conserve Delegate
 //----------------------------------------------------------------------------
 
 

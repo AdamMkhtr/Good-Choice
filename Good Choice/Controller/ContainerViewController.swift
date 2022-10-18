@@ -35,52 +35,59 @@ class ContainerViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-
-    configureTableViewController()
-    configureBottomBarController()
-    configureNavigationBarController()
-    configureDetailsBarController()
+    setupContainers()
     detailsTopBarView.isHidden = true
-    setupBottomBarContainer()
-
-    baseController.delegateInformation = informationBaseController.self
-    baseController.delegateDisplay = self
-    baseController.delegateDescription = chooseController.self
-    detailsTopBarController.informationDelegateDisplay = chooseController.self
-
+    setupDelegate()
   }
 
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
 
+  /// setup all container for the app.
+  func setupContainers() {
+    configureTableViewController()
+    configureBottomBarController()
+    configureTopNavigationBarController()
+    configureTopDetailsBarController()
+    setupBottomBarContainer()
+  }
+
+  /// Setup all delegate for the app.
+  func setupDelegate() {
+    baseController.delegateInformation = informationBaseController.self
+    baseController.delegateDisplay = self
+    baseController.delegateDescription = chooseController.self
+    detailsTopBarController.informationDelegateDisplay = chooseController.self
+  }
+
   /// Setup the button for the base container.
   func setupBaseInformationContainer() {
     detailsTopBarController.didTapSupply = { [weak self] in
-      self?.configureBaseBarController(controller: self!.informationBaseController)
+      self?.configureMainController(controller: self!.informationBaseController)
     }
     detailsTopBarController.didTapChoose = { [weak self] in
-      self?.configureBaseBarController(controller: self!.chooseController)
+      self?.configureMainController(controller: self!.chooseController)
     }
     detailsTopBarController.didTapConserve = { [weak self] in
-      self?.configureBaseBarController(controller: self!.chooseController)
+      self?.configureMainController(controller: self!.chooseController)
     }
   }
 
+  /// Setup how base display with bottom bar
   func setupBottomBarContainer() {
     bottomBarController.didTapFruit = { [weak self] in
-      self?.configureBaseBarController(controller: self!.baseController)
+      self?.configureMainController(controller: self!.baseController)
       self?.detailsTopBarView.isHidden = true
     }
     bottomBarController.didTapVegetable = { [weak self] in
-      self?.configureBaseBarController(controller: self!.baseController)
+      self?.configureMainController(controller: self!.baseController)
       self?.detailsTopBarView.isHidden = true
     }
   }
 
-  /// Configure the view for the home container.
-  func configureDetailsBarController() {
+  /// Configure the view for the Details Top Bar container.
+  func configureTopDetailsBarController() {
     detailsTopBarView.addSubview(detailsTopBarController.view)
     addChild(detailsTopBarController)
     detailsTopBarController.didMove(toParent: self)
@@ -95,6 +102,7 @@ class ContainerViewController: UIViewController {
     ])
   }
 
+  /// Configure the view for the bottom bar container.
   func configureBottomBarController() {
     bottomBar.addSubview(bottomBarController.view)
     addChild(bottomBarController)
@@ -110,8 +118,8 @@ class ContainerViewController: UIViewController {
     ])
   }
 
-  /// Configure the view for the home container.
-  func configureNavigationBarController() {
+  /// Configure the view for the top bar navigation container.
+  func configureTopNavigationBarController() {
     navigationBarView.addSubview(navigationBarController.view)
     addChild(navigationBarController)
     navigationBarController.didMove(toParent: self)
@@ -126,31 +134,11 @@ class ContainerViewController: UIViewController {
     ])
   }
 
-    /// Configure the view for the home container.
-    func configureTableViewController() {
-      baseView.addSubview(baseController.view)
-      addChild(baseController)
-      baseController.didMove(toParent: self)
-
-      baseController.view.translatesAutoresizingMaskIntoConstraints = false
-      bottomBarController.delegate = baseController.self
-
-      NSLayoutConstraint.activate([
-        baseController.view.topAnchor.constraint(equalTo: baseView.topAnchor),
-        baseController.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
-        baseController.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
-        baseController.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
-      ])
-    }
-
-  /// Configure the view for the home container.
-  func configureBaseBarController(controller : UIViewController) {
+  /// Configure the view for Main container.
+  func configureMainController(controller : UIViewController) {
     baseView.addSubview(controller.view)
     addChild(controller)
     controller.didMove(toParent: self)
-    #warning("attention oublie pas ici controller -> base pour le delegate")
-
-
     controller.view.translatesAutoresizingMaskIntoConstraints = false
 
     NSLayoutConstraint.activate([
@@ -162,8 +150,6 @@ class ContainerViewController: UIViewController {
   }
 }
 
-
-
 //----------------------------------------------------------------------------
 // MARK: - Extension
 //----------------------------------------------------------------------------
@@ -174,6 +160,4 @@ extension ContainerViewController: DisplayDelegate {
     detailsTopBarView.isHidden = false
     configureBaseBarController(controller: informationBaseController)
   }
-
-
 }
