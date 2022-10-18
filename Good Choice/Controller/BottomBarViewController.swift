@@ -15,6 +15,9 @@ class BottomBarViewController: UIViewController {
 
    weak var delegate: BottomBarDelegate?
 
+  var didTapFruit: (() -> Void)?
+  var didTapVegetable: (() -> Void)?
+
   //----------------------------------------------------------------------------
   // MARK: - Outlet
   //----------------------------------------------------------------------------
@@ -65,12 +68,14 @@ class BottomBarViewController: UIViewController {
     fruitsLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     fruitImageView.image = UIImage(named: "FruitsActivate")
     delegate?.didLauchRequestFruits()
+    didTapFruit?()
   }
   @objc func tapVegetable() {
     delegate?.didLauchRequestVegetables()
     recolorAllView()
     vegetableLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     vegetableImageView.image = UIImage(named: "legumesActivate")
+    didTapVegetable?()
   }
 
   private func recolorAllView() {

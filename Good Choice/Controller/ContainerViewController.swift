@@ -42,6 +42,7 @@ class ContainerViewController: UIViewController {
     configureNavigationBarController()
     configureDetailsBarController()
     detailsTopBarView.isHidden = true
+    setupBottomBarContainer()
 
     baseController.delegateInformation = informationBaseController.self
     baseController.delegateDisplay = self
@@ -64,6 +65,17 @@ class ContainerViewController: UIViewController {
     }
     detailsTopBarController.didTapConserve = { [weak self] in
       self?.configureBaseBarController(controller: self!.chooseController)
+    }
+  }
+
+  func setupBottomBarContainer() {
+    bottomBarController.didTapFruit = { [weak self] in
+      self?.configureBaseBarController(controller: self!.baseController)
+      self?.detailsTopBarView.isHidden = true
+    }
+    bottomBarController.didTapVegetable = { [weak self] in
+      self?.configureBaseBarController(controller: self!.baseController)
+      self?.detailsTopBarView.isHidden = true
     }
   }
 

@@ -57,9 +57,8 @@ extension BaseViewController: BottomBarDelegate {
   }
 
   func didLauchRequestVegetables() {
-    print("okkk")
-//    dataCell = Vegetable.vegetables
-//    choiceTableView.reloadData()
+ //   dataCell = Vegetable.vegetables
+   // choiceTableView.reloadData()
   }
 }
 
