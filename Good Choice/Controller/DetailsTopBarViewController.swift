@@ -16,6 +16,8 @@ class DetailsTopBarViewController: UIViewController {
   var didTapChoose: (() -> Void)?
   var didTapConserve: (() -> Void)?
 
+  var informationDelegateDisplay: InformationDelegate?
+
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -68,12 +70,14 @@ class DetailsTopBarViewController: UIViewController {
     recolorAllView()
     chooseLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     didTapChoose?()
+    informationDelegateDisplay?.didDisplayChoose()
   }
   
   @objc func tapConserve() {
     recolorAllView()
     conserveLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     didTapConserve?()
+    informationDelegateDisplay?.didDisplayConserve()
   }
   
   private func recolorAllView() {

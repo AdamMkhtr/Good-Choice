@@ -15,7 +15,7 @@ class ContainerViewController: UIViewController {
 
   let baseController = BaseViewController(nibName: nil, bundle: nil)
   let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
-  let ChooseController = ChooseViewController(nibName: nil, bundle: nil)
+  let chooseController = ChooseViewController(nibName: nil, bundle: nil)
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
   let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
   let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
@@ -45,7 +45,8 @@ class ContainerViewController: UIViewController {
 
     baseController.delegateInformation = informationBaseController.self
     baseController.delegateDisplay = self
-    baseController.delegateDescription = ChooseController.self
+    baseController.delegateDescription = chooseController.self
+    detailsTopBarController.informationDelegateDisplay = chooseController.self
 
   }
 
@@ -59,10 +60,10 @@ class ContainerViewController: UIViewController {
       self?.configureBaseBarController(controller: self!.informationBaseController)
     }
     detailsTopBarController.didTapChoose = { [weak self] in
-      self?.configureBaseBarController(controller: self!.ChooseController)
+      self?.configureBaseBarController(controller: self!.chooseController)
     }
     detailsTopBarController.didTapConserve = { [weak self] in
-      self?.configureBaseBarController(controller: self!.ChooseController)
+      self?.configureBaseBarController(controller: self!.chooseController)
     }
   }
 

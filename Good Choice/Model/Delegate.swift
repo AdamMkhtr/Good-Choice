@@ -14,3 +14,8 @@ protocol DisplayDelegate: AnyObject {
 protocol DescriptionDelegate: AnyObject {
   func didCollectDescriptionOfProduct(fruit: fruitDetail)
 }
+
+protocol InformationDelegate: AnyObject {
+  func didDisplayChoose()
+  func didDisplayConserve()
+}

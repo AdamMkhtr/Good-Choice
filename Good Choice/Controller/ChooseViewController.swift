@@ -51,3 +51,23 @@ extension ChooseViewController: DescriptionDelegate {
 
 
 }
+
+
+//----------------------------------------------------------------------------
+// MARK: - Extension Choose/ conserve delegate
+//----------------------------------------------------------------------------
+
+
+extension ChooseViewController: InformationDelegate {
+  func didDisplayChoose() {
+    titleLabel.text = "Choisir :"
+    descriptionTextView.text = fruitDescription?.chooseDescription
+  }
+
+  func didDisplayConserve() {
+    titleLabel.text = "Conserver :"
+    descriptionTextView.text = fruitDescription?.conserveDescription
+  }
+
+
+}

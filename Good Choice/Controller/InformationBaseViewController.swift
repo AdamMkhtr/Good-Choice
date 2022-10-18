@@ -83,3 +83,5 @@ extension InformationBaseViewController: BaseDelegate {
     fruitForInformation = fruit
   }
 }
+
+
