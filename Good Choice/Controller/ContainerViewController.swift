@@ -13,6 +13,8 @@ class ContainerViewController: UIViewController {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
+  weak var delegateTopBar: DetailsTopBarDelegate?
+
   let baseController = BaseViewController(nibName: nil, bundle: nil)
   let bottomBarController = BottomBarViewController(nibName: nil, bundle: nil)
   let chooseController = ChooseViewController(nibName: nil, bundle: nil)
@@ -39,7 +41,6 @@ class ContainerViewController: UIViewController {
     setupContainers()
     detailsTopBarView.isHidden = true
     setupBaseInformationContainer()
-
   }
 
   //----------------------------------------------------------------------------
@@ -58,6 +59,7 @@ class ContainerViewController: UIViewController {
   /// Setup all delegate for the app.
   func setupDelegate() {
 
+    delegateTopBar = detailsTopBarController.self
     bottomBarController.delegate = baseController.self
     baseController.delegateInformation = informationBaseController.self
     baseController.delegateDisplay = self
@@ -83,10 +85,12 @@ class ContainerViewController: UIViewController {
     bottomBarController.didTapFruit = { [weak self] in
       self?.configureMainController(controller: self!.baseController)
       self?.detailsTopBarView.isHidden = true
+      self?.delegateTopBar?.didReeloadTopBarColor()
     }
     bottomBarController.didTapVegetable = { [weak self] in
       self?.configureMainController(controller: self!.baseController)
       self?.detailsTopBarView.isHidden = true
+      self?.delegateTopBar?.didReeloadTopBarColor()
     }
   }
 

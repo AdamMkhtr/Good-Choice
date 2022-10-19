@@ -40,7 +40,9 @@ class DetailsTopBarViewController: UIViewController {
     setupTapGestureRecognizer()
     tapSupply()
   }
-  
+
+
+
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
@@ -87,6 +89,16 @@ class DetailsTopBarViewController: UIViewController {
       selectedLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
   }
-  
-  
+}
+
+//----------------------------------------------------------------------------
+// MARK: - Extension TopBar Delegate
+//----------------------------------------------------------------------------
+
+extension DetailsTopBarViewController: DetailsTopBarDelegate {
+
+  func didReeloadTopBarColor() {
+    recolorAllView()
+    apportLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
+  }
 }

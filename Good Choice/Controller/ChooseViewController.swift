@@ -30,10 +30,6 @@ class ChooseViewController: UIViewController {
     super.viewDidLoad()
   }
 
-  override func viewWillAppear(_ animated: Bool) {
-    titleLabel.text = fruitDescription?.choose
-    descriptionTextView.text = fruitDescription?.chooseDescription
-  }
 
   //----------------------------------------------------------------------------
   // MARK: - Methods

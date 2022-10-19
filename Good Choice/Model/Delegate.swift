@@ -24,3 +24,7 @@ protocol BottomBarDelegate: AnyObject {
   func didLauchRequestFruits()
   func didLauchRequestVegetables()
 }
+
+protocol DetailsTopBarDelegate: AnyObject {
+  func didReeloadTopBarColor()
+}

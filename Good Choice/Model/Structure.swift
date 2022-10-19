@@ -13,9 +13,8 @@ struct Vitamine {
 }
 
 struct ProductDetail {
+  var type: Type
   var name : String
-  var conserve = "Conserver :"
-  var choose = "Choisir :"
   var chooseDescription: String
   var conserveDescription: String
   var calories : String
@@ -24,4 +23,9 @@ struct ProductDetail {
   var vitamine1: Vitamine
   var vitamine2 : Vitamine
   var vitamine3 : Vitamine
+}
+
+enum Type {
+  case fruit
+  case vegetable
 }
