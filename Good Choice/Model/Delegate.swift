@@ -28,3 +28,12 @@ protocol BottomBarDelegate: AnyObject {
 protocol DetailsTopBarDelegate: AnyObject {
   func didReeloadTopBarColor()
 }
+
+protocol NavigationDelegate: AnyObject {
+  func didPastViewFruit()
+  func didPastViewVegetable()
+}
+
+protocol WhatProductDelegate: AnyObject {
+  func didKnowWhatProduct(product : Type)
+}

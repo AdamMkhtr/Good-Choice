@@ -41,6 +41,7 @@ class ContainerViewController: UIViewController {
     setupContainers()
     detailsTopBarView.isHidden = true
     setupBaseInformationContainer()
+    setupNavigationBarContainer()
   }
 
   //----------------------------------------------------------------------------
@@ -65,6 +66,8 @@ class ContainerViewController: UIViewController {
     baseController.delegateDisplay = self
     baseController.delegateDescription = chooseController.self
     detailsTopBarController.informationDelegateDisplay = chooseController.self
+    informationBaseController.knowWhatProductDelegate = navigationBarController.self
+
   }
 
   /// Setup the button for the base container.
@@ -87,7 +90,23 @@ class ContainerViewController: UIViewController {
       self?.detailsTopBarView.isHidden = true
       self?.delegateTopBar?.didReeloadTopBarColor()
     }
+
     bottomBarController.didTapVegetable = { [weak self] in
+      self?.configureMainController(controller: self!.baseController)
+      self?.detailsTopBarView.isHidden = true
+      self?.delegateTopBar?.didReeloadTopBarColor()
+    }
+  }
+
+  /// Setup how base display with pas button on Navigation bar
+  func setupNavigationBarContainer() {
+    navigationBarController.didTapFruit = { [weak self] in
+      self?.configureMainController(controller: self!.baseController)
+      self?.detailsTopBarView.isHidden = true
+      self?.delegateTopBar?.didReeloadTopBarColor()
+    }
+
+    navigationBarController.didTapVegetable = { [weak self] in
       self?.configureMainController(controller: self!.baseController)
       self?.detailsTopBarView.isHidden = true
       self?.delegateTopBar?.didReeloadTopBarColor()
