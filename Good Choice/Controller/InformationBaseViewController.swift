@@ -14,7 +14,7 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   
   var fruitForInformation : ProductDetail?
-  weak var knowWhatProductDelegate: WhatProductDelegate?
+
   
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -46,7 +46,7 @@ class InformationBaseViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     setupInformations()
-    knowWhatProductDelegate?.didKnowWhatProduct(product: fruitForInformation!.type)
+
   }
   
   /// Check if the information is not optional and use the data on the display .
