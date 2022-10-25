@@ -34,6 +34,6 @@ protocol NavigationDelegate: AnyObject {
   func didPastViewVegetable()
 }
 
-protocol WhatProductDelegate: AnyObject {
-  func didKnowWhatProduct(product : Type)
+protocol ProductDelegate: AnyObject {
+  func didKnowProduct(product : Type)
 }

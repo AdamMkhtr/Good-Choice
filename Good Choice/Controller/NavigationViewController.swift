@@ -14,7 +14,7 @@ class NavigationViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   weak var navigationDelegate: NavigationDelegate?
-  weak var whatProductDelegate : WhatProductDelegate?
+  weak var whatProductDelegate : ProductDelegate?
 
   var didTapFruit: (() -> Void)?
   var didTapVegetable: (() -> Void)?
@@ -43,16 +43,15 @@ class NavigationViewController: UIViewController {
 
   func knowWhatViewDisplay() {
 
+    pastButtonView.isHidden = true
+
     if resultProduct == Type.fruit {
-      pastButtonView.isHidden = true
       didTapFruit?()
     }
 
     else if resultProduct == Type.vegetable {
-      pastButtonView.isHidden = true
       didTapVegetable?()
     }
-
   }
 
   func setupTapGestureRecognizer() {
@@ -67,11 +66,13 @@ class NavigationViewController: UIViewController {
 
 }
 
-extension NavigationViewController: WhatProductDelegate {
-  func didKnowWhatProduct(product: Type) {
+//----------------------------------------------------------------------------
+// MARK: - Extension What product Delegate
+//----------------------------------------------------------------------------
+
+extension NavigationViewController: ProductDelegate {
+  func didKnowProduct(product: Type) {
     pastButtonView.isHidden = false
     resultProduct = product
   }
-
-
 }
