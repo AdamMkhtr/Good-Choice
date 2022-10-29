@@ -14,6 +14,7 @@ class BottomBarViewController: UIViewController {
   //----------------------------------------------------------------------------
 
   weak var delegate: BottomBarDelegate?
+  weak var delegateNavigation: InformationNavigatonDelegate?
   var didTapFruit: (() -> Void)?
   var didTapVegetable: (() -> Void)?
 
@@ -74,6 +75,7 @@ class BottomBarViewController: UIViewController {
     fruitImageView.image = UIImage(named: "FruitsActivate")
     delegate?.didLauchRequestFruits()
     didTapFruit?()
+    delegateNavigation?.didHideTheButton()
   }
 
   @objc func tapVegetable() {
@@ -82,6 +84,7 @@ class BottomBarViewController: UIViewController {
     vegetableLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     vegetableImageView.image = UIImage(named: "legumesActivate")
     didTapVegetable?()
+    delegateNavigation?.didHideTheButton()
   }
 
   /// Recolor the view on white and change the icon in white when the button is unused.

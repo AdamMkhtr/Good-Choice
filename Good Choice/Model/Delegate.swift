@@ -37,3 +37,6 @@ protocol NavigationDelegate: AnyObject {
 protocol ProductDelegate: AnyObject {
   func didKnowProduct(product : Type)
 }
+protocol InformationNavigatonDelegate: AnyObject {
+  func didHideTheButton()
+}

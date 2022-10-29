@@ -67,7 +67,8 @@ class ContainerViewController: UIViewController {
     baseController.delegateDescription = chooseController.self
     detailsTopBarController.informationDelegateDisplay = chooseController.self
     baseController.knowWhatProductDelegate = navigationBarController.self
-
+    bottomBarController.delegateNavigation = navigationBarController.self
+    
   }
 
   /// Setup the button for the base container.

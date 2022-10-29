@@ -76,3 +76,11 @@ extension NavigationViewController: ProductDelegate {
     resultProduct = product
   }
 }
+
+extension NavigationViewController: InformationNavigatonDelegate {
+  func didHideTheButton() {
+    pastButtonView.isHidden = true
+  }
+
+
+}
