@@ -103,9 +103,6 @@ extension BaseViewController: UITableViewDelegate {
     delegateDisplay?.didDisplayTheInformationsView()
     delegateDescription?.didCollectDescriptionOfProduct(fruit: productInfo)
     knowWhatProductDelegate?.didKnowProduct(product: productInfo.type)
-
-
   }
-
 }
 

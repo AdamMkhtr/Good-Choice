@@ -30,7 +30,6 @@ class ChooseViewController: UIViewController {
     super.viewDidLoad()
   }
 
-
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
@@ -43,7 +42,7 @@ class ChooseViewController: UIViewController {
 
 extension ChooseViewController: DescriptionDelegate {
   func didCollectDescriptionOfProduct(fruit: ProductDetail) {
-    #warning("Attention ne pas oublier de régler ça")
+#warning("Attention ne pas oublier de régler ça")
     guard fruit != nil else {
       return
     }
@@ -65,6 +64,4 @@ extension ChooseViewController: InformationDelegate {
     titleLabel.text = "Conserver :"
     descriptionTextView.text = fruitDescription?.conserveDescription
   }
-
-
 }

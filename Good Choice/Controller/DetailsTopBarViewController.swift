@@ -8,16 +8,17 @@
 import UIKit
 
 class DetailsTopBarViewController: UIViewController {
+
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-
+  
   var didTapSupply: (() -> Void)?
   var didTapChoose: (() -> Void)?
   var didTapConserve: (() -> Void)?
-
+  
   var informationDelegateDisplay: InformationDelegate?
-
+  
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -40,9 +41,7 @@ class DetailsTopBarViewController: UIViewController {
     setupTapGestureRecognizer()
     tapSupply()
   }
-
-
-
+  
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
@@ -63,26 +62,27 @@ class DetailsTopBarViewController: UIViewController {
   
   
   @objc func tapSupply() {
-    recolorAllView()
+    recolorAllLabels()
     apportLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     didTapSupply?()
   }
   
   @objc func tapChoose() {
-    recolorAllView()
+    recolorAllLabels()
     chooseLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     didTapChoose?()
     informationDelegateDisplay?.didDisplayChoose()
   }
   
   @objc func tapConserve() {
-    recolorAllView()
+    recolorAllLabels()
     conserveLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
     didTapConserve?()
     informationDelegateDisplay?.didDisplayConserve()
   }
   
-  private func recolorAllView() {
+  /// Recolor all label in white.
+  private func recolorAllLabels() {
     let selectedLabels: [UILabel] =
     [apportLabel, chooseLabel, conserveLabel]
     for selectedLabel in selectedLabels {
@@ -96,9 +96,9 @@ class DetailsTopBarViewController: UIViewController {
 //----------------------------------------------------------------------------
 
 extension DetailsTopBarViewController: DetailsTopBarDelegate {
-
+  
   func didReeloadTopBarColor() {
-    recolorAllView()
+    recolorAllLabels()
     apportLabel.textColor =  #colorLiteral(red: 0.5764705882, green: 0.3803921569, blue: 0.5960784314, alpha: 1)
   }
 }

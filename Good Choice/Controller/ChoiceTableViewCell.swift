@@ -9,14 +9,9 @@ import UIKit
 
 class ChoiceTableViewCell: UITableViewCell {
 
-
-
-
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-
-
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -36,7 +31,6 @@ class ChoiceTableViewCell: UITableViewCell {
 
   override func setSelected(_ selected: Bool, animated: Bool) {
     super.setSelected(selected, animated: animated)
-
   }
 
   func setupCornerRadius() {
@@ -48,6 +42,5 @@ class ChoiceTableViewCell: UITableViewCell {
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
-
 
 }

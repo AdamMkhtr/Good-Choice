@@ -53,7 +53,7 @@ class InformationBaseViewController: UIViewController {
   /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
     guard fruitForInformation != nil else {
-      print("PAS EU LE TEMPS")
+      print("No data found")
       return
     }
     vitamine1.text = fruitForInformation?.vitamine1.name
