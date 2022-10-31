@@ -14,8 +14,8 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   
   var fruitForInformation : ProductDetail?
+   var firstTime = false
 
-  
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
@@ -44,14 +44,16 @@ class InformationBaseViewController: UIViewController {
     super.viewDidLoad()
   }
   
-  override func viewWillAppear(_ animated: Bool) {
-    setupInformations()
-
-  }
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(true)
+      setupInformations()
+      firstTime = true
+    }
   
   /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
     guard fruitForInformation != nil else {
+      print("PAS EU LE TEMPS")
       return
     }
     vitamine1.text = fruitForInformation?.vitamine1.name
@@ -63,8 +65,9 @@ class InformationBaseViewController: UIViewController {
     resultVitamine3.text = fruitForInformation?.vitamine3.number
     
     resultCompo1.text = fruitForInformation?.calories
-    resultCompo2.text = fruitForInformation?.lipides
+    resultCompo2.text = fruitForInformation?.fibres
     resultCompo3.text = fruitForInformation?.glucides
+
   }
   
   //----------------------------------------------------------------------------
@@ -81,5 +84,8 @@ class InformationBaseViewController: UIViewController {
 extension InformationBaseViewController: BaseDelegate {
   func didCollectInfos(fruit: ProductDetail) {
     fruitForInformation = fruit
+    if firstTime == true {
+      setupInformations()
+    }
   }
 }

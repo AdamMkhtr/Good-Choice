@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol BaseDelegate: AnyObject {
+  func didCollectInfos(fruit : ProductDetail)
+}
+
 protocol DisplayDelegate: AnyObject {
   func didDisplayTheInformationsView()
 }

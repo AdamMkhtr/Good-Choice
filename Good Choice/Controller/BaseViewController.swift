@@ -66,14 +66,6 @@ extension BaseViewController: BottomBarDelegate {
 }
 
 //----------------------------------------------------------------------------
-// MARK: - Protocol Base Delegate
-//----------------------------------------------------------------------------
-
-protocol BaseDelegate: AnyObject {
-  func didCollectInfos(fruit : ProductDetail)
-}
-
-//----------------------------------------------------------------------------
 // MARK: - Extension TableView Data source
 //----------------------------------------------------------------------------
 
@@ -105,12 +97,13 @@ extension BaseViewController: UITableViewDelegate {
       return
     }
 
-    let fruitInfos = Fruit.fruits[indexPathFruits]
+    let productInfo = dataCell[indexPathFruits]
 
-    delegateInformation?.didCollectInfos(fruit: fruitInfos)
+    delegateInformation?.didCollectInfos(fruit: productInfo)
     delegateDisplay?.didDisplayTheInformationsView()
-    delegateDescription?.didCollectDescriptionOfProduct(fruit: fruitInfos)
-    knowWhatProductDelegate?.didKnowProduct(product: fruitInfos.type)
+    delegateDescription?.didCollectDescriptionOfProduct(fruit: productInfo)
+    knowWhatProductDelegate?.didKnowProduct(product: productInfo.type)
+
 
   }
 

@@ -19,7 +19,7 @@ struct ProductDetail {
   var conserveDescription: String
   var calories : String
   var glucides : String
-  var lipides : String
+  var fibres : String
   var vitamine1: Vitamine
   var vitamine2 : Vitamine
   var vitamine3 : Vitamine
