@@ -22,7 +22,8 @@ class Vegetable {
                                     fibres: "3,6g",
                                     vitamines: [Vitamine(name: "B9", number: "70,40µg"),
                                                 Vitamine(name: "K1", number: "14,50µg"),
-                                                Vitamine(name: "B5", number: "1,07mg")])
+                                                Vitamine(name: "B5", number: "1,07mg"),
+                                                Vitamine(name: "Bdd5", number: "1,07mg")])
 
 
   static let artichaut = ProductDetail(type: .vegetable,

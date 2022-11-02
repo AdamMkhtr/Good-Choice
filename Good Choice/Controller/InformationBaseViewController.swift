@@ -14,12 +14,22 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   
   var productInformations : ProductDetail?
-   var firstTime = false
+  var firstTime = false
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
   //----------------------------------------------------------------------------
   
+  @IBOutlet weak var vitamineView1: UIView!
+  @IBOutlet weak var vitamineView2: UIView!
+  @IBOutlet weak var vitamineView3: UIView!
+  @IBOutlet weak var vitamineView4: UIView!
+
+  @IBOutlet weak var vitamineResultView1: UIView!
+  @IBOutlet weak var vitamineResultView2: UIView!
+  @IBOutlet weak var vitamineResultView3: UIView!
+  @IBOutlet weak var vitamineResultView4: UIView!
+
   @IBOutlet weak var vitamine1: UILabel!
   @IBOutlet weak var vitamine2: UILabel!
   @IBOutlet weak var vitamine3: UILabel!
@@ -40,6 +50,8 @@ class InformationBaseViewController: UIViewController {
   @IBOutlet weak var resultCompo3: UILabel!
   @IBOutlet weak var resultCompo4: UILabel!
 
+
+
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
@@ -48,11 +60,11 @@ class InformationBaseViewController: UIViewController {
     super.viewDidLoad()
   }
   
-    override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(true)
-      setupInformations()
-      firstTime = true
-    }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    setupInformations()
+    firstTime = true
+  }
   
   /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
@@ -60,22 +72,10 @@ class InformationBaseViewController: UIViewController {
       print("No data found")
       return
     }
-    if productInformations?.vitamines.count == 3 {
 
-    }
-    else if productInformations?.vitamines.count == 2 {
 
-    }
-    else if productInformations?.vitamines.count == 2 {
+    fillTheArray()
 
-    }
-    vitamine1.text = productInformations?.vitamine1.name
-    vitamine2.text = productInformations?.vitamine2.name
-    vitamine3.text = productInformations?.vitamine3.name
-    
-    resultVitamine1.text = productInformations?.vitamine1.number
-    resultVitamine2.text = productInformations?.vitamine2.number
-    resultVitamine3.text = productInformations?.vitamine3.number
     
     resultCompo1.text = productInformations?.calories
     resultCompo2.text = productInformations?.fibres
@@ -87,12 +87,69 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   func fillTheArray(){
 
-    var namesVitamines = [vitamine1,vitamine2,vitamine3, vitamine4]
+    vitamineView2.isHidden = false
+    vitamineView3.isHidden = false
+    vitamineView4.isHidden = false
 
-    for detailsVitamine in productInformations?.vitamines {
-      detailsVitamine.name =
+    vitamineResultView2.isHidden = false
+    vitamineResultView3.isHidden = false
+    vitamineResultView4.isHidden = false
+
+    if productInformations?.vitamines.count == 3 {
+
+      vitamine1.text = productInformations?.vitamines[0].name
+      vitamine2.text = productInformations?.vitamines[1].name
+      vitamine3.text = productInformations?.vitamines[2].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+      resultVitamine2.text = productInformations?.vitamines[1].number
+      resultVitamine3.text = productInformations?.vitamines[2].number
+
+      vitamineView4.isHidden = true
+      vitamineResultView4.isHidden = true
+
     }
+    else if productInformations?.vitamines.count == 2 {
 
+      vitamine1.text = productInformations?.vitamines[0].name
+      vitamine2.text = productInformations?.vitamines[1].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+      resultVitamine2.text = productInformations?.vitamines[1].number
+
+      vitamineView3.isHidden = true
+      vitamineView4.isHidden = true
+
+      vitamineResultView3.isHidden = true
+      vitamineResultView4.isHidden = true
+
+    }
+    else if productInformations?.vitamines.count == 1 {
+
+      vitamine1.text = productInformations?.vitamines[0].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+
+      vitamineView2.isHidden = true
+      vitamineView3.isHidden = true
+      vitamineView4.isHidden = true
+
+      vitamineResultView2.isHidden = true
+      vitamineResultView3.isHidden = true
+      vitamineResultView4.isHidden = true
+
+    } else {
+
+      vitamine1.text = productInformations?.vitamines[0].name
+      vitamine2.text = productInformations?.vitamines[1].name
+      vitamine3.text = productInformations?.vitamines[2].name
+      vitamine4.text = productInformations?.vitamines[3].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+      resultVitamine2.text = productInformations?.vitamines[1].number
+      resultVitamine3.text = productInformations?.vitamines[2].number
+      resultVitamine4.text = productInformations?.vitamines[3].number
+    }
   }
   
 }
@@ -106,6 +163,7 @@ extension InformationBaseViewController: BaseDelegate {
     productInformations = fruit
     if firstTime == true {
       setupInformations()
+
     }
   }
 }
