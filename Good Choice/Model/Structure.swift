@@ -20,12 +20,13 @@ struct ProductDetail {
   var calories : String
   var glucides : String
   var fibres : String
-  var vitamine1: Vitamine
-  var vitamine2 : Vitamine
-  var vitamine3 : Vitamine
+  var vitamines : [Vitamine]
 }
 
 enum Type {
   case fruit
   case vegetable
 }
+
+// fruit.vitamines[1].number
+
