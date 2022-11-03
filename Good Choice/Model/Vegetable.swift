@@ -21,10 +21,11 @@ class Vegetable {
                                     glucides: "0,83g",
                                     fibres: "3,6g",
                                     water: "84,30g",
-                                    vitamines: [Vitamine(name: "B9", number: "70,40µg"),
-                                                Vitamine(name: "K1", number: "14,50µg"),
-                                                Vitamine(name: "B5", number: "1,07mg"),
-                                                Vitamine(name: "Bdd5", number: "1,07mg")])
+                                    vitamines: [Vitamine(name: "B9", number: "35,20%"),
+                                                Vitamine(name: "K1", number: "19,33%"),
+                                                Vitamine(name: "B5", number: "17,83%"),
+                                                Vitamine(name: "E", number: "18,58%"),
+                                                Vitamine(name: "B6", number: "12,14%")])
 
 
   static let artichaut = ProductDetail(type: .vegetable,
