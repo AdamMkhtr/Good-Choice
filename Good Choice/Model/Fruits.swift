@@ -21,9 +21,13 @@ class Fruit {
                                    calories: "62kcal",
                                    glucides: "14,80g",
                                    fibres: "1,30g",
-                                   vitamines: [Vitamine(name: "B9", number: "58,90µg"),
-                                               Vitamine(name: "A", number: "416,67µg"),
-                                               Vitamine(name: "C", number: "8,14mg")])
+                                   water: "84,30g",
+                                   vitamines: [Vitamine(name: "B9", number: "29,45%"),
+                                               Vitamine(name: "A", number: "52,08%"),
+                                               Vitamine(name: "C", number: "10,18%"),
+                                               Vitamine(name: "Potassium", number: "380mg")
+                                              ]
+                    )
 
   static let banane = ProductDetail(type: .fruit,
                                     name: "Banane",
@@ -32,6 +36,7 @@ class Fruit {
                                     calories: "90,50kcal",
                                     glucides: "19,70g",
                                     fibres: "2,70g",
+                                    water: "78,80g",
                                     vitamines: [Vitamine(name: "B6", number: "0,18mg"),
                                                 Vitamine(name: "B9", number: "19µg"),
                                                 Vitamine(name: "Potassium", number: "320mg")])

@@ -20,6 +20,7 @@ class Vegetable {
                                     calories: "205kcal",
                                     glucides: "0,83g",
                                     fibres: "3,6g",
+                                    water: "84,30g",
                                     vitamines: [Vitamine(name: "B9", number: "70,40µg"),
                                                 Vitamine(name: "K1", number: "14,50µg"),
                                                 Vitamine(name: "B5", number: "1,07mg"),
@@ -33,6 +34,7 @@ class Vegetable {
                                        calories: "205kcal",
                                        glucides: "0,83g",
                                        fibres: "3,6g",
+                                       water: "84,30g",
                                        vitamines: [Vitamine(name: "B9", number: "70,40µg"),
                                                    Vitamine(name: "K1", number: "14,80µg"),
                                                    Vitamine(name: "C", number: "11,70mg")])
@@ -44,6 +46,7 @@ class Vegetable {
                                         calories: "38,40kcal",
                                         glucides: "4,53mg",
                                         fibres: "0,90g",
+                                        water: "84,30g",
                                         vitamines: [Vitamine(name: "B3", number: "4,53mg"),
                                                     Vitamine(name: "B5", number: "1,57mg"),
                                                     Vitamine(name: "B3", number: "0,29mg")])
@@ -55,6 +58,7 @@ class Vegetable {
                                        calories: "23kcal",
                                        glucides: "3,13g",
                                        fibres: "1,7g",
+                                       water: "84,30g",
                                        vitamines: [Vitamine(name: "B9", number: "16,40µg"),
                                                    Vitamine(name: "C", number: "17,50mg"),
                                                    Vitamine(name: "B6", number: "0,19mg")])
@@ -66,6 +70,7 @@ class Vegetable {
                                        calories: "14,70kcal",
                                        glucides: "2,23g",
                                        fibres: "0,90g",
+                                       water: "84,30g",
                                        vitamines: [Vitamine(name: "Eau", number: "96,30g"),
                                                    Vitamine(name: "Manganèse", number: "0,11mg"),
                                                    Vitamine(name: "Potassium", number: "140mg")])
@@ -77,6 +82,7 @@ class Vegetable {
                                          calories: "28kcal",
                                          glucides: "3,39g",
                                          fibres: "3,20g",
+                                         water: "84,30g",
                                          vitamines: [Vitamine(name: "B9", number: "48,50µg"),
                                                      Vitamine(name: "K1", number: "14,40µg"),
                                                      Vitamine(name: "C", number: "13,60mg")])
@@ -88,6 +94,7 @@ class Vegetable {
                                        calories: "80,30kcal",
                                        glucides: "9,93g",
                                        fibres: "4,80g",
+                                       water: "84,30g",
                                        vitamines: [Vitamine(name: "K1", number: "47,40µg"),
                                                    Vitamine(name: "C", number: "41,50mg"),
                                                    Vitamine(name: "B1", number: "0,29mg")])

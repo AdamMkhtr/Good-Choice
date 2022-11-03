@@ -80,6 +80,7 @@ class InformationBaseViewController: UIViewController {
     resultCompo1.text = productInformations?.calories
     resultCompo2.text = productInformations?.fibres
     resultCompo3.text = productInformations?.glucides
+    resultCompo4.text = productInformations?.water
   }
   
   //----------------------------------------------------------------------------

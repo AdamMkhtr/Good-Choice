@@ -20,6 +20,7 @@ struct ProductDetail {
   var calories : String
   var glucides : String
   var fibres : String
+  var water : String
   var vitamines : [Vitamine]
 }
 
