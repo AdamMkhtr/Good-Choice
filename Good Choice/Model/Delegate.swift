@@ -44,7 +44,3 @@ protocol ProductDelegate: AnyObject {
 protocol InformationNavigatonDelegate: AnyObject {
   func didHideTheButton()
 }
-
-protocol NameNavigationDelegate: AnyObject {
-  func didCollectName(name: String)
-}

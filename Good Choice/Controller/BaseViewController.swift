@@ -17,7 +17,6 @@ class BaseViewController: UIViewController {
   weak var delegateInformation : BaseDelegate?
   weak var delegateDescription : DescriptionDelegate?
   weak var knowWhatProductDelegate: ProductDelegate?
-  weak var nameNavigationDelegate: NameNavigationDelegate?
   
   var dataCell = Fruit.fruits
 
@@ -104,7 +103,6 @@ extension BaseViewController: UITableViewDelegate {
     delegateDisplay?.didDisplayTheInformationsView()
     delegateDescription?.didCollectDescriptionOfProduct(fruit: productInfo)
     knowWhatProductDelegate?.didKnowProduct(product: productInfo.type)
-    nameNavigationDelegate?.didCollectName(name: productInfo.name)
   }
 }
 

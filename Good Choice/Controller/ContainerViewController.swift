@@ -68,7 +68,6 @@ class ContainerViewController: UIViewController {
     detailsTopBarController.informationDelegateDisplay = chooseController.self
     baseController.knowWhatProductDelegate = navigationBarController.self
     bottomBarController.delegateNavigation = navigationBarController.self
-    baseController.nameNavigationDelegate = navigationBarController.self
     
   }
 

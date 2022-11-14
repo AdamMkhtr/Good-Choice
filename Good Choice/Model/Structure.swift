@@ -28,3 +28,6 @@ enum Type {
   case fruit
   case vegetable
 }
+
+// fruit.vitamines[1].number
+

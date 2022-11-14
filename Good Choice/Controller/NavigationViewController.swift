@@ -16,7 +16,6 @@ class NavigationViewController: UIViewController {
   weak var navigationDelegate: NavigationDelegate?
   weak var whatProductDelegate : ProductDelegate?
   
-  
   var didTapFruit: (() -> Void)?
   var didTapVegetable: (() -> Void)?
   
@@ -26,7 +25,6 @@ class NavigationViewController: UIViewController {
   // MARK: - Outlets
   //----------------------------------------------------------------------------
   
-  @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var pastButtonView: UIView!
   
   //----------------------------------------------------------------------------
@@ -42,11 +40,11 @@ class NavigationViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
-  
+
   /// Know what is the product fruit or vegetable for return on the correct display.
   func knowWhatViewDisplay() {
     pastButtonView.isHidden = true
-    titleLabel.text = "Good Choice"
+    
     if resultProduct == Type.fruit {
       didTapFruit?()
     }
@@ -55,7 +53,7 @@ class NavigationViewController: UIViewController {
       didTapVegetable?()
     }
   }
-  
+
   /// Setup the gesture recognizer for the view.
   func setupTapGestureRecognizer() {
     let tapGestureFruits = UITapGestureRecognizer()
@@ -82,12 +80,5 @@ extension NavigationViewController: ProductDelegate {
 extension NavigationViewController: InformationNavigatonDelegate {
   func didHideTheButton() {
     pastButtonView.isHidden = true
-    titleLabel.text = "Good Choice"
-  }
-}
-
-extension NavigationViewController: NameNavigationDelegate {
-  func didCollectName(name: String) {
-    titleLabel.text = name
   }
 }
