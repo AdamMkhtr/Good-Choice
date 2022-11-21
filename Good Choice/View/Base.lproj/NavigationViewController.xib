@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationViewController" customModule="Good_Choice" customModuleProvider="target">
+            <connections>
+                <outlet property="pastButtonView" destination="AiF-R2-EOc" id="LHI-Kq-u6o"/>
+                <outlet property="titleLabel" destination="Vr3-Y0-YSR" id="i7q-Yc-es3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Choice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr3-Y0-YSR">
+                    <rect key="frame" x="103" y="45.666666666666671" width="170" height="32.666666666666671"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiF-R2-EOc">
+                    <rect key="frame" x="7" y="24.666666666666664" width="89" height="74.666666666666686"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.left.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KL8-5S-8Ig">
+                            <rect key="frame" x="34" y="28.999999999999996" width="21.333333333333329" height="17.333333333333332"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AiF-R2-EOc" secondAttribute="height" multiplier="44:37" id="TOb-rt-SUm"/>
+                        <constraint firstItem="KL8-5S-8Ig" firstAttribute="centerX" secondItem="AiF-R2-EOc" secondAttribute="centerX" id="VTt-7g-w6o"/>
+                        <constraint firstItem="KL8-5S-8Ig" firstAttribute="centerY" secondItem="AiF-R2-EOc" secondAttribute="centerY" id="boz-nc-J4a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.32549019610000002" green="0.59999999999999998" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vr3-Y0-YSR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0NS-c7-Glu"/>
+                <constraint firstItem="Vr3-Y0-YSR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5yg-dn-QCZ"/>
+                <constraint firstItem="Vr3-Y0-YSR" firstAttribute="leading" secondItem="AiF-R2-EOc" secondAttribute="trailing" constant="7" id="HUy-rh-b6F"/>
+                <constraint firstItem="AiF-R2-EOc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="boS-sf-6Vi"/>
+                <constraint firstItem="AiF-R2-EOc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="dtf-qK-pfV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="12.307692307692307" y="-183.41232227488152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
