@@ -99,6 +99,7 @@ class InformationBaseViewController: UIViewController {
 
 
     fillVitaminesArray()
+    fillElementsArray()
 
     
     resultCompo1.text = productInformations?.calories
@@ -233,59 +234,50 @@ class InformationBaseViewController: UIViewController {
       resultElement4View.isHidden = true
 
     }
-    else if productInformations?.vitamines.count == 2 {
+    else if productInformations?.elements.count == 2 {
 
-      vitamine1.text = productInformations?.vitamines[0].name
-      vitamine2.text = productInformations?.vitamines[1].name
+      element1.text = productInformations?.elements[0].name
+      element2.text = productInformations?.elements[1].name
 
-      resultVitamine1.text = productInformations?.vitamines[0].number
-      resultVitamine2.text = productInformations?.vitamines[1].number
+      resultElement1.text = productInformations?.elements[0].number
+      resultElement2.text = productInformations?.elements[1].number
 
-      vitamineView3.isHidden = true
-      vitamineView4.isHidden = true
-      vitamineView5.isHidden = true
+      element3View.isHidden = true
+      element4View.isHidden = true
 
-      vitamineResultView3.isHidden = true
-      vitamineResultView4.isHidden = true
-      vitamineResultView5.isHidden = true
-
+      resultElement3View.isHidden = true
+      resultElement4View.isHidden = true
 
     }
-    else if productInformations?.vitamines.count == 1 {
 
-      vitamine1.text = productInformations?.vitamines[0].name
+    else if productInformations?.elements.count == 1 {
 
-      resultVitamine1.text = productInformations?.vitamines[0].number
+      element1.text = productInformations?.elements[0].name
 
-      vitamineView2.isHidden = true
-      vitamineView3.isHidden = true
-      vitamineView4.isHidden = true
-      vitamineView5.isHidden = true
+      resultElement1.text = productInformations?.elements[0].number
 
-      vitamineResultView2.isHidden = true
-      vitamineResultView3.isHidden = true
-      vitamineResultView4.isHidden = true
-      vitamineResultView5.isHidden = true
+      element2View.isHidden = true
+      element3View.isHidden = true
+      element3View.isHidden = true
 
+
+      resultElement2View.isHidden = true
+      resultElement3View.isHidden = true
+      resultElement4View.isHidden = true
 
     } else {
 
-      vitamine1.text = productInformations?.vitamines[0].name
-      vitamine2.text = productInformations?.vitamines[1].name
-      vitamine3.text = productInformations?.vitamines[2].name
-      vitamine4.text = productInformations?.vitamines[3].name
-      vitamine5.text = productInformations?.vitamines[4].name
+      element1.text = productInformations?.elements[0].name
+      element2.text = productInformations?.elements[1].name
+      element3.text = productInformations?.elements[2].name
+      element4.text = productInformations?.elements[3].name
 
-      resultVitamine1.text = productInformations?.vitamines[0].number
-      resultVitamine2.text = productInformations?.vitamines[1].number
-      resultVitamine3.text = productInformations?.vitamines[2].number
-      resultVitamine4.text = productInformations?.vitamines[3].number
-      resultVitamine5.text = productInformations?.vitamines[4].number
+      resultElement1.text = productInformations?.elements[0].number
+      resultElement2.text = productInformations?.elements[1].number
+      resultElement3.text = productInformations?.elements[2].number
+      resultElement4.text = productInformations?.elements[3].number
     }
   }
-
-
-  
 }
 
 //----------------------------------------------------------------------------

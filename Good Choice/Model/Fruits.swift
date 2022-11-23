@@ -26,9 +26,9 @@ class Fruit {
                                                Value(name: "A", number: "52,08%"),
                                                Value(name: "C", number: "10,18%"),
                                                Value(name: "Potassium", number: "380mg")],
-                                   elements: [Value(name: "", number: ""),
-                                              Value(name: "", number: ""),
-                                              Value(name: "", number: "")])
+                                   elements: [Value(name: "1", number: "2"),
+                                              Value(name: "2", number: "333"),
+                                              Value(name: "3", number: "4444")])
 
   static let banane = ProductDetail(type: .fruit,
                                     name: "Banane",
@@ -41,9 +41,8 @@ class Fruit {
                                     vitamines: [Value(name: "B6", number: "0,18mg"),
                                                 Value(name: "B9", number: "19µg"),
                                                 Value(name: "Potassium", number: "320mg")],
-                                    elements: [Value(name: "", number: ""),
-                                               Value(name: "", number: ""),
-                                               Value(name: "", number: "")])
+                                    elements: [Value(name: "22", number: "DFDD"),
+                                               Value(name: "333", number: "4444")])
 
   static let fruits = [melon, banane]
 
