@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,11 +13,27 @@
                 <outlet property="compo2" destination="cnb-ph-pD5" id="tuJ-kZ-1YN"/>
                 <outlet property="compo3" destination="dya-rf-Kdt" id="bpV-lK-HVa"/>
                 <outlet property="compo4" destination="cij-mL-aGZ" id="8Ez-PM-GJI"/>
+                <outlet property="element1" destination="S2T-Nr-5le" id="ZzY-xr-Ckj"/>
+                <outlet property="element1View" destination="Lx7-Wa-UAl" id="bNs-sm-zcL"/>
+                <outlet property="element2" destination="yBu-Hc-LhQ" id="Xqg-F9-HAM"/>
+                <outlet property="element2View" destination="yVp-Eo-fZr" id="iVK-Y1-c6N"/>
+                <outlet property="element3" destination="Ppq-Ur-2Hh" id="cpr-B9-kfY"/>
+                <outlet property="element3View" destination="wfa-I3-n8P" id="Xf0-eg-1Nd"/>
+                <outlet property="element4" destination="N6U-Yj-Oy9" id="k5Y-Ta-kwm"/>
+                <outlet property="element4View" destination="SXZ-uc-R2W" id="ng4-9o-vvA"/>
                 <outlet property="informationScrollView" destination="0uH-Xl-QaX" id="1ds-Wy-RHp"/>
                 <outlet property="resultCompo1" destination="4gc-kl-fBJ" id="bFB-j3-yDl"/>
                 <outlet property="resultCompo2" destination="dal-k1-v6r" id="pcx-2r-3Lb"/>
                 <outlet property="resultCompo3" destination="YWk-Ek-q61" id="3Km-gf-shp"/>
                 <outlet property="resultCompo4" destination="IMK-b0-AFU" id="8Sx-dI-wVC"/>
+                <outlet property="resultElement1" destination="YeW-hO-Blh" id="Ukd-7S-6Lq"/>
+                <outlet property="resultElement1View" destination="gFy-Rq-bX5" id="uLI-eS-E3s"/>
+                <outlet property="resultElement2" destination="FPc-cy-wIF" id="4DD-8M-zRj"/>
+                <outlet property="resultElement2View" destination="68i-Ig-3wL" id="dDP-d1-FXY"/>
+                <outlet property="resultElement3" destination="k82-hp-350" id="Dog-Yd-AW2"/>
+                <outlet property="resultElement3View" destination="J1E-jX-dIf" id="Gho-6a-Blw"/>
+                <outlet property="resultElement4" destination="9MN-Tf-gD3" id="rWN-aa-m7S"/>
+                <outlet property="resultElement4View" destination="q2H-3B-JFj" id="Hnb-Os-0LG"/>
                 <outlet property="resultVitamine1" destination="Nlp-8G-T1C" id="pvn-MO-Iid"/>
                 <outlet property="resultVitamine2" destination="Hu2-ND-q01" id="Nnt-9U-Vu1"/>
                 <outlet property="resultVitamine3" destination="cgU-L8-ba3" id="USY-Ol-VEB"/>
@@ -253,7 +269,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="m43-eO-tc1">
                                                     <rect key="frame" x="0.0" y="0.0" width="401.5" height="132.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamines et autres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDf-oK-tmz">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDf-oK-tmz">
                                                             <rect key="frame" x="0.0" y="0.0" width="401.5" height="77.5"/>
                                                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
                                                             <color key="textColor" red="0.57647058819999997" green="0.3803921569" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -473,7 +489,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="GhT-xU-wQK">
                                                     <rect key="frame" x="0.0" y="0.0" width="401.5" height="132"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamines et autres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-as-eF5">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minéraux et oligo-éléments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-as-eF5">
                                                             <rect key="frame" x="0.0" y="0.0" width="401.5" height="77.5"/>
                                                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
                                                             <color key="textColor" red="0.57647058819999997" green="0.3803921569" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -497,10 +513,10 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="401.5" height="66"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-Wa-UAl">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="79.5" height="66"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-Nr-5le">
-                                                                                    <rect key="frame" x="16.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -513,10 +529,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVp-Eo-fZr">
-                                                                            <rect key="frame" x="80.5" y="0.0" width="79.5" height="66"/>
+                                                                            <rect key="frame" x="100.5" y="0.0" width="100" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-Hc-LhQ">
-                                                                                    <rect key="frame" x="16.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -529,10 +545,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfa-I3-n8P">
-                                                                            <rect key="frame" x="161" y="0.0" width="79.5" height="66"/>
+                                                                            <rect key="frame" x="201.5" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-Ur-2Hh">
-                                                                                    <rect key="frame" x="16.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -545,10 +561,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXZ-uc-R2W">
-                                                                            <rect key="frame" x="241.5" y="0.0" width="79.5" height="66"/>
+                                                                            <rect key="frame" x="302" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-Yj-Oy9">
-                                                                                    <rect key="frame" x="16.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -560,32 +576,16 @@
                                                                                 <constraint firstItem="N6U-Yj-Oy9" firstAttribute="centerY" secondItem="SXZ-uc-R2W" secondAttribute="centerY" id="nqz-tI-aRs"/>
                                                                             </constraints>
                                                                         </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CqL-Xw-znV">
-                                                                            <rect key="frame" x="322" y="0.0" width="79.5" height="66"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYX-Xw-3J9">
-                                                                                    <rect key="frame" x="16.5" y="22.5" width="46.5" height="21"/>
-                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <constraints>
-                                                                                <constraint firstItem="HYX-Xw-3J9" firstAttribute="centerY" secondItem="CqL-Xw-znV" secondAttribute="centerY" id="R4c-11-Bg8"/>
-                                                                                <constraint firstItem="HYX-Xw-3J9" firstAttribute="centerX" secondItem="CqL-Xw-znV" secondAttribute="centerX" id="ulL-3c-qz1"/>
-                                                                            </constraints>
-                                                                        </view>
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IZK-iO-2dP">
                                                                     <rect key="frame" x="0.0" y="67" width="401.5" height="65.5"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFy-Rq-bX5">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="79.5" height="65.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="99.5" height="65.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-hO-Blh">
-                                                                                    <rect key="frame" x="16.5" y="22" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -598,10 +598,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68i-Ig-3wL">
-                                                                            <rect key="frame" x="80.5" y="0.0" width="79.5" height="65.5"/>
+                                                                            <rect key="frame" x="100.5" y="0.0" width="100" height="65.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPc-cy-wIF">
-                                                                                    <rect key="frame" x="16.5" y="22" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -614,10 +614,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1E-jX-dIf">
-                                                                            <rect key="frame" x="161" y="0.0" width="79.5" height="65.5"/>
+                                                                            <rect key="frame" x="201.5" y="0.0" width="99.5" height="65.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k82-hp-350">
-                                                                                    <rect key="frame" x="16.5" y="22" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -630,10 +630,10 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2H-3B-JFj">
-                                                                            <rect key="frame" x="241.5" y="0.0" width="79.5" height="65.5"/>
+                                                                            <rect key="frame" x="302" y="0.0" width="99.5" height="65.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MN-Tf-gD3">
-                                                                                    <rect key="frame" x="16.5" y="22" width="46.5" height="21"/>
+                                                                                    <rect key="frame" x="26.5" y="22" width="46.5" height="21"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -643,22 +643,6 @@
                                                                             <constraints>
                                                                                 <constraint firstItem="9MN-Tf-gD3" firstAttribute="centerY" secondItem="q2H-3B-JFj" secondAttribute="centerY" id="Blb-1l-loe"/>
                                                                                 <constraint firstItem="9MN-Tf-gD3" firstAttribute="centerX" secondItem="q2H-3B-JFj" secondAttribute="centerX" id="fqB-du-t1O"/>
-                                                                            </constraints>
-                                                                        </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDI-2s-fC0">
-                                                                            <rect key="frame" x="322" y="0.0" width="79.5" height="65.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b1-s1-CoJ">
-                                                                                    <rect key="frame" x="16.5" y="22" width="46.5" height="21"/>
-                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <constraints>
-                                                                                <constraint firstItem="5b1-s1-CoJ" firstAttribute="centerY" secondItem="JDI-2s-fC0" secondAttribute="centerY" id="33b-Qy-EfC"/>
-                                                                                <constraint firstItem="5b1-s1-CoJ" firstAttribute="centerX" secondItem="JDI-2s-fC0" secondAttribute="centerX" id="j9U-X3-fUf"/>
                                                                             </constraints>
                                                                         </view>
                                                                     </subviews>

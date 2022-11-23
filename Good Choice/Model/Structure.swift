@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Vitamine {
+struct Value {
   var name : String
   var number : String
 }
@@ -21,7 +21,8 @@ struct ProductDetail {
   var glucides : String
   var fibres : String
   var water : String
-  var vitamines : [Vitamine]
+  var vitamines : [Value]
+  var elements: [Value]
 }
 
 enum Type {

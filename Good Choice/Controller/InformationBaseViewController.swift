@@ -56,7 +56,25 @@ class InformationBaseViewController: UIViewController {
   @IBOutlet weak var resultCompo3: UILabel!
   @IBOutlet weak var resultCompo4: UILabel!
 
+  @IBOutlet weak var element1: UILabel!
+  @IBOutlet weak var element2: UILabel!
+  @IBOutlet weak var element3: UILabel!
+  @IBOutlet weak var element4: UILabel!
 
+  @IBOutlet weak var resultElement1: UILabel!
+  @IBOutlet weak var resultElement2: UILabel!
+  @IBOutlet weak var resultElement3: UILabel!
+  @IBOutlet weak var resultElement4: UILabel!
+
+  @IBOutlet weak var element1View: UIView!
+  @IBOutlet weak var element2View: UIView!
+  @IBOutlet weak var element3View: UIView!
+  @IBOutlet weak var element4View: UIView!
+
+  @IBOutlet weak var resultElement1View: UIView!
+  @IBOutlet weak var resultElement2View: UIView!
+  @IBOutlet weak var resultElement3View: UIView!
+  @IBOutlet weak var resultElement4View: UIView!
 
   //----------------------------------------------------------------------------
   // MARK: - Init
@@ -80,7 +98,7 @@ class InformationBaseViewController: UIViewController {
     }
 
 
-    fillTheArray()
+    fillVitaminesArray()
 
     
     resultCompo1.text = productInformations?.calories
@@ -93,7 +111,7 @@ class InformationBaseViewController: UIViewController {
   // MARK: - Methods
   //----------------------------------------------------------------------------
 
-  func fillTheArray(){
+  func fillVitaminesArray(){
 
     vitamineView2.isHidden = false
     vitamineView3.isHidden = false
@@ -188,6 +206,85 @@ class InformationBaseViewController: UIViewController {
       resultVitamine5.text = productInformations?.vitamines[4].number
     }
   }
+
+  func fillElementsArray(){
+
+    element2View.isHidden = false
+    element3View.isHidden = false
+    element4View.isHidden = false
+
+    resultElement2View.isHidden = false
+    resultElement3View.isHidden = false
+    resultElement4View.isHidden = false
+
+
+    if productInformations?.elements.count == 3 {
+
+      element1.text = productInformations?.elements[0].name
+      element2.text = productInformations?.elements[1].name
+      element3.text = productInformations?.elements[2].name
+
+      resultElement1.text = productInformations?.elements[0].number
+      resultElement2.text = productInformations?.elements[1].number
+      resultElement3.text = productInformations?.elements[2].number
+
+      element4View.isHidden = true
+
+      resultElement4View.isHidden = true
+
+    }
+    else if productInformations?.vitamines.count == 2 {
+
+      vitamine1.text = productInformations?.vitamines[0].name
+      vitamine2.text = productInformations?.vitamines[1].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+      resultVitamine2.text = productInformations?.vitamines[1].number
+
+      vitamineView3.isHidden = true
+      vitamineView4.isHidden = true
+      vitamineView5.isHidden = true
+
+      vitamineResultView3.isHidden = true
+      vitamineResultView4.isHidden = true
+      vitamineResultView5.isHidden = true
+
+
+    }
+    else if productInformations?.vitamines.count == 1 {
+
+      vitamine1.text = productInformations?.vitamines[0].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+
+      vitamineView2.isHidden = true
+      vitamineView3.isHidden = true
+      vitamineView4.isHidden = true
+      vitamineView5.isHidden = true
+
+      vitamineResultView2.isHidden = true
+      vitamineResultView3.isHidden = true
+      vitamineResultView4.isHidden = true
+      vitamineResultView5.isHidden = true
+
+
+    } else {
+
+      vitamine1.text = productInformations?.vitamines[0].name
+      vitamine2.text = productInformations?.vitamines[1].name
+      vitamine3.text = productInformations?.vitamines[2].name
+      vitamine4.text = productInformations?.vitamines[3].name
+      vitamine5.text = productInformations?.vitamines[4].name
+
+      resultVitamine1.text = productInformations?.vitamines[0].number
+      resultVitamine2.text = productInformations?.vitamines[1].number
+      resultVitamine3.text = productInformations?.vitamines[2].number
+      resultVitamine4.text = productInformations?.vitamines[3].number
+      resultVitamine5.text = productInformations?.vitamines[4].number
+    }
+  }
+
+
   
 }
 

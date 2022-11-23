@@ -22,12 +22,13 @@ class Fruit {
                                    glucides: "14,80g",
                                    fibres: "1,30g",
                                    water: "84,30g",
-                                   vitamines: [Vitamine(name: "B9", number: "29,45%"),
-                                               Vitamine(name: "A", number: "52,08%"),
-                                               Vitamine(name: "C", number: "10,18%"),
-                                               Vitamine(name: "Potassium", number: "380mg")
-                                              ]
-                    )
+                                   vitamines: [Value(name: "B9", number: "29,45%"),
+                                               Value(name: "A", number: "52,08%"),
+                                               Value(name: "C", number: "10,18%"),
+                                               Value(name: "Potassium", number: "380mg")],
+                                   elements: [Value(name: "", number: ""),
+                                              Value(name: "", number: ""),
+                                              Value(name: "", number: "")])
 
   static let banane = ProductDetail(type: .fruit,
                                     name: "Banane",
@@ -37,9 +38,12 @@ class Fruit {
                                     glucides: "19,70g",
                                     fibres: "2,70g",
                                     water: "78,80g",
-                                    vitamines: [Vitamine(name: "B6", number: "0,18mg"),
-                                                Vitamine(name: "B9", number: "19µg"),
-                                                Vitamine(name: "Potassium", number: "320mg")])
+                                    vitamines: [Value(name: "B6", number: "0,18mg"),
+                                                Value(name: "B9", number: "19µg"),
+                                                Value(name: "Potassium", number: "320mg")],
+                                    elements: [Value(name: "", number: ""),
+                                               Value(name: "", number: ""),
+                                               Value(name: "", number: "")])
 
   static let fruits = [melon, banane]
 
