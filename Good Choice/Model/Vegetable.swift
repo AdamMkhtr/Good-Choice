@@ -26,27 +26,28 @@ class Vegetable {
                                                 Value(name: "B5", number: "17,83%"),
                                                 Value(name: "E", number: "18,58%"),
                                                 Value(name: "B6", number: "12,14%")],
-                                    elements: [Value(name: "", number: ""),
-                                               Value(name: "", number: ""),
-                                               Value(name: "", number: "")])
+                                    elements: [Value(name: "Cuivre", number: "18%"),
+                                               Value(name: "Potassium", number: "21,50%"),
+                                               Value(name: "Manganèse", number: "10%")])
 
-                                    
+
 
 
   static let artichaut = ProductDetail(type: .vegetable,
                                        name: "Artichaut",
                                        chooseDescription: exemple,
                                        conserveDescription: exemple,
-                                       calories: "205kcal",
+                                       calories: "47,30kcal",
                                        glucides: "0,83g",
                                        fibres: "3,6g",
-                                       water: "84,30g",
-                                       vitamines: [Value(name: "B9", number: "70,40µg"),
-                                                   Value(name: "K1", number: "14,80µg"),
-                                                   Value(name: "C", number: "11,70mg")],
-                                       elements: [Value(name: "", number: ""),
-                                                  Value(name: "", number: ""),
-                                                  Value(name: "", number: "")])
+                                       water: "81,40g",
+                                       vitamines: [Value(name: "B9", number: "34%"),
+                                                   Value(name: "K1", number: "20%"),
+                                                   Value(name: "C", number: "15%%")],
+                                       elements: [Value(name: "Cuivre", number: "23%"),
+                                                  Value(name: "Potassium", number: "19%"),
+                                                  Value(name: "Manganèse", number: "13%"),
+                                                  Value(name: "Magnésium", number: "13%")])
 
 
   static let champignon = ProductDetail(type: .vegetable,
@@ -56,13 +57,15 @@ class Vegetable {
                                         calories: "38,40kcal",
                                         glucides: "4,53mg",
                                         fibres: "0,90g",
-                                        water: "84,30g",
-                                        vitamines: [Value(name: "B3", number: "4,53mg"),
-                                                    Value(name: "B5", number: "1,57mg"),
-                                                    Value(name: "B3", number: "0,29mg")],
-                                        elements: [Value(name: "", number: ""),
-                                                   Value(name: "", number: ""),
-                                                   Value(name: "", number: "")])
+                                        water: "88,40g",
+                                        vitamines: [Value(name: "B3", number: "31%"),
+                                                    Value(name: "B5", number: "26%"),
+                                                    Value(name: "B2", number: "21%"),
+                                                    Value(name: "B9", number: "17%")],
+                                        elements: [Value(name: "Cuivre", number: "35%"),
+                                                   Value(name: "Potassium", number: "18%"),
+                                                   Value(name: "Phosphore", number: "14%"),
+                                                   Value(name: "Sélénium", number: "12%")])
 
 
   static let courgette = ProductDetail(type: .vegetable,
@@ -72,29 +75,24 @@ class Vegetable {
                                        calories: "23kcal",
                                        glucides: "3,13g",
                                        fibres: "1,7g",
-                                       water: "84,30g",
-                                       vitamines: [Value(name: "B9", number: "16,40µg"),
-                                                   Value(name: "C", number: "17,50mg"),
-                                                   Value(name: "B6", number: "0,19mg")],
-                                       elements: [Value(name: "", number: ""),
-                                                  Value(name: "", number: ""),
-                                                  Value(name: "", number: "")])
+                                       water: "93,10g",
+                                       vitamines: [Value(name: "B9", number: "19%"),
+                                                   Value(name: "C", number: "22%"),
+                                                   Value(name: "B6", number: "14%")],
+                                       elements: [Value(name: "Potassium", number: "13%"),
+                                                  Value(name: "Manganèse", number: "9%")])
 
 
   static let concombre = ProductDetail(type: .vegetable,
-                                       name: "Cobcombre",
+                                       name: "Concombre",
                                        chooseDescription: exemple,
                                        conserveDescription: exemple,
                                        calories: "14,70kcal",
                                        glucides: "2,23g",
                                        fibres: "0,90g",
-                                       water: "84,30g",
-                                       vitamines: [Value(name: "Eau", number: "96,30g"),
-                                                   Value(name: "Manganèse", number: "0,11mg"),
-                                                   Value(name: "Potassium", number: "140mg")],
-                                       elements: [Value(name: "", number: ""),
-                                                  Value(name: "", number: ""),
-                                                  Value(name: "", number: "")])
+                                       water: "96,30g",
+                                       vitamines: [Value(name: "C", number: "4%")],
+                                       elements: [Value(name: "Potassium", number: "7%")])
 
 
   static let haricotVert = ProductDetail(type: .vegetable,
@@ -104,13 +102,12 @@ class Vegetable {
                                          calories: "28kcal",
                                          glucides: "3,39g",
                                          fibres: "3,20g",
-                                         water: "84,30g",
-                                         vitamines: [Value(name: "B9", number: "48,50µg"),
-                                                     Value(name: "K1", number: "14,40µg"),
-                                                     Value(name: "C", number: "13,60mg")],
-                                         elements: [Value(name: "", number: ""),
-                                                    Value(name: "", number: ""),
-                                                    Value(name: "", number: "")])
+                                         water: "90,8g",
+                                         vitamines: [Value(name: "B9", number: "25%"),
+                                                     Value(name: "K1", number: "19%"),
+                                                     Value(name: "C", number: "17%")],
+                                         elements: [Value(name: "Manganèse", number: "12%"),
+                                                    Value(name: "Potassium", number: "11%")])
 
 
   static let petitPois = ProductDetail(type: .vegetable,
@@ -120,13 +117,16 @@ class Vegetable {
                                        calories: "80,30kcal",
                                        glucides: "9,93g",
                                        fibres: "4,80g",
-                                       water: "84,30g",
-                                       vitamines: [Value(name: "K1", number: "47,40µg"),
-                                                   Value(name: "C", number: "41,50mg"),
-                                                   Value(name: "B1", number: "0,29mg")],
-                                       elements: [Value(name: "", number: ""),
-                                                  Value(name: "", number: ""),
-                                                  Value(name: "", number: "")])
+                                       water: "77,40g",
+                                       vitamines: [Value(name: "K1", number: "63%"),
+                                                   Value(name: "C", number: "52%"),
+                                                   Value(name: "B1", number: "26%"),
+                                                   Value(name: "B9", number: "23%"),
+                                                   Value(name: "B3", number: "13%")],
+                                       elements: [Value(name: "Manganèse", number: "20%"),
+                                                  Value(name: "Phosphore", number: "17%"),
+                                                  Value(name: "Cuivre", number: "14%"),
+                                                  Value(name: "Fer", number: "12%")])
 
 
   static let vegetables = [avocat, artichaut, champignon, courgette, concombre,haricotVert, petitPois]
