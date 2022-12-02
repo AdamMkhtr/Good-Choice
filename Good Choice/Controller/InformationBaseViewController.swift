@@ -258,7 +258,7 @@ class InformationBaseViewController: UIViewController {
 
       element2View.isHidden = true
       element3View.isHidden = true
-      element3View.isHidden = true
+      element4View.isHidden = true
 
 
       resultElement2View.isHidden = true

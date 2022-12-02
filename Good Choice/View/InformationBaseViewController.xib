@@ -516,8 +516,8 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-Nr-5le">
-                                                                                    <rect key="frame" x="29" y="23" width="41.5" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
@@ -532,8 +532,8 @@
                                                                             <rect key="frame" x="100.5" y="0.0" width="100" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-Hc-LhQ">
-                                                                                    <rect key="frame" x="29" y="23" width="41.5" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
@@ -548,8 +548,8 @@
                                                                             <rect key="frame" x="201.5" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-Ur-2Hh">
-                                                                                    <rect key="frame" x="29" y="23" width="41.5" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
@@ -564,8 +564,8 @@
                                                                             <rect key="frame" x="302" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-Yj-Oy9">
-                                                                                    <rect key="frame" x="29" y="23" width="41.5" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
