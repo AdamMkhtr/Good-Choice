@@ -29,11 +29,6 @@ class ChooseViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
   }
-
-  //----------------------------------------------------------------------------
-  // MARK: - Methods
-  //----------------------------------------------------------------------------
-
 }
 
 //----------------------------------------------------------------------------
@@ -42,10 +37,6 @@ class ChooseViewController: UIViewController {
 
 extension ChooseViewController: DescriptionDelegate {
   func didCollectDescriptionOfProduct(fruit: ProductDetail) {
-#warning("Attention ne pas oublier de régler ça")
-    guard fruit != nil else {
-      return
-    }
     fruitDescription = fruit
   }
 }
