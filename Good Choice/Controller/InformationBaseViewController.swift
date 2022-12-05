@@ -8,11 +8,11 @@
 import UIKit
 
 class InformationBaseViewController: UIViewController {
-  
+
   //----------------------------------------------------------------------------
   // MARK: - Properties
   //----------------------------------------------------------------------------
-  
+
   var productInformations : ProductDetail?
   var firstTime = false
 
@@ -22,30 +22,34 @@ class InformationBaseViewController: UIViewController {
 
   @IBOutlet weak var informationScrollView: UIScrollView!
 
+  //----------------------------------------------------------------------------
+  // MARK: - Vitamins Outlets
+  //----------------------------------------------------------------------------
+
   @IBOutlet weak var vitamineView1: UIView!
   @IBOutlet weak var vitamineView2: UIView!
   @IBOutlet weak var vitamineView3: UIView!
   @IBOutlet weak var vitamineView4: UIView!
   @IBOutlet weak var vitamineView5: UIView!
-  
+
   @IBOutlet weak var vitamineResultView1: UIView!
   @IBOutlet weak var vitamineResultView2: UIView!
   @IBOutlet weak var vitamineResultView3: UIView!
   @IBOutlet weak var vitamineResultView4: UIView!
   @IBOutlet weak var vitamineResultView5: UIView!
-  
+
   @IBOutlet weak var vitamine1: UILabel!
   @IBOutlet weak var vitamine2: UILabel!
   @IBOutlet weak var vitamine3: UILabel!
   @IBOutlet weak var vitamine4: UILabel!
   @IBOutlet weak var vitamine5: UILabel!
-  
+
   @IBOutlet weak var resultVitamine1: UILabel!
   @IBOutlet weak var resultVitamine2: UILabel!
   @IBOutlet weak var resultVitamine3: UILabel!
   @IBOutlet weak var resultVitamine4: UILabel!
   @IBOutlet weak var resultVitamine5: UILabel!
-  
+
   @IBOutlet weak var compo1: UILabel!
   @IBOutlet weak var compo2: UILabel!
   @IBOutlet weak var compo3: UILabel!
@@ -55,6 +59,10 @@ class InformationBaseViewController: UIViewController {
   @IBOutlet weak var resultCompo2: UILabel!
   @IBOutlet weak var resultCompo3: UILabel!
   @IBOutlet weak var resultCompo4: UILabel!
+
+  //----------------------------------------------------------------------------
+  // MARK: - Elements Outlets
+  //----------------------------------------------------------------------------
 
   @IBOutlet weak var element1: UILabel!
   @IBOutlet weak var element2: UILabel!
@@ -79,17 +87,21 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
-  
+
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
     setupInformations()
     firstTime = true
   }
-  
+
+  //----------------------------------------------------------------------------
+  // MARK: - Setup
+  //----------------------------------------------------------------------------
+
   /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
     guard productInformations != nil else {
@@ -97,21 +109,20 @@ class InformationBaseViewController: UIViewController {
       return
     }
 
-
     fillVitaminesArray()
     fillElementsArray()
 
-    
     resultCompo1.text = productInformations?.calories
     resultCompo2.text = productInformations?.fibres
     resultCompo3.text = productInformations?.glucides
     resultCompo4.text = productInformations?.water
   }
-  
+
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
 
+  /// Fill and setup the array vitamins in informations view according to the count of vitamins for the product.
   func fillVitaminesArray(){
 
     vitamineView2.isHidden = false
@@ -208,6 +219,7 @@ class InformationBaseViewController: UIViewController {
     }
   }
 
+  /// Fill and setup the array Elements in informations view according to the count of elements for the product.
   func fillElementsArray(){
 
     element2View.isHidden = false

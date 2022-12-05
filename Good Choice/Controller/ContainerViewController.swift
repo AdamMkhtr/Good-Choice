@@ -59,7 +59,6 @@ class ContainerViewController: UIViewController {
 
   /// Setup all delegate for the app.
   func setupDelegate() {
-
     delegateTopBar = detailsTopBarController.self
     bottomBarController.delegate = baseController.self
     baseController.delegateInformation = informationBaseController.self
@@ -69,7 +68,6 @@ class ContainerViewController: UIViewController {
     baseController.knowWhatProductDelegate = navigationBarController.self
     bottomBarController.delegateNavigation = navigationBarController.self
     baseController.nameNavigationDelegate = navigationBarController.self
-    
   }
 
   /// Setup the button for the base container.
@@ -114,6 +112,10 @@ class ContainerViewController: UIViewController {
       self?.delegateTopBar?.didReeloadTopBarColor()
     }
   }
+
+  //----------------------------------------------------------------------------
+  // MARK: - Configure Container
+  //----------------------------------------------------------------------------
 
   /// Configure the view for the Details Top Bar container.
   func configureTopDetailsBarController() {
@@ -180,7 +182,7 @@ class ContainerViewController: UIViewController {
 }
 
 //----------------------------------------------------------------------------
-// MARK: - Extension
+// MARK: - Extension ContainerViewController
 //----------------------------------------------------------------------------
 
 extension ContainerViewController: DisplayDelegate {
