@@ -515,65 +515,77 @@
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-Wa-UAl">
                                                                             <rect key="frame" x="0.0" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-Nr-5le">
-                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-Nr-5le">
+                                                                                    <rect key="frame" x="3" y="3" width="93.5" height="60"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                                 </label>
                                                                             </subviews>
                                                                             <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
-                                                                                <constraint firstItem="S2T-Nr-5le" firstAttribute="centerX" secondItem="Lx7-Wa-UAl" secondAttribute="centerX" id="gdw-g9-0gz"/>
-                                                                                <constraint firstItem="S2T-Nr-5le" firstAttribute="centerY" secondItem="Lx7-Wa-UAl" secondAttribute="centerY" id="yrA-yQ-3mv"/>
+                                                                                <constraint firstItem="S2T-Nr-5le" firstAttribute="leading" secondItem="Lx7-Wa-UAl" secondAttribute="leading" constant="3" id="LGV-Ao-TMv"/>
+                                                                                <constraint firstItem="S2T-Nr-5le" firstAttribute="top" secondItem="Lx7-Wa-UAl" secondAttribute="top" constant="3" id="bxn-uR-Ks1"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="S2T-Nr-5le" secondAttribute="trailing" constant="3" id="fEX-NW-OH6"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="S2T-Nr-5le" secondAttribute="bottom" constant="3" id="fsP-cQ-uTW"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVp-Eo-fZr">
                                                                             <rect key="frame" x="100.5" y="0.0" width="100" height="66"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-Hc-LhQ">
-                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-Hc-LhQ">
+                                                                                    <rect key="frame" x="3" y="3" width="94" height="60"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                                 </label>
                                                                             </subviews>
                                                                             <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
-                                                                                <constraint firstItem="yBu-Hc-LhQ" firstAttribute="centerX" secondItem="yVp-Eo-fZr" secondAttribute="centerX" id="iTd-T0-Auc"/>
-                                                                                <constraint firstItem="yBu-Hc-LhQ" firstAttribute="centerY" secondItem="yVp-Eo-fZr" secondAttribute="centerY" id="kyl-OJ-ecc"/>
+                                                                                <constraint firstItem="yBu-Hc-LhQ" firstAttribute="top" secondItem="yVp-Eo-fZr" secondAttribute="top" constant="3" id="7UT-ba-ryh"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="yBu-Hc-LhQ" secondAttribute="bottom" constant="3" id="8aK-H2-Oz7"/>
+                                                                                <constraint firstItem="yBu-Hc-LhQ" firstAttribute="leading" secondItem="yVp-Eo-fZr" secondAttribute="leading" constant="3" id="Bmw-a7-LK8"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="yBu-Hc-LhQ" secondAttribute="trailing" constant="3" id="fSU-5U-ivg"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfa-I3-n8P">
                                                                             <rect key="frame" x="201.5" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-Ur-2Hh">
-                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
-                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-Ur-2Hh">
+                                                                                    <rect key="frame" x="3" y="3" width="93.5" height="60"/>
+                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                                 </label>
                                                                             </subviews>
                                                                             <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
-                                                                                <constraint firstItem="Ppq-Ur-2Hh" firstAttribute="centerX" secondItem="wfa-I3-n8P" secondAttribute="centerX" id="Q3R-zD-0lt"/>
-                                                                                <constraint firstItem="Ppq-Ur-2Hh" firstAttribute="centerY" secondItem="wfa-I3-n8P" secondAttribute="centerY" id="U66-Eg-ykp"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="Ppq-Ur-2Hh" secondAttribute="bottom" constant="3" id="FcJ-8j-Hn2"/>
+                                                                                <constraint firstItem="Ppq-Ur-2Hh" firstAttribute="top" secondItem="wfa-I3-n8P" secondAttribute="top" constant="3" id="a0g-Mh-ltb"/>
+                                                                                <constraint firstItem="Ppq-Ur-2Hh" firstAttribute="leading" secondItem="wfa-I3-n8P" secondAttribute="leading" constant="3" id="iEE-69-uzp"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="Ppq-Ur-2Hh" secondAttribute="trailing" constant="3" id="rxs-1k-VXo"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXZ-uc-R2W">
                                                                             <rect key="frame" x="302" y="0.0" width="99.5" height="66"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-Yj-Oy9">
-                                                                                    <rect key="frame" x="26.5" y="22.5" width="46.5" height="21"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-Yj-Oy9">
+                                                                                    <rect key="frame" x="3" y="3" width="93.5" height="60"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                                                 </label>
                                                                             </subviews>
                                                                             <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
-                                                                                <constraint firstItem="N6U-Yj-Oy9" firstAttribute="centerX" secondItem="SXZ-uc-R2W" secondAttribute="centerX" id="lgF-iq-Rya"/>
-                                                                                <constraint firstItem="N6U-Yj-Oy9" firstAttribute="centerY" secondItem="SXZ-uc-R2W" secondAttribute="centerY" id="nqz-tI-aRs"/>
+                                                                                <constraint firstItem="N6U-Yj-Oy9" firstAttribute="leading" secondItem="SXZ-uc-R2W" secondAttribute="leading" constant="3" id="l9P-CI-caM"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="N6U-Yj-Oy9" secondAttribute="bottom" constant="3" id="oSU-us-BDp"/>
+                                                                                <constraint firstItem="N6U-Yj-Oy9" firstAttribute="top" secondItem="SXZ-uc-R2W" secondAttribute="top" constant="3" id="qXz-oc-xgv"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="N6U-Yj-Oy9" secondAttribute="trailing" constant="3" id="wP2-iw-l4U"/>
                                                                             </constraints>
                                                                         </view>
                                                                     </subviews>

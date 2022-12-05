@@ -16,7 +16,6 @@ class NavigationViewController: UIViewController {
   weak var navigationDelegate: NavigationDelegate?
   weak var whatProductDelegate : ProductDelegate?
   
-  
   var didTapFruit: (() -> Void)?
   var didTapVegetable: (() -> Void)?
   
@@ -69,7 +68,7 @@ class NavigationViewController: UIViewController {
 }
 
 //----------------------------------------------------------------------------
-// MARK: - Extension What product Delegate
+// MARK: - Extension for delegate
 //----------------------------------------------------------------------------
 
 extension NavigationViewController: ProductDelegate {
