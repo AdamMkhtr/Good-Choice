@@ -22,10 +22,10 @@ class Fruit {
                                    glucides: "14,80g",
                                    fibres: "1,30g",
                                    water: "84,20g",
-                                   vitamines: [Value(name: "B9", number: "29%"),
-                                               Value(name: "A", number: "52%"),
-                                               Value(name: "C", number: "10%")],
-                                   elements: [Value(name: "Potassium", number: "19%")])
+                                   vitamines: [Value(name: "B9", score : .A),
+                                               Value(name: "A", score : .AP),
+                                               Value(name: "C", score : .C)],
+                                   elements: [Value(name: "Potassium", score : .B)])
 
   static let banane = ProductDetail(type: .fruit,
                                     name: "Banane",
@@ -35,11 +35,11 @@ class Fruit {
                                     glucides: "19,70g",
                                     fibres: "2,70g",
                                     water: "78,80g",
-                                    vitamines: [Value(name: "B6", number: "13%"),
-                                                Value(name: "B9", number: "10%")],
-                                    elements: [Value(name: "Manganèse", number: "18%"),
-                                               Value(name: "Potassium", number: "16%"),
-                                               Value(name: "Chlorure", number: "10%")])
+                                    vitamines: [Value(name: "B6", score : .C),
+                                                Value(name: "B9", score : .C)],
+                                    elements: [Value(name: "Manganèse", score : .B),
+                                               Value(name: "Potassium", score : .B),
+                                               Value(name: "Chlorure", score : .C)])
 
   static let kiwi = ProductDetail(type: .fruit,
                                   name: "Kiwi",
@@ -49,11 +49,11 @@ class Fruit {
                                   glucides: "11g",
                                   fibres: "2,40g",
                                   water: "83,50g",
-                                  vitamines: [Value(name: "C", number: "102%"),
-                                              Value(name: "K1", number: "22%"),
-                                              Value(name: "B9", number: "11%")],
-                                  elements: [Value(name: "Cuivre", number: "15%"),
-                                             Value(name: "Potassium", number: "15%")])
+                                  vitamines: [Value(name: "C", score : .AP),
+                                              Value(name: "K1", score : .B),
+                                              Value(name: "B9", score : .C)],
+                                  elements: [Value(name: "Cuivre", score : .B),
+                                             Value(name: "Potassium", score : .B)])
 
   static let passionFruit = ProductDetail(type: .fruit,
                                           name: "Fruit de la passion",
@@ -63,14 +63,14 @@ class Fruit {
                                           glucides: "10,90g",
                                           fibres: "6,80g",
                                           water: "73,60g",
-                                          vitamines: [Value(name: "B9", number: "51%"),
-                                                      Value(name: "C", number: "32%"),
-                                                      Value(name: "A", number: "21%"),
-                                                      Value(name: "B6", number: "12%")],
-                                          elements: [Value(name: "Cuivre", number: "15%"),
-                                                     Value(name: "Potassium", number: "12%"),
-                                                     Value(name: "Manganèse", number: "9%"),
-                                                     Value(name: "Zinc", number: "8%")])
+                                          vitamines: [Value(name: "B9", score : .AP),
+                                                      Value(name: "C", score : .A),
+                                                      Value(name: "A", score : .B),
+                                                      Value(name: "B6", score : .C)],
+                                          elements: [Value(name: "Cuivre", score : .B),
+                                                     Value(name: "Potassium", score : .C),
+                                                     Value(name: "Manganèse", score : .C),
+                                                     Value(name: "Zinc", score : .C)])
 
 
   static let pineapple = ProductDetail(type: .fruit,
@@ -81,10 +81,10 @@ class Fruit {
                                        glucides: "11,70g",
                                        fibres: "1,20g",
                                        water: "85,50g",
-                                       vitamines: [Value(name: "C", number: "58%"),
-                                                   Value(name: "B9", number: "10%")],
-                                       elements: [Value(name: "Manganèse", number: "42%"),
-                                                  Value(name: "Potassium", number: "7%")])
+                                       vitamines: [Value(name: "C", score : .AP),
+                                                   Value(name: "B9", score : .C)],
+                                       elements: [Value(name: "Manganèse", score : .AP),
+                                                  Value(name: "Potassium", score : .C)])
 
   static let strawberry = ProductDetail(type: .fruit,
                                         name: "Fraise",
@@ -94,9 +94,9 @@ class Fruit {
                                         glucides: "6,03g",
                                         fibres: "3,80g",
                                         water: "90,30g",
-                                        vitamines: [Value(name: "C", number: "68%"),
-                                                    Value(name: "B9", number: "49%")],
-                                        elements: [Value(name: "Manganèse", number: "13%")])
+                                        vitamines: [Value(name: "C", score : .AP),
+                                                    Value(name: "B9", score : .AP)],
+                                        elements: [Value(name: "Manganèse", score : .C)])
 
 
   static let watermelon = ProductDetail(type: .fruit,
@@ -107,9 +107,9 @@ class Fruit {
                                         glucides: "8,33g",
                                         fibres: "0,50g",
                                         water: "91g",
-                                        vitamines: [Value(name: "A", number: "25%"),
-                                                    Value(name: "B9", number: "18%")],
-                                        elements: [Value(name: "Potassium", number: "5%")])
+                                        vitamines: [Value(name: "A", score : .B),
+                                                    Value(name: "B9", score : .B)],
+                                        elements: [Value(name: "Potassium", score : .C)])
 
 
 
