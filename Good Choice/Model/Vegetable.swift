@@ -21,17 +21,32 @@ class Vegetable {
                                     glucides: "0,83g",
                                     fibres: "3,6g",
                                     water: "84,30g",
-                                    vitamines: [Value(name: "B9", number: "35,20%"),
-                                                Value(name: "K1", number: "19,33%"),
-                                                Value(name: "B5", number: "17,83%"),
-                                                Value(name: "E", number: "18,58%"),
-                                                Value(name: "B6", number: "12,14%")],
+                                    vitamines: [Value(name: "B9", number: "++"),
+                                                Value(name: "K1", number: "++"),
+                                                Value(name: "B5", number: "+"),
+                                                Value(name: "E", number: "+"),
+                                                Value(name: "B6", number: "+")],
                                     elements: [Value(name: "Cuivre", number: "18%"),
                                                Value(name: "Potassium", number: "21,50%"),
                                                Value(name: "Manganèse", number: "10%")])
 
 
-
+//  static let avocat = ProductDetail(type: .vegetable,
+//                                    name: "Avocat",
+//                                    chooseDescription: exemple,
+//                                    conserveDescription: exemple,
+//                                    calories: "205kcal",
+//                                    glucides: "0,83g",
+//                                    fibres: "3,6g",
+//                                    water: "84,30g",
+//                                    vitamines: [Value(name: "B9", number: "35,20%"),
+//                                                Value(name: "K1", number: "19,33%"),
+//                                                Value(name: "B5", number: "17,83%"),
+//                                                Value(name: "E", number: "18,58%"),
+//                                                Value(name: "B6", number: "12,14%")],
+//                                    elements: [Value(name: "Cuivre", number: "18%"),
+//                                               Value(name: "Potassium", number: "21,50%"),
+//                                               Value(name: "Manganèse", number: "10%")])
 
   static let artichaut = ProductDetail(type: .vegetable,
                                        name: "Artichaut",

@@ -103,7 +103,7 @@
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-1A-I8y">
                                                                             <rect key="frame" x="0.0" y="0.0" width="99.5" height="65.5"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFM-Hz-4Rc">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aoi-VZ-cL3">
                                                                                     <rect key="frame" x="13" y="21.5" width="73.5" height="22.5"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,8 +112,8 @@
                                                                             </subviews>
                                                                             <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
-                                                                                <constraint firstItem="rFM-Hz-4Rc" firstAttribute="centerX" secondItem="fA3-1A-I8y" secondAttribute="centerX" id="c8a-Qu-9T3"/>
-                                                                                <constraint firstItem="rFM-Hz-4Rc" firstAttribute="centerY" secondItem="fA3-1A-I8y" secondAttribute="centerY" id="csi-hX-sm8"/>
+                                                                                <constraint firstItem="Aoi-VZ-cL3" firstAttribute="centerY" secondItem="fA3-1A-I8y" secondAttribute="centerY" id="Jok-ir-kM2"/>
+                                                                                <constraint firstItem="Aoi-VZ-cL3" firstAttribute="centerX" secondItem="fA3-1A-I8y" secondAttribute="centerX" id="fzP-wm-k5G"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hly-CM-ApF">
