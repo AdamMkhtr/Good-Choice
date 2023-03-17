@@ -34,7 +34,7 @@
                 <outlet property="resultElement3View" destination="J1E-jX-dIf" id="Gho-6a-Blw"/>
                 <outlet property="resultElement4" destination="9MN-Tf-gD3" id="rWN-aa-m7S"/>
                 <outlet property="resultElement4View" destination="q2H-3B-JFj" id="Hnb-Os-0LG"/>
-                <outlet property="resultVitamine1" destination="Nlp-8G-T1C" id="pvn-MO-Iid"/>
+                <outlet property="resultVitamine1" destination="rkk-X7-p4V" id="87P-HT-1xW"/>
                 <outlet property="resultVitamine2" destination="Hu2-ND-q01" id="Nnt-9U-Vu1"/>
                 <outlet property="resultVitamine3" destination="cgU-L8-ba3" id="USY-Ol-VEB"/>
                 <outlet property="resultVitamine4" destination="2mN-1N-9Xg" id="RoS-xJ-oMf"/>
@@ -380,17 +380,16 @@
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frp-kE-PBr">
                                                                             <rect key="frame" x="0.0" y="0.0" width="79.5" height="66"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlp-8G-T1C">
-                                                                                    <rect key="frame" x="16.5" y="22.5" width="46.5" height="21"/>
-                                                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkk-X7-p4V">
+                                                                                    <rect key="frame" x="4" y="4" width="71.5" height="58"/>
+                                                                                </imageView>
                                                                             </subviews>
                                                                             <color key="backgroundColor" red="0.56078431370000004" green="0.78039215689999997" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
-                                                                                <constraint firstItem="Nlp-8G-T1C" firstAttribute="centerX" secondItem="frp-kE-PBr" secondAttribute="centerX" id="0v6-i3-QUJ"/>
-                                                                                <constraint firstItem="Nlp-8G-T1C" firstAttribute="centerY" secondItem="frp-kE-PBr" secondAttribute="centerY" id="3cC-CY-DUR"/>
+                                                                                <constraint firstItem="rkk-X7-p4V" firstAttribute="leading" secondItem="frp-kE-PBr" secondAttribute="leading" constant="4" id="8et-eM-cI9"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="rkk-X7-p4V" secondAttribute="trailing" constant="4" id="9fc-lw-Mnf"/>
+                                                                                <constraint firstItem="rkk-X7-p4V" firstAttribute="top" secondItem="frp-kE-PBr" secondAttribute="top" constant="4" id="9pi-7n-huf"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="rkk-X7-p4V" secondAttribute="bottom" constant="4" id="hoa-hg-gL9"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-Bk-ugt">

@@ -9,7 +9,7 @@ import Foundation
 
 struct Value {
   var name : String
-  var number : String
+  var score : Score
 }
 
 struct ProductDetail {
@@ -28,4 +28,11 @@ struct ProductDetail {
 enum Type {
   case fruit
   case vegetable
+}
+
+enum Score : String {
+  case AP = "NoteA+"
+  case A = "NoteA"
+  case B = "NoteB"
+  case C = "NoteC"
 }
