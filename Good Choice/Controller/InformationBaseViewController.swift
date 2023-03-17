@@ -46,10 +46,10 @@ class InformationBaseViewController: UIViewController {
 
 
   @IBOutlet weak var resultVitamine1: UIImageView!
-  @IBOutlet weak var resultVitamine2: UILabel!
-  @IBOutlet weak var resultVitamine3: UILabel!
-  @IBOutlet weak var resultVitamine4: UILabel!
-  @IBOutlet weak var resultVitamine5: UILabel!
+  @IBOutlet weak var resultVitamine2: UIImageView!
+  @IBOutlet weak var resultVitamine3: UIImageView!
+  @IBOutlet weak var resultVitamine4: UIImageView!
+  @IBOutlet weak var resultVitamine5: UIImageView!
 
   @IBOutlet weak var compo1: UILabel!
   @IBOutlet weak var compo2: UILabel!
@@ -70,10 +70,11 @@ class InformationBaseViewController: UIViewController {
   @IBOutlet weak var element3: UILabel!
   @IBOutlet weak var element4: UILabel!
 
-  @IBOutlet weak var resultElement1: UILabel!
-  @IBOutlet weak var resultElement2: UILabel!
-  @IBOutlet weak var resultElement3: UILabel!
-  @IBOutlet weak var resultElement4: UILabel!
+
+  @IBOutlet weak var resultElement1: UIImageView!
+  @IBOutlet weak var resultElement2: UIImageView!
+  @IBOutlet weak var resultElement3: UIImageView!
+  @IBOutlet weak var resultElement4: UIImageView!
 
   @IBOutlet weak var element1View: UIView!
   @IBOutlet weak var element2View: UIView!
@@ -126,6 +127,8 @@ class InformationBaseViewController: UIViewController {
   /// Fill and setup the array vitamins in informations view according to the count of vitamins for the product.
   func fillVitaminesArray(){
 
+
+
     vitamineView2.isHidden = false
     vitamineView3.isHidden = false
     vitamineView4.isHidden = false
@@ -143,10 +146,10 @@ class InformationBaseViewController: UIViewController {
       vitamine3.text = productInformations?.vitamines[2].name
       vitamine4.text = productInformations?.vitamines[3].name
 
-      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].number)!)
-      resultVitamine2.text = productInformations?.vitamines[1].number
-      resultVitamine3.text = productInformations?.vitamines[2].number
-      resultVitamine4.text = productInformations?.vitamines[3].number
+      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
+      resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
+      resultVitamine3.image = UIImage(named: (productInformations?.vitamines[2].score.rawValue)!)
+      resultVitamine4.image = UIImage(named: (productInformations?.vitamines[3].score.rawValue)!)
 
       vitamineView5.isHidden = true
       vitamineResultView5.isHidden = true
@@ -158,9 +161,9 @@ class InformationBaseViewController: UIViewController {
       vitamine2.text = productInformations?.vitamines[1].name
       vitamine3.text = productInformations?.vitamines[2].name
 
-      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].number)!)
-      resultVitamine2.text = productInformations?.vitamines[1].number
-      resultVitamine3.text = productInformations?.vitamines[2].number
+      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
+      resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
+      resultVitamine3.image = UIImage(named: (productInformations?.vitamines[2].score.rawValue)!)
 
       vitamineView4.isHidden = true
       vitamineView5.isHidden = true
@@ -174,8 +177,8 @@ class InformationBaseViewController: UIViewController {
       vitamine1.text = productInformations?.vitamines[0].name
       vitamine2.text = productInformations?.vitamines[1].name
 
-      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].number)!)
-      resultVitamine2.text = productInformations?.vitamines[1].number
+      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
+      resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
 
       vitamineView3.isHidden = true
       vitamineView4.isHidden = true
@@ -191,7 +194,7 @@ class InformationBaseViewController: UIViewController {
 
       vitamine1.text = productInformations?.vitamines[0].name
 
-      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].number)!)
+      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
 
       vitamineView2.isHidden = true
       vitamineView3.isHidden = true
@@ -212,11 +215,11 @@ class InformationBaseViewController: UIViewController {
       vitamine4.text = productInformations?.vitamines[3].name
       vitamine5.text = productInformations?.vitamines[4].name
 
-      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].number)!)
-      resultVitamine2.text = productInformations?.vitamines[1].number
-      resultVitamine3.text = productInformations?.vitamines[2].number
-      resultVitamine4.text = productInformations?.vitamines[3].number
-      resultVitamine5.text = productInformations?.vitamines[4].number
+      resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
+      resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
+      resultVitamine3.image = UIImage(named: (productInformations?.vitamines[2].score.rawValue)!)
+      resultVitamine4.image = UIImage(named: (productInformations?.vitamines[3].score.rawValue)!)
+      resultVitamine5.image = UIImage(named: (productInformations?.vitamines[4].score.rawValue)!)
     }
   }
 
@@ -238,9 +241,9 @@ class InformationBaseViewController: UIViewController {
       element2.text = productInformations?.elements[1].name
       element3.text = productInformations?.elements[2].name
 
-      resultElement1.text = productInformations?.elements[0].number
-      resultElement2.text = productInformations?.elements[1].number
-      resultElement3.text = productInformations?.elements[2].number
+      resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
+      resultElement2.image = UIImage(named: (productInformations?.elements[1].score.rawValue)!)
+      resultElement3.image = UIImage(named: (productInformations?.elements[2].score.rawValue)!)
 
       element4View.isHidden = true
 
@@ -252,8 +255,8 @@ class InformationBaseViewController: UIViewController {
       element1.text = productInformations?.elements[0].name
       element2.text = productInformations?.elements[1].name
 
-      resultElement1.text = productInformations?.elements[0].number
-      resultElement2.text = productInformations?.elements[1].number
+      resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
+      resultElement2.image = UIImage(named: (productInformations?.elements[1].score.rawValue)!)
 
       element3View.isHidden = true
       element4View.isHidden = true
@@ -267,7 +270,7 @@ class InformationBaseViewController: UIViewController {
 
       element1.text = productInformations?.elements[0].name
 
-      resultElement1.text = productInformations?.elements[0].number
+      resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
 
       element2View.isHidden = true
       element3View.isHidden = true
@@ -285,10 +288,10 @@ class InformationBaseViewController: UIViewController {
       element3.text = productInformations?.elements[2].name
       element4.text = productInformations?.elements[3].name
 
-      resultElement1.text = productInformations?.elements[0].number
-      resultElement2.text = productInformations?.elements[1].number
-      resultElement3.text = productInformations?.elements[2].number
-      resultElement4.text = productInformations?.elements[3].number
+      resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
+      resultElement2.image = UIImage(named: (productInformations?.elements[1].score.rawValue)!)
+      resultElement3.image = UIImage(named: (productInformations?.elements[2].score.rawValue)!)
+      resultElement4.image = UIImage(named: (productInformations?.elements[3].score.rawValue)!)
     }
   }
 }
