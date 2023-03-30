@@ -26,8 +26,8 @@ class Vegetable {
                                                 Value(name: "B5", score : .C),
                                                 Value(name: "E", score : .C),
                                                 Value(name: "B6", score : .C)],
-                                    elements: [Value(name: "Cuivre", score : .B),
-                                               Value(name: "Potassium", score : .A),
+                                    elements: [Value(name: "Potassium", score : .A),
+                                               Value(name: "Cuivre", score : .B),
                                                Value(name: "Manganèse", score : .C)])
 
 

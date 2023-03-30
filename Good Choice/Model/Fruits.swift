@@ -22,8 +22,8 @@ class Fruit {
                                    glucides: "14,80g",
                                    fibres: "1,30g",
                                    water: "84,20g",
-                                   vitamines: [Value(name: "B9", score : .A),
-                                               Value(name: "A", score : .AP),
+                                   vitamines: [Value(name: "A", score : .AP),
+                                               Value(name: "B9", score : .A),
                                                Value(name: "C", score : .C)],
                                    elements: [Value(name: "Potassium", score : .B)])
 
