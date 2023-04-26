@@ -51,7 +51,7 @@ class Vegetable {
 
 
   static let champignon = ProductDetail(type: .vegetable,
-                                        name: "Champignon",
+                                        name: "Champignon de Paris",
                                         chooseDescription: exemple,
                                         conserveDescription: exemple,
                                         calories: "38,40kcal",

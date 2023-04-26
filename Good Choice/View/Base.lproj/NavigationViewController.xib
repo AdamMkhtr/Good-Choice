@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,10 +26,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiF-R2-EOc">
-                    <rect key="frame" x="32.000000000000007" y="24.666666666666664" width="88.666666666666686" height="74.666666666666686"/>
+                    <rect key="frame" x="32" y="24.666666666666668" width="48.333333333333343" height="40.666666666666657"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.left.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KL8-5S-8Ig">
-                            <rect key="frame" x="33.666666666666671" y="28.999999999999996" width="21.333333333333329" height="17.333333333333332"/>
+                            <rect key="frame" x="13.333333333333334" y="11.999999999999996" width="21.333333333333329" height="17.333333333333336"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </imageView>
                     </subviews>
@@ -46,7 +46,8 @@
                 <constraint firstItem="Vr3-Y0-YSR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0NS-c7-Glu"/>
                 <constraint firstItem="Vr3-Y0-YSR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5yg-dn-QCZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AiF-R2-EOc" secondAttribute="bottom" constant="24.670000000000002" id="BMc-Cd-UJB"/>
-                <constraint firstItem="AiF-R2-EOc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dtf-qK-pfV"/>
+                <constraint firstItem="Vr3-Y0-YSR" firstAttribute="leading" secondItem="AiF-R2-EOc" secondAttribute="trailing" constant="22.670000000000002" id="V1y-ri-BEq"/>
+                <constraint firstItem="AiF-R2-EOc" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dtf-qK-pfV"/>
                 <constraint firstItem="AiF-R2-EOc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24.670000000000002" id="f2e-r1-qf6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
