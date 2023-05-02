@@ -30,6 +30,8 @@
 		A6E7D56C28FF05D200386AD1 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7D56B28FF05D200386AD1 /* Structure.swift */; };
 		A6F3973F28E73B13007BB4B0 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */; };
 		A6F3974028E73B13007BB4B0 /* ChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */; };
+		A6F7EC372A013FE70016C8B3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F7EC352A013FE70016C8B3 /* InfoViewController.swift */; };
+		A6F7EC382A013FE70016C8B3 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F7EC362A013FE70016C8B3 /* InfoViewController.xib */; };
 		A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		A6E7D56B28FF05D200386AD1 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
 		A6F3973D28E73B13007BB4B0 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
 		A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseViewController.xib; sourceTree = "<group>"; };
+		A6F7EC352A013FE70016C8B3 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A6F7EC362A013FE70016C8B3 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		A6FC8DF728E2FCAA00C7C6C4 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,7 @@
 		A617C1C928E1C99C0007ED3E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A6F7EC352A013FE70016C8B3 /* InfoViewController.swift */,
 				A620B5FF28E1CA800066BF6E /* ContainerViewController.swift */,
 				A620B60728E1D5BA0066BF6E /* BottomBarViewController.swift */,
 				A651375B28E47771008C3631 /* InformationBaseViewController.swift */,
@@ -110,6 +115,7 @@
 				A6E3EB0028E32359002C4C69 /* ChoiceTableViewCell.xib */,
 				A6F3973E28E73B13007BB4B0 /* ChooseViewController.xib */,
 				A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */,
+				A6F7EC362A013FE70016C8B3 /* InfoViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				A620B60228E1CA800066BF6E /* ContainerViewController.xib in Resources */,
 				A651375E28E47771008C3631 /* InformationBaseViewController.xib in Resources */,
 				A652651628E734B500CFB6C6 /* DetailsTopBarViewController.xib in Resources */,
+				A6F7EC382A013FE70016C8B3 /* InfoViewController.xib in Resources */,
 				A6B0EA862922B8A500550AEF /* NavigationViewController.xib in Resources */,
 				A6E3EB0228E32359002C4C69 /* ChoiceTableViewCell.xib in Resources */,
 			);
@@ -235,6 +242,7 @@
 				A620B60928E1D5BA0066BF6E /* BottomBarViewController.swift in Sources */,
 				A620B60128E1CA800066BF6E /* ContainerViewController.swift in Sources */,
 				A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */,
+				A6F7EC372A013FE70016C8B3 /* InfoViewController.swift in Sources */,
 				A651375D28E47771008C3631 /* InformationBaseViewController.swift in Sources */,
 				A6E7D56C28FF05D200386AD1 /* Structure.swift in Sources */,
 				A6F3973F28E73B13007BB4B0 /* ChooseViewController.swift in Sources */,

@@ -21,6 +21,7 @@ class ContainerViewController: UIViewController {
   let informationBaseController = InformationBaseViewController(nibName: nil, bundle: nil)
   let detailsTopBarController = DetailsTopBarViewController(nibName: nil, bundle: nil)
   let navigationBarController = NavigationViewController(nibName: nil, bundle: nil)
+  let infoViewController = InfoViewController(nibName: nil, bundle: nil)
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -30,7 +31,8 @@ class ContainerViewController: UIViewController {
   @IBOutlet weak var baseView: UIView!
   @IBOutlet weak var navigationBarView: UIView!
   @IBOutlet weak var detailsTopBarView: UIView!
-  
+  @IBOutlet weak var infoView: UIView!
+
   //----------------------------------------------------------------------------
   // MARK: - Init
   //----------------------------------------------------------------------------
@@ -42,8 +44,16 @@ class ContainerViewController: UIViewController {
     detailsTopBarView.isHidden = true
     setupBaseInformationContainer()
     setupNavigationBarContainer()
+
+
+    let tapGestureInfo = UITapGestureRecognizer()
+    self.infoView.addGestureRecognizer(tapGestureInfo)
+    tapGestureInfo.addTarget(self, action: #selector(tapInfo))
   }
 
+  @objc func tapInfo() {
+    infoView.isHidden = true
+  }
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
@@ -54,6 +64,7 @@ class ContainerViewController: UIViewController {
     configureMainController(controller: baseController)
     configureBottomBarController()
     configureTopDetailsBarController()
+    configureInfoController()
     setupBottomBarContainer()
   }
 
@@ -177,6 +188,21 @@ class ContainerViewController: UIViewController {
       controller.view.bottomAnchor.constraint(equalTo: baseView.bottomAnchor),
       controller.view.leadingAnchor.constraint(equalTo: baseView.leadingAnchor),
       controller.view.trailingAnchor.constraint(equalTo: baseView.trailingAnchor),
+    ])
+  }
+
+  func configureInfoController() {
+    infoView.addSubview(infoViewController.view)
+    addChild(infoViewController)
+    infoViewController.didMove(toParent: self)
+
+    infoViewController.view.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      infoViewController.view.topAnchor.constraint(equalTo: infoView.topAnchor),
+      infoViewController.view.bottomAnchor.constraint(equalTo: infoView.bottomAnchor),
+      infoViewController.view.leadingAnchor.constraint(equalTo: infoView.leadingAnchor),
+      infoViewController.view.trailingAnchor.constraint(equalTo: infoView.trailingAnchor),
     ])
   }
 }

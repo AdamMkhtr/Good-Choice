@@ -92,6 +92,7 @@ class InformationBaseViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -126,8 +127,6 @@ class InformationBaseViewController: UIViewController {
 
   /// Fill and setup the array vitamins in informations view according to the count of vitamins for the product.
   func fillVitaminesArray(){
-
-
 
     vitamineView2.isHidden = false
     vitamineView3.isHidden = false
@@ -233,7 +232,6 @@ class InformationBaseViewController: UIViewController {
     resultElement2View.isHidden = false
     resultElement3View.isHidden = false
     resultElement4View.isHidden = false
-
 
     if productInformations?.elements.count == 3 {
 
