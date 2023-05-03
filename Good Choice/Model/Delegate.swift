@@ -48,3 +48,7 @@ protocol InformationNavigatonDelegate: AnyObject {
 protocol NameNavigationDelegate: AnyObject {
   func didCollectName(name: String)
 }
+
+protocol InfoPopUpDelegate: AnyObject {
+  func didDisplayPopUp()
+}

@@ -15,6 +15,7 @@ class InformationBaseViewController: UIViewController {
 
   var productInformations : ProductDetail?
   var firstTime = false
+  weak var infoPopUpDelegate : InfoPopUpDelegate?
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -92,18 +93,30 @@ class InformationBaseViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    setupGesture()
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
     setupInformations()
     firstTime = true
+    setupGesture()
   }
 
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
+
+  func setupGesture() {
+    let tapGestureVitamine = UITapGestureRecognizer()
+    self.vitamineView1.addGestureRecognizer(tapGestureVitamine)
+    tapGestureVitamine.addTarget(self, action: #selector(tapVitamine1))
+  }
+
+
+@objc func tapVitamine1() {
+  infoPopUpDelegate?.didDisplayPopUp()
+}
 
   /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
@@ -140,10 +153,10 @@ class InformationBaseViewController: UIViewController {
 
     if productInformations?.vitamines.count == 4 {
 
-      vitamine1.text = productInformations?.vitamines[0].name
-      vitamine2.text = productInformations?.vitamines[1].name
-      vitamine3.text = productInformations?.vitamines[2].name
-      vitamine4.text = productInformations?.vitamines[3].name
+      vitamine1.text = productInformations?.vitamines[0].element.name
+      vitamine2.text = productInformations?.vitamines[1].element.name
+      vitamine3.text = productInformations?.vitamines[2].element.name
+      vitamine4.text = productInformations?.vitamines[3].element.name
 
       resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
       resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
@@ -156,9 +169,9 @@ class InformationBaseViewController: UIViewController {
     }
     else if productInformations?.vitamines.count == 3 {
 
-      vitamine1.text = productInformations?.vitamines[0].name
-      vitamine2.text = productInformations?.vitamines[1].name
-      vitamine3.text = productInformations?.vitamines[2].name
+      vitamine1.text = productInformations?.vitamines[0].element.name
+      vitamine2.text = productInformations?.vitamines[1].element.name
+      vitamine3.text = productInformations?.vitamines[2].element.name
 
       resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
       resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
@@ -173,8 +186,8 @@ class InformationBaseViewController: UIViewController {
     }
     else if productInformations?.vitamines.count == 2 {
 
-      vitamine1.text = productInformations?.vitamines[0].name
-      vitamine2.text = productInformations?.vitamines[1].name
+      vitamine1.text = productInformations?.vitamines[0].element.name
+      vitamine2.text = productInformations?.vitamines[1].element.name
 
       resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
       resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
@@ -191,7 +204,7 @@ class InformationBaseViewController: UIViewController {
     }
     else if productInformations?.vitamines.count == 1 {
 
-      vitamine1.text = productInformations?.vitamines[0].name
+      vitamine1.text = productInformations?.vitamines[0].element.name
 
       resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
 
@@ -208,11 +221,11 @@ class InformationBaseViewController: UIViewController {
 
     } else {
 
-      vitamine1.text = productInformations?.vitamines[0].name
-      vitamine2.text = productInformations?.vitamines[1].name
-      vitamine3.text = productInformations?.vitamines[2].name
-      vitamine4.text = productInformations?.vitamines[3].name
-      vitamine5.text = productInformations?.vitamines[4].name
+      vitamine1.text = productInformations?.vitamines[0].element.name
+      vitamine2.text = productInformations?.vitamines[1].element.name
+      vitamine3.text = productInformations?.vitamines[2].element.name
+      vitamine4.text = productInformations?.vitamines[3].element.name
+      vitamine5.text = productInformations?.vitamines[4].element.name
 
       resultVitamine1.image = UIImage(named: (productInformations?.vitamines[0].score.rawValue)!)
       resultVitamine2.image = UIImage(named: (productInformations?.vitamines[1].score.rawValue)!)
@@ -235,9 +248,9 @@ class InformationBaseViewController: UIViewController {
 
     if productInformations?.elements.count == 3 {
 
-      element1.text = productInformations?.elements[0].name
-      element2.text = productInformations?.elements[1].name
-      element3.text = productInformations?.elements[2].name
+      element1.text = productInformations?.elements[0].element.name
+      element2.text = productInformations?.elements[1].element.name
+      element3.text = productInformations?.elements[2].element.name
 
       resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
       resultElement2.image = UIImage(named: (productInformations?.elements[1].score.rawValue)!)
@@ -250,8 +263,8 @@ class InformationBaseViewController: UIViewController {
     }
     else if productInformations?.elements.count == 2 {
 
-      element1.text = productInformations?.elements[0].name
-      element2.text = productInformations?.elements[1].name
+      element1.text = productInformations?.elements[0].element.name
+      element2.text = productInformations?.elements[1].element.name
 
       resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
       resultElement2.image = UIImage(named: (productInformations?.elements[1].score.rawValue)!)
@@ -266,7 +279,7 @@ class InformationBaseViewController: UIViewController {
 
     else if productInformations?.elements.count == 1 {
 
-      element1.text = productInformations?.elements[0].name
+      element1.text = productInformations?.elements[0].element.name
 
       resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
 
@@ -281,10 +294,10 @@ class InformationBaseViewController: UIViewController {
 
     } else {
 
-      element1.text = productInformations?.elements[0].name
-      element2.text = productInformations?.elements[1].name
-      element3.text = productInformations?.elements[2].name
-      element4.text = productInformations?.elements[3].name
+      element1.text = productInformations?.elements[0].element.name
+      element2.text = productInformations?.elements[1].element.name
+      element3.text = productInformations?.elements[2].element.name
+      element4.text = productInformations?.elements[3].element.name
 
       resultElement1.image = UIImage(named: (productInformations?.elements[0].score.rawValue)!)
       resultElement2.image = UIImage(named: (productInformations?.elements[1].score.rawValue)!)
@@ -304,7 +317,6 @@ extension InformationBaseViewController: BaseDelegate {
     if firstTime == true {
       informationScrollView.setContentOffset(CGPointZero, animated: false)
       setupInformations()
-
     }
   }
 }

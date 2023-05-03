@@ -8,7 +8,8 @@
 import Foundation
 
 struct Value {
-  var name : String
+  var element : Info
+  // var name : String
   var score : Score
 }
 
@@ -36,3 +37,9 @@ enum Score : String {
   case B = "NoteB"
   case C = "NoteC"
 }
+
+struct Info {
+  var name : String
+  var info : String
+}
+
