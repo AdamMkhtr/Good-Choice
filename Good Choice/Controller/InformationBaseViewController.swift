@@ -107,7 +107,7 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
-  #warning("oublie pas ici")
+
   func setupGesture() {
     let tapGestureVitamine1 = UITapGestureRecognizer()
     self.vitamineView1.addGestureRecognizer(tapGestureVitamine1)
