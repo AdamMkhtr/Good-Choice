@@ -49,6 +49,10 @@ protocol NameNavigationDelegate: AnyObject {
   func didCollectName(name: String)
 }
 
-protocol InfoPopUpDelegate: AnyObject {
+protocol PopUpDelegate: AnyObject {
   func didDisplayPopUp()
+}
+
+protocol InfoPopUpDelegate : AnyObject {
+  func didCollectInfoPopUp(info: String)
 }

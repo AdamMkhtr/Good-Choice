@@ -38,7 +38,7 @@ Le melon se conserve mieux dans un placard ou une cave fraîche.
                                    fibres: "1,30g",
                                    water: "84,20g",
                                    vitamines: [Value(element: Vitamine.vitamineA, score : .AP),
-                                               Value(element: Vitamine.vitamineA, score : .A),
+                                               Value(element: Vitamine.vitamineB9, score : .A),
                                                Value(element: Vitamine.vitamineA, score : .C)],
                                    elements: [Value(element: Vitamine.vitamineA, score : .B)])
 

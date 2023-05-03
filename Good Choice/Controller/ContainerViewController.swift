@@ -79,7 +79,8 @@ class ContainerViewController: UIViewController {
     baseController.knowWhatProductDelegate = navigationBarController.self
     bottomBarController.delegateNavigation = navigationBarController.self
     baseController.nameNavigationDelegate = navigationBarController.self
-    informationBaseController.infoPopUpDelegate = self
+    informationBaseController.popUpDelegate = self
+    informationBaseController.infoPopupDelegate = infoViewController.self
   }
 
   /// Setup the button for the base container.
@@ -219,7 +220,7 @@ extension ContainerViewController: DisplayDelegate {
     configureMainController(controller: informationBaseController)
   }
 }
-extension ContainerViewController: InfoPopUpDelegate {
+extension ContainerViewController: PopUpDelegate {
   func didDisplayPopUp() {
     infoView.isHidden = false
     print("CA PASSE BIEN ICI")

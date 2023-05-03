@@ -15,7 +15,8 @@ class InformationBaseViewController: UIViewController {
 
   var productInformations : ProductDetail?
   var firstTime = false
-  weak var infoPopUpDelegate : InfoPopUpDelegate?
+  weak var popUpDelegate : PopUpDelegate?
+  weak var infoPopupDelegate : InfoPopUpDelegate?
 
   //----------------------------------------------------------------------------
   // MARK: - Outlets
@@ -106,17 +107,28 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Setup
   //----------------------------------------------------------------------------
-
+  #warning("oublie pas ici")
   func setupGesture() {
-    let tapGestureVitamine = UITapGestureRecognizer()
-    self.vitamineView1.addGestureRecognizer(tapGestureVitamine)
-    tapGestureVitamine.addTarget(self, action: #selector(tapVitamine1))
+    let tapGestureVitamine1 = UITapGestureRecognizer()
+    self.vitamineView1.addGestureRecognizer(tapGestureVitamine1)
+    tapGestureVitamine1.addTarget(self, action: #selector(tapVitamine1))
+
+    let tapGestureVitamine2 = UITapGestureRecognizer()
+    self.vitamineView2.addGestureRecognizer(tapGestureVitamine2)
+    tapGestureVitamine2.addTarget(self, action: #selector(tapVitamine2))
+
+    let tapGestureVitamine3 = UITapGestureRecognizer()
+    self.vitamineView3.addGestureRecognizer(tapGestureVitamine3)
+    tapGestureVitamine3.addTarget(self, action: #selector(tapVitamine3))
+
+    let tapGestureVitamine4 = UITapGestureRecognizer()
+    self.vitamineView4.addGestureRecognizer(tapGestureVitamine4)
+    tapGestureVitamine4.addTarget(self, action: #selector(tapVitamine4))
+
+    let tapGestureVitamine5 = UITapGestureRecognizer()
+    self.vitamineView5.addGestureRecognizer(tapGestureVitamine5)
+    tapGestureVitamine5.addTarget(self, action: #selector(tapVitamine5))
   }
-
-
-@objc func tapVitamine1() {
-  infoPopUpDelegate?.didDisplayPopUp()
-}
 
   /// Check if the information is not optional and use the data on the display .
   func setupInformations() {
@@ -137,6 +149,38 @@ class InformationBaseViewController: UIViewController {
   //----------------------------------------------------------------------------
   // MARK: - Methods
   //----------------------------------------------------------------------------
+
+  @objc func tapVitamine1() {
+    guard let info = productInformations?.vitamines[0].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+
+  @objc func tapVitamine2() {
+    guard let info = productInformations?.vitamines[1].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+
+  @objc func tapVitamine3() {
+    guard let info = productInformations?.vitamines[2].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+
+  @objc func tapVitamine4() {
+    guard let info = productInformations?.vitamines[3].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+
+  @objc func tapVitamine5() {
+    guard let info = productInformations?.vitamines[4].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+
+
 
   /// Fill and setup the array vitamins in informations view according to the count of vitamins for the product.
   func fillVitaminesArray(){

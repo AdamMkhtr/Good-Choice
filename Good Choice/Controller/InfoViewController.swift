@@ -11,6 +11,12 @@ class InfoViewController: UIViewController {
 
 
   //----------------------------------------------------------------------------
+  // MARK: - Properties
+  //----------------------------------------------------------------------------
+
+
+
+  //----------------------------------------------------------------------------
   // MARK: - Outlet
   //----------------------------------------------------------------------------
 
@@ -26,6 +32,7 @@ class InfoViewController: UIViewController {
     super.viewDidLoad()
     setupCornerRadius()
   }
+
 
   //----------------------------------------------------------------------------
   // MARK: - Setup
@@ -44,4 +51,10 @@ class InfoViewController: UIViewController {
 
 
 
+}
+
+extension InfoViewController : InfoPopUpDelegate {
+  func didCollectInfoPopUp(info: String) {
+    infoLabel.text = info
+  }
 }
