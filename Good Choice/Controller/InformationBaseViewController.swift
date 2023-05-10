@@ -128,6 +128,23 @@ class InformationBaseViewController: UIViewController {
     let tapGestureVitamine5 = UITapGestureRecognizer()
     self.vitamineView5.addGestureRecognizer(tapGestureVitamine5)
     tapGestureVitamine5.addTarget(self, action: #selector(tapVitamine5))
+
+    let tapGestureElement1 = UITapGestureRecognizer()
+    self.element1View.addGestureRecognizer(tapGestureElement1)
+    tapGestureElement1.addTarget(self, action: #selector(tapElement1))
+
+    let tapGestureElement2 = UITapGestureRecognizer()
+    self.element2View.addGestureRecognizer(tapGestureElement2)
+    tapGestureElement2.addTarget(self, action: #selector(tapElement2))
+
+    let tapGestureElement3 = UITapGestureRecognizer()
+    self.element3View.addGestureRecognizer(tapGestureElement3)
+    tapGestureElement3.addTarget(self, action: #selector(tapElement3))
+
+    let tapGestureElement4 = UITapGestureRecognizer()
+    self.element4View.addGestureRecognizer(tapGestureElement4)
+    tapGestureElement4.addTarget(self, action: #selector(tapElement4))
+
   }
 
   /// Check if the information is not optional and use the data on the display .
@@ -180,6 +197,26 @@ class InformationBaseViewController: UIViewController {
     popUpDelegate?.didDisplayPopUp()
   }
 
+  @objc func tapElement1() {
+    guard let info = productInformations?.elements[0].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+  @objc func tapElement2() {
+    guard let info = productInformations?.elements[1].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+  @objc func tapElement3() {
+    guard let info = productInformations?.elements[2].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
+  @objc func tapElement4() {
+    guard let info = productInformations?.elements[3].element.info else {return}
+    infoPopupDelegate?.didCollectInfoPopUp(info: info)
+    popUpDelegate?.didDisplayPopUp()
+  }
 
 
   /// Fill and setup the array vitamins in informations view according to the count of vitamins for the product.

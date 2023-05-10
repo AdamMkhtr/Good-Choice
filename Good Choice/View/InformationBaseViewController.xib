@@ -14,7 +14,7 @@
                 <outlet property="compo3" destination="dya-rf-Kdt" id="bpV-lK-HVa"/>
                 <outlet property="compo4" destination="cij-mL-aGZ" id="8Ez-PM-GJI"/>
                 <outlet property="element1" destination="S2T-Nr-5le" id="ZzY-xr-Ckj"/>
-                <outlet property="element1View" destination="Xh7-mF-BCo" id="8Gr-Yw-oEb"/>
+                <outlet property="element1View" destination="Lx7-Wa-UAl" id="yCS-Vg-J3A"/>
                 <outlet property="element2" destination="yBu-Hc-LhQ" id="Xqg-F9-HAM"/>
                 <outlet property="element2View" destination="yVp-Eo-fZr" id="iVK-Y1-c6N"/>
                 <outlet property="element3" destination="Ppq-Ur-2Hh" id="cpr-B9-kfY"/>
