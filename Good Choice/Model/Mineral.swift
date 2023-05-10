@@ -26,4 +26,6 @@ class Mineral {
 
   static let chlorure = Info(name: "Chlorure", info: "Le chlorure joue un rôle important dans la digestion. Il aide à la production d'acide chlorhydrique dans l'estomac, ce qui est nécessaire pour décomposer les aliments et faciliter la digestion. Il est également impliqué dans la régulation de la pression artérielle et de l'équilibre acido-basique dans le corps.")
 
+  static let cuivre = Info(name: "Cuivre", info: "Le cuivre est nécessaire pour plusieurs fonctions physiologiques, y compris la formation de globules rouges, la fonction immunitaire, la croissance et le développement des os et des tissus conjonctifs, la pigmentation des cheveux et de la peau, et la synthèse de l'hémoglobine. Il est également impliqué dans la production d'énergie dans les cellules et dans la formation de collagène, une protéine structurelle importante pour la peau, les tendons, les ligaments et les vaisseaux sanguins.")
+
 }
