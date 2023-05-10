@@ -52,7 +52,7 @@
                         <constraint firstAttribute="width" secondItem="44G-kq-n0i" secondAttribute="height" multiplier="390:89" id="VBS-w7-Jly"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1x-Wk-Krq" userLabel="InfoMenu">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1x-Wk-Krq" userLabel="InfoMenu">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                 </view>
             </subviews>

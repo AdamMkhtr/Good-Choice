@@ -16,6 +16,7 @@
 		A651375E28E47771008C3631 /* InformationBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A651375C28E47771008C3631 /* InformationBaseViewController.xib */; };
 		A652651528E734B500CFB6C6 /* DetailsTopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652651328E734B500CFB6C6 /* DetailsTopBarViewController.swift */; };
 		A652651628E734B500CFB6C6 /* DetailsTopBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */; };
+		A65E6CE02A0B901500BCFDC1 /* Mineral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65E6CDF2A0B901500BCFDC1 /* Mineral.swift */; };
 		A66DD73828E3516D00FCEF30 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66DD73728E3516D00FCEF30 /* Vegetable.swift */; };
 		A69B1DC028E1C78500BA13CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1DBF28E1C78500BA13CA /* AppDelegate.swift */; };
 		A69B1DC228E1C78500BA13CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1DC128E1C78500BA13CA /* SceneDelegate.swift */; };
@@ -46,6 +47,7 @@
 		A651375C28E47771008C3631 /* InformationBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationBaseViewController.xib; sourceTree = "<group>"; };
 		A652651328E734B500CFB6C6 /* DetailsTopBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTopBarViewController.swift; sourceTree = "<group>"; };
 		A652651428E734B500CFB6C6 /* DetailsTopBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTopBarViewController.xib; sourceTree = "<group>"; };
+		A65E6CDF2A0B901500BCFDC1 /* Mineral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mineral.swift; sourceTree = "<group>"; };
 		A66DD73728E3516D00FCEF30 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
 		A69B1DBC28E1C78500BA13CA /* Good Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69B1DBF28E1C78500BA13CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				A69B754328FAF4EA007D9FF8 /* Delegate.swift */,
 				A6E7D56B28FF05D200386AD1 /* Structure.swift */,
 				A64248DB2A01520400A2A94E /* Vitamine.swift */,
+				A65E6CDF2A0B901500BCFDC1 /* Mineral.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				A620B60928E1D5BA0066BF6E /* BottomBarViewController.swift in Sources */,
 				A620B60128E1CA800066BF6E /* ContainerViewController.swift in Sources */,
 				A6FC8DF928E2FCAA00C7C6C4 /* NavigationViewController.swift in Sources */,
+				A65E6CE02A0B901500BCFDC1 /* Mineral.swift in Sources */,
 				A6F7EC372A013FE70016C8B3 /* InfoViewController.swift in Sources */,
 				A64248DC2A01520400A2A94E /* Vitamine.swift in Sources */,
 				A651375D28E47771008C3631 /* InformationBaseViewController.swift in Sources */,
